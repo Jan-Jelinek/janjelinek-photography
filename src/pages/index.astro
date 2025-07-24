@@ -1,5 +1,9 @@
 ---
+import { getCollection } from 'astro:content';
 
+const posts = (await getCollection('posts')).sort(
+  (a, b) => b.data.sequence - a.data.sequence,
+);
 ---
 
 <html lang="en">
@@ -12,5 +16,10 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+		<div>
+		{posts.map(post => (
+			<a href={`/collections/${post.data.slug}`}>{post.data.title}</a>
+		))}
+		</div>
 	</body>
 </html>
