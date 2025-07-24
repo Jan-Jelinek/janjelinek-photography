@@ -1,0 +1,28 @@
+---
+const { images } = Astro.props;
+---
+
+<div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+    {
+        images.map((img: { src: string; w: number; h: number; }) => 
+        <a href={img.src} 
+            data-pswp-width={img.w} 
+            data-pswp-height={img.h} 
+            target="_blank">
+            <img src={img.src} alt="Image failed to load" width="300" height="200" loading="lazy" />
+        </a>
+        )
+    }
+</div>
+
+<script>
+    // Initialize PhotoSwipe
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    import 'photoswipe/style.css';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+    pswpModule: () => import('photoswipe')
+    });
+    lightbox.init();
+</script>
