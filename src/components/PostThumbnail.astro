@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+---
+
+<a href={`/collections/${post.data.slug}`}>
+    <img src={post.data.cover.src} alt="..." />
+    {post.data.title}
+</a>

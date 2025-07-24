@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import PostThumbnail from '../components/PostThumbnail.astro'
 
 const posts = (await getCollection('posts')).sort(
   (a, b) => b.data.sequence - a.data.sequence,
@@ -18,7 +19,7 @@ const posts = (await getCollection('posts')).sort(
 		<h1>Astro</h1>
 		<div>
 		{posts.map(post => (
-			<a href={`/collections/${post.data.slug}`}>{post.data.title}</a>
+			<PostThumbnail post={post} />
 		))}
 		</div>
 	</body>

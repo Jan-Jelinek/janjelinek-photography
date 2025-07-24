@@ -6,11 +6,12 @@ import { glob, file } from 'astro/loaders';
 
 const posts = defineCollection({
   loader: glob({ pattern: ['**/post.mdx'], base: 'src/collections' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
       sequence: z.number(),
       slug: z.string(),
       title: z.string(),
-    // state: z.enum(['ongoing', 'complete']),
+      cover: image(),
+        // state: z.enum(['ongoing', 'complete']),
   }),
 });
 
