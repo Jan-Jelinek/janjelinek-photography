@@ -7,9 +7,12 @@ Made with [Astro](https://astro.build/)
 ---
 
 todo
-- Next and previous post navigation
+- Finish PostThumbnail component
+- Add next and previous post navigation buttons
+- Finish home page design
+- Finish markdown post design
 - Fix up README
-- Write more posts
+- Write posts
 - Github actions and Hosting
 - View transitions?
 - View counter?
