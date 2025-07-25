@@ -1,28 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro'
 import PostThumbnail from '../components/PostThumbnail.astro'
-import "../styles/global.css";
 
 const posts = (await getCollection('posts')).sort(
   (a, b) => b.data.sequence - a.data.sequence,
 );
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<h1 class="text-3xl font-bold underline">Hello world!</h1>
-		<div>
-		{posts.map(post => (
-			<PostThumbnail post={post} />
-		))}
-		</div>
-	</body>
-</html>
+<BaseLayout>
+	<div class="grid grid-cols-4 gap-4">
+	{posts.map(post => (
+		<PostThumbnail post={post} />
+	))}
+	</div>
+</BaseLayout>

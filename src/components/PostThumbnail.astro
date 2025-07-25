@@ -8,7 +8,18 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<a href={`/collections/${post.data.slug}`}>
-    <img src={post.data.cover.src} alt="..." />
-    {post.data.title}
-</a>
+<!--
+TODO:
+ - Post title appears on image
+ - coverFont
+ - coverColor
+ - Country flag in top right-corner
+
+-->
+
+<article>
+  <a href={`/collections/${post.data.slug}`}>
+      <img src={post.data.cover.src} alt="..." style="border-radius: 16px;" />
+      {post.data.title}
+  </a>
+</article>

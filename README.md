@@ -7,7 +7,6 @@ Made with [Astro](https://astro.build/)
 ---
 
 todo
-- Layouts (maybe add tailwind?)
 - Next and previous post navigation
 - Fix up README
 - Write more posts
