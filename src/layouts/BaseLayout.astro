@@ -9,17 +9,10 @@ const { page } = Astro.props;
 <!doctype html>
 <html lang="en">
 <Head pageTitle="Jan Jelinek Photography" />
-<body class="w-full h-full"> <!--  Raisin Black #212121 -->
+<body class="w-full h-full">
 	<Header page={page} />
-	<main>
+	<main class="px-[4%] sm:px-[8%] md:px-[12%] lg:px-[20%]">
 		<slot />
 	</main>
 </body>
 </html>
-
-<style>
-	main {
-		margin: auto;
-		padding: 0 20%;
-	}
-</style>

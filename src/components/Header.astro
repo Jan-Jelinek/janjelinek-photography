@@ -2,13 +2,13 @@
 const { page } = Astro.props;
 ---
 
-<header class="flex flex-col pt-18 pb-12">
+<header class="flex flex-col pt-12 pb-8 xs:pt-18 sm:pb-12">
     <div class="m-auto pb-2">
-        <a href="/" class="text-6xl font-mono" style="color: #2A3439">
+        <a href="/" class="text-4xl xs:text-5xl sm:text-6xl font-mono" style="color: #2A3439">
             <span style="color: #2A3439">J</span><span style="color: #2C363B">a</span><span style="color: #2D373C">n</span> <span style="color: #2A3439">J</span><span style="color: #2A3439">e</span><span style="color: #283133">l</span><span style="color: #2F383D">i</span><span style="color: #2D373C">n</span><span style="color: #2A3439">e</span><span style="color: #252F34">k</span>
         </a>
     </div>
-    <div class="m-auto text-2xl">
+    <div class="m-auto text-xl xs:text-2xl">
         {page}
     </div>
 </header>

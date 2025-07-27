@@ -2,7 +2,7 @@
 const { images } = Astro.props;
 ---
 
-<div class="grid grid-cols-4" id="gallery">
+<div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4" id="gallery">
     {
         images.map((img: { src: string; w: number; h: number; }) => 
         <a href={img.src} 

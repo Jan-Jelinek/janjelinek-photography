@@ -7,10 +7,10 @@ Made with [Astro](https://astro.build/)
 ---
 
 todo
-- Responsive UI
 - ImageGallery component improvements (alt text, remove need for adding image dimensions)
 - Finish PostThumbnail component
 - Add next and previous post navigation buttons
+- Favicon
 - Fix up README
 - Write posts
 - Github actions and Hosting
