@@ -7,9 +7,10 @@ Made with [Astro](https://astro.build/)
 ---
 
 todo
-- ImageGallery component improvements (alt text, remove need for adding image dimensions)
 - Finish PostThumbnail component
 - Add next and previous post navigation buttons
+- Customize Photoswipe (remove zoom button, look into what else i can do)
+- Make ImageGallery auto-import images to posts using import.meta.glob()
 - Favicon
 - Fix up README
 - Write posts

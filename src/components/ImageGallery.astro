@@ -1,17 +1,19 @@
 ---
+import type { ImageMetadata } from "astro";
+
 const { images } = Astro.props;
 ---
 
 <div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4" id="gallery">
     {
-        images.map((img: { src: string; w: number; h: number; }) => 
+        images.map((img: ImageMetadata) => (
         <a href={img.src} 
-            data-pswp-width={img.w} 
-            data-pswp-height={img.h} 
+            data-pswp-width={img.width} 
+            data-pswp-height={img.height} 
             target="_blank">
             <img src={img.src} alt="Image failed to load" loading="lazy" class="shadow-lg" />
         </a>
-        )
+        ))
     }
 </div>
 
