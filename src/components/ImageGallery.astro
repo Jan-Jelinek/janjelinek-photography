@@ -2,14 +2,14 @@
 const { images } = Astro.props;
 ---
 
-<div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+<div class="grid grid-cols-4" id="gallery">
     {
         images.map((img: { src: string; w: number; h: number; }) => 
         <a href={img.src} 
             data-pswp-width={img.w} 
             data-pswp-height={img.h} 
             target="_blank">
-            <img src={img.src} alt="Image failed to load" width="300" height="200" loading="lazy" />
+            <img src={img.src} alt="Image failed to load" loading="lazy" class="shadow-lg" />
         </a>
         )
     }

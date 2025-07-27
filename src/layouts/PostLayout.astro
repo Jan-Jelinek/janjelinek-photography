@@ -1,0 +1,23 @@
+---
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import type { MarkdownLayoutProps } from 'astro';
+import "../styles/global.css";
+
+const { frontmatter } = Astro.props;
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+}>;
+---
+
+<!doctype html>
+<html lang="en">
+<Head pageTitle={frontmatter.title}/>
+<body>
+	<Header page={frontmatter.title} />
+    <main>
+        <slot />
+    </main>
+</body>
+</html>
