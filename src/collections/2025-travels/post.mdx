@@ -10,6 +10,7 @@ state: 'ongoing'
 ---
 import ImageGallery from "../../components/ImageGallery.astro";
 import Footnote from "../../components/Footnote.astro";
+import PaginationLinks from "../../components/PaginationLinks.astro";
 
 import TW1 from './images/tw1.webp';
 import TW2 from './images/tw2.webp';
@@ -28,10 +29,10 @@ import JP3 from './images/jp3.webp';
 import JP4 from './images/jp4.webp';
 import JP5 from './images/jp5.webp';
 
-<ImageGallery images={[
-    TW1, TW2, TW3, TW4, TW5, TW6, TW7, TW8, HK1, HK2, TL1, JP1, JP2, JP3, JP4, JP5
-]} />
+<ImageGallery images={[TW1, TW2, TW3, TW4, TW5, TW6, TW7, TW8, HK1, HK2, TL1, JP1, JP2, JP3, JP4, JP5]} />
 
 <Footnote>
     These are some of my favorite shots taken during 2025.
 </Footnote>
+
+<PaginationLinks postId={frontmatter.sequence} />

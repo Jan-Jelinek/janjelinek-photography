@@ -9,8 +9,15 @@ coverColor: 'wip'
 state: 'ongoing'
 ---
 import ImageGallery from "../../components/ImageGallery.astro";
+import Footnote from "../../components/Footnote.astro";
+import PaginationLinks from "../../components/PaginationLinks.astro";
+
 import I1 from './images/1.webp';
 
-Kobe
-
 <ImageGallery images={[I1]} />
+
+<Footnote>
+    wip in progress
+</Footnote>
+
+<PaginationLinks postId={frontmatter.sequence} />
