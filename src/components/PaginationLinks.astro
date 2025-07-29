@@ -15,49 +15,40 @@ const previousPost = previousPosts[0];
 ---
 
 {nextPost || previousPost ? (
-<div class="px-[4%] sm:px-[8%] md:px-[12%] lg:px-[20%] pb-12 md:pb-16 lg:pb-20">
-    <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4">
+<div class="px-[4%] sm:px-[8%] md:px-[12%] lg:px-[20%] pb-5 md:pb-8 lg:pb-10">
+    <div class="flex justify-between border-t border-gray-300 pt-3">
     {!nextPost ? (
-        <div></div>
+        <div/>
     ) : (
-        <a href={`/collections/${nextPost.data.slug}`} style={`background-image: url('${nextPost.data.cover.src}'); background-position: 0% 35%;`} class="shadow-lg">
-            <div class="h-full" style="background-image: linear-gradient(to left, rgba(255,255,255,0.3), rgba(255,255,255,0.3));">
-                <div class="h-full" style="background-image: linear-gradient(to left, rgba(0,0,0,0.25), rgba(0,0,0,0.5));">
-                    <div class="flex flex-row p-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 my-auto stroke-2 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                        </svg>
-                        <div class="pl-2">
-                            <div class="text-lg leading-none text-gray-200 text-shadow-lg">Next</div>
-                            <div class="text-2xl leading-none text-gray-100 text-shadow-lg">{nextPost.data.title}</div>
-                        </div>
-                    </div>
+        <a href={`/collections/${nextPost.data.slug}`}>
+            <div class="flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="my-auto stroke-2" viewBox="0 0 16 16">
+                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                </svg>
+                <div class="pl-2">
+                    <div class="text-sm leading-none">Next</div>
+                    <div class="text-lg leading-none">{nextPost.data.title}</div>
                 </div>
             </div>
         </a>
     )}
     {!previousPost ? (
-        <div></div>
+        <div/>
     ) : (
-        <a href={`/collections/${previousPost.data.slug}`} style={`background-image: url('${previousPost.data.cover.src}'); background-position: 0% 35%;`} class="shadow-lg">
-            <div class="h-full" style="background-image: linear-gradient(to right, rgba(255,255,255,0.3), rgba(255,255,255,0.3));">
-                <div class="h-full" style="background-image: linear-gradient(to right, rgba(0,0,0,0.25), rgba(0,0,0,0.5));">
-                    <div class="flex flex-row p-4 justify-end">
-                        <div class="pr-3 text-right">
-                            <div class="text-lg leading-none text-gray-200 text-shadow-lg">Previous</div>
-                            <div class="text-2xl leading-none text-gray-100 text-shadow-lg">{previousPost.data.title}</div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 my-auto stroke-2 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="my-auto text-white stroke-2" viewBox="0 0 16 16">
-                            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
-                        </svg> */}
-                    </div>
+        <a href={`/collections/${previousPost.data.slug}`}>
+            <div class="flex flex-row justify-end">
+                <div class="pr-3 text-right">
+                    <div class="text-sm leading-none">Previous</div>
+                    <div class="text-lg leading-none">{previousPost.data.title}</div>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="my-auto stroke-2" viewBox="0 0 16 16">
+                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                </svg>
             </div>
         </a>
     )}
     </div>
 </div>
-):(<div/>)}
+) : (
+<div/>
+)}
