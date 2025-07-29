@@ -7,8 +7,6 @@ Made with [Astro](https://astro.build/)
 ---
 
 todo
-- Finish PostThumbnail component
-- Customize Photoswipe (remove zoom button, look into what else i can do)
 - Make ImageGallery auto-import images to posts using import.meta.glob()
 - Favicon
 - Fix up README

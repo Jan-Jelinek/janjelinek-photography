@@ -1,25 +1,15 @@
 ---
-import { Image } from "astro:assets";
 import type { CollectionEntry } from 'astro:content';
 interface Props {
-  post: CollectionEntry<'posts'>;
+    post: CollectionEntry<'posts'>;
 }
 
 const { post } = Astro.props;
 ---
 
-<!--
-TODO:
- - Post title appears on image
- - coverFont
- - coverColor
- - Country flag in top right-corner
-
--->
-
-<article>
-  <a href={`/collections/${post.data.slug}`}>
-      <img src={post.data.cover.src} alt="..." class="shadow-lg" />
-      {post.data.title}
-  </a>
-</article>
+<a href={`/collections/${post.data.slug}`} class="shadow-lg relative">
+    <img src={post.data.cover.src} alt="..." />
+    <div class="absolute bottom-1 left-2 text-xl font-semibold text-white text-shadow-lg">
+        {post.data.title}
+    </div>
+</a>
