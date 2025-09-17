@@ -8,8 +8,8 @@ const posts = (await getCollection('posts')).sort(
 );
 ---
 
-<BaseLayout page="Best Collections">
-	<div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 gap-3">
+<BaseLayout page="Travel Photography">
+	<div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 gap-3 xs:gap-4">
 	{posts.map(post => (
 		<PostThumbnail post={post} />
 	))}

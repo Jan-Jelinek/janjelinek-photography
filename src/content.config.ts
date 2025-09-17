@@ -11,6 +11,7 @@ const posts = defineCollection({
       slug: z.string(),
       title: z.string(),
       cover: image(),
+      color: z.string(),
         // state: z.enum(['ongoing', 'complete']),
   }),
 });

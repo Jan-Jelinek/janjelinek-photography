@@ -8,6 +8,7 @@ const { frontmatter } = Astro.props;
 
 type Props = MarkdownLayoutProps<{
   title: string;
+  color: string;
 }>;
 ---
 
@@ -15,9 +16,9 @@ type Props = MarkdownLayoutProps<{
 <html lang="en">
 <Head pageTitle={frontmatter.title}/>
 <body>
-	<Header page={frontmatter.title} />
-    <main>
-        <slot />
-    </main>
+	<Header page={frontmatter.title} color={frontmatter.color} />
+  <main>
+    <slot />
+  </main>
 </body>
 </html>

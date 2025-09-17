@@ -9,7 +9,7 @@ const { post } = Astro.props;
 
 <a href={`/collections/${post.data.slug}`} class="shadow-lg relative">
     <img src={post.data.cover.src} alt="..." />
-    <div class="absolute bottom-1 left-2 text-xl font-semibold text-white text-shadow-lg">
+    <div class="absolute bottom-1 left-2 text-xl text-white text-shadow-lg">
         {post.data.title}
     </div>
 </a>
