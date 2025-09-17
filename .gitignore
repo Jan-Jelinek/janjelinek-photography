@@ -1,6 +1,3 @@
-# Temp until image format is finalized
-*.webp
-
 # build output
 dist/
 # generated types
