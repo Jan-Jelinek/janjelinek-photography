@@ -2,41 +2,27 @@
 sequence: 4
 slug: 2025-travels
 title: 2025 Travels
-cover: ./images/_cover.webp
+cover: ./_cover.webp
 layout: ../../layouts/PostLayout.astro
+color: '#C4322E'
 ---
-import ImageGallery from "../../components/ImageGallery.astro";
+import ImageGallery from "../../components/ImageGalleryAzure.astro";
 import Footnote from "../../components/Footnote.astro";
 import PaginationLinks from "../../components/PaginationLinks.astro";
 
-import TW1 from './images/tw1.webp';
-import TW2 from './images/tw2.webp';
-import TW3 from './images/tw3.webp';
-import TW4 from './images/tw4.webp';
-import TW5 from './images/tw5.webp';
-import TW6 from './images/tw6.webp';
-import TW7 from './images/tw7.webp';
-import TW8 from './images/tw8.webp';
-import TW9 from './images/tw9.webp';
-import TW10 from './images/tw10.webp';
-import HK1 from './images/hk1.webp';
-import HK2 from './images/hk2.webp';
-import HK3 from './images/hk3.webp';
-import TL1 from './images/tl1.webp';
-import JP1 from './images/jp1.webp';
-import JP2 from './images/jp2.webp';
-import JP3 from './images/jp3.webp';
-import JP4 from './images/jp4.webp';
-import JP5 from './images/jp5.webp';
-
-<ImageGallery images={[
-    TW1, TW2, TW3, TW4, TW9, TW6, TW7, TW8, TW5, TW10, 
-    HK1, HK2, 
-    JP2, JP3, JP5, JP4
+<ImageGallery base_url="https://stjjp.blob.core.windows.net/images/2025-travels/" images={[
+    "1-01","1-02","1-03","1-04",
+    "1-05","1-06","1-07",
 ]} />
 
 <Footnote>
-    These are some of my favorite shots taken during 2025.
+    <div style="border: 2px solid orange; max-width: max-content; padding: 1em;">
+    ⚠️Work in progress⚠️
+
+    Please check on this collection again in a few weeks!
+    </div>
+    <br/>
+    A collection of some of my favorite images from 2025.
 </Footnote>
 
 <PaginationLinks postId={frontmatter.sequence} />
