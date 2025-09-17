@@ -1,31 +1,32 @@
 ---
 import type { ImageMetadata } from "astro";
-
 const { images } = Astro.props;
 ---
 
 <div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4" id="gallery">
     {
         images.map((img: ImageMetadata) => (
-        <a href={img.src} 
-            data-pswp-width={img.width} 
-            data-pswp-height={img.height} 
-            target="_blank">
-            <img src={img.src} alt="Image failed to load" loading="lazy" class="shadow-lg" />
+        <a href={img.src}
+           data-pswp-width={2400} 
+           data-pswp-height={1600} 
+           data-cropped="true"
+           target="_blank"
+           style="max-height: 16.6667vw">
+            <img src={img.src} alt="Image failed to load" loading="lazy" class="shadow-lg" style="overflow: hidden" />
         </a>
         ))
     }
 </div>
 
 <script>
-    // Initialize PhotoSwipe
+    // Initialize PhotoSwipe 
     import PhotoSwipeLightbox from 'photoswipe/lightbox';
     import 'photoswipe/style.css';
     const lightbox = new PhotoSwipeLightbox({
         gallery: '#gallery',
         children: 'a',
         zoom: false,
-        counter: false,
+        loop: false,
     pswpModule: () => import('photoswipe')
     });
     lightbox.init();

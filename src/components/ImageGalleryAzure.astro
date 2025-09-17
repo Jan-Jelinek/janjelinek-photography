@@ -1,0 +1,76 @@
+---
+const { base_url, images } = Astro.props;
+---
+
+<div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4" id="gallery">
+  {
+    images.map((img_url: String) => {
+      const isPortrait = img_url.endsWith("(R)");
+      img_url = isPortrait
+        ? img_url.replace("(R)", "")
+        : img_url;
+
+      const width = isPortrait ? 2000 : 3000;
+      const height = isPortrait ? 3000 : 2000;
+      const srcsetw_sm = isPortrait ? 800 : 1200;
+      const srcsetw_lg = isPortrait ? 1600 : 2400;
+
+      return (
+        <a href="#"
+           data-pswp-srcset={`${base_url+img_url}-1200p.jpg ${srcsetw_sm}w, ${base_url+img_url}-2400p.jpg ${srcsetw_lg}w`}
+           data-pswp-width={width}
+           data-pswp-height={height}
+           data-cropped="true"
+           target="_blank"
+           class="relative block overflow-hidden bg-gray-50"
+           style="aspect-ratio: 3/2"
+        >
+          <img
+            src={`${base_url+img_url}-720p.webp`}
+            alt="Image failed to load"
+            loading="lazy"
+            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 opacity-0"
+            data-fade-on-load
+          />
+        </a>
+      )
+    })
+  }
+</div>
+
+
+<!-- Fade-in on load -->
+<script lang="ts">
+  const imgs = document.querySelectorAll('#gallery img[data-fade-on-load]');
+  imgs.forEach((img) => {
+    const el = /** @type {HTMLImageElement} */ (img);
+    const reveal = () => {
+      el.classList.add('opacity-100', 'shadow-lg');
+      el.parentElement.classList.add('shadow-lg');
+    }
+
+    // If image is cached and already loaded
+    if (el.complete) {
+      if (el.naturalWidth > 0) reveal();
+      return;
+    }
+
+    el.addEventListener('load', reveal, { once: true });
+    // If it errors, at least unhide it
+    el.addEventListener('error', () => el.classList.remove('opacity-0'), { once: true });
+  });
+</script>
+
+<script>
+  // Initialize PhotoSwipe href={base_url+img_url+".jpg"}
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
+  import 'photoswipe/style.css';
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery',
+    children: 'a',
+    zoom: false,
+    loop: false,
+  pswpModule: () => import('photoswipe')
+  });
+  lightbox.init();
+</script>
