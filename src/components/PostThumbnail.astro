@@ -8,11 +8,13 @@ const { post } = Astro.props;
 ---
 
 <a href={`/collections/${post.data.slug}`} 
-   class="shadow-lg relative overlay zoom"
-   style={`--overlay-color: ${post.data.color}`}>
-    <img src={post.data.cover.src} alt="..." />
-    <div class="absolute bottom-1 left-2 text-xl text-white text-shadow-lg z-2">
+   class={`shadow-xl relative zoom border-8 border-b-28 border-white`}
+   style={`--overlay-color: ${post.data.color}; rotate: ${post.data.rotate}deg;`}>
+    <img src={post.data.cover.src} class="border-8 border-b-20 border-white" alt="..." />
+    <div class="absolute -bottom-4 w-full text-xl z-2" style="font-family: cursive;">
+      <div class="flex justify-center w-full">
         {post.data.title}
+      </div>
     </div>
 </a>
 
