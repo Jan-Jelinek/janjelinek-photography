@@ -1,31 +1,75 @@
-# WIP
+# Jelinek Photos
 
-A simple website for showcasing my photography.
+A minimalist, personal photography site to showcase some of my favorite shots.
 
-Made with [Astro](https://astro.build/)
+Built with [Astro](https://astro.build/) and optimized for speed, responsiveness, and a great viewing experience across devices.
 
----
+🌐 Live site: [jelinekphotos.com](https://jelinekphotos.com)
 
-todo
-- Make ImageGallery auto-import images to posts using import.meta.glob()
-- Favicon
-- Fix up README
-- Write posts
-- Github actions and Hosting
-- View transitions?
-- View counter?
+## Tech Stack
 
-## Docker
+* [Astro](https://astro.build/) - Web framework
+* [Tailwind CSS](https://tailwindcss.com/) - Styling
+* [Photoswipe](https://photoswipe.com/) - Image galleries
+* [GitHub Pages](https://pages.github.com) - Hosting
+* [Azure Storage Blob](https://azure.microsoft.com/services/storage/blobs/) - Image Hosting
+
+## Features
+
+- **Photography Collections via MDX**  
+  Collections are written in MDX files for easy content management and organization.
+
+- **Responsive Design**  
+  Fully responsive layout, ensuring photos look great on desktop, tablet, and mobile devices.
+
+- **Optimized Images**
+  Uses srcset to serve appropriately sized images depending on the viewer’s screen resolution.
+
+- **Interactive Galleries**  
+  PhotoSwipe powers elegant fullscreen image galleries with zoom, swipe, and navigation controls.
+
+- **Fast & Modern**
+  Astro ensures minimal JavaScript and fast static site performance.
+
+## Development
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (latest LTS recommended)
+- npm (or yarn)
+
+### Getting Started
+
+Clone the repo and install dependencies:
 
 ```
-docker build -t jj-p .
-docker run -p 3001:80 jj-p
+git clone https://github.com/Jan-Jelinek/janjelinek-photography.git
+cd janjelinek-photography
+npm install
 ```
 
-## Dependencies
+Run the development server:
 
-[photoswipe](https://photoswipe.com/)
+```
+npm run dev
+```
 
-mdx
+Build for production:
+```
+npm run build
+```
 
-tailwind
+Preview the production build:
+```
+npm run preview
+```
+
+## Contact
+
+Jan Jelinek - [janjelinek.dev@gmail.com](mailto:janjelinek.dev@gmail.com)
+
+Project Link: [https://github.com/Jan-Jelinek/janjelinek-photography](https://github.com/Jan-Jelinek/janjelinek-photography)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
