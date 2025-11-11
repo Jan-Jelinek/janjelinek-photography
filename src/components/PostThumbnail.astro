@@ -15,7 +15,7 @@ const { post } = Astro.props;
       <img src={post.data.cover.src} alt={`${post.data.title} collection thumbnail image`} />
     </div>
     <div class="text-md sm:text-xl md:text-lg lg:text-xl" style="font-family: cursive;">
-      <div class="flex justify-center w-full pt-2 whitespace-nowrap">
+      <div class="flex justify-center w-full pt-2 whitespace-nowrap" style={`color: ${post.data.color};`}>
         {post.data.title}
       </div>
     </div>
