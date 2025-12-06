@@ -1,0 +1,109 @@
+---
+const { base_url, images } = Astro.props;
+---
+
+<div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4" id="gallery">
+  {
+    images.map((img_url: any) => {
+      if (typeof img_url === "string") {
+        const isHorizontal = img_url.endsWith("v") == false;
+        img_url = img_url.replace("v", "");
+  
+        const srcset_sm_w = isHorizontal ? 1200 : 800; // Small phone screens
+        const srcset_md_w = isHorizontal ? 1800 : 1200; // Bigger phone screens
+        const srcset_lg_w = isHorizontal ? 2400 : 1600; // Computers
+        const srcset_lg_h = isHorizontal ? 1600 : 2400;
+  
+        return (
+          <a href="#"
+             data-pswp-srcset={`${base_url+img_url}-1200.jpg ${srcset_sm_w}w, ${base_url+img_url}-1800.jpg ${srcset_md_w}w, ${base_url+img_url}-2400.jpg ${srcset_lg_w}w`}
+             data-pswp-width={srcset_lg_w}
+             data-pswp-height={srcset_lg_h}
+             data-cropped="true"
+             target="_blank"
+             class="relative block overflow-hidden bg-gray-50"
+             style="aspect-ratio: 3/2"
+          >
+            <img
+              src={`${base_url+img_url}-720.webp`}
+              alt="Image failed to load"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 opacity-0"
+              data-fade-on-load
+            />
+          </a>
+        )
+      }
+      else {
+        return (
+          <a href={img_url.src}
+           data-pswp-width={img_url.width} 
+           data-pswp-height={img_url.height}
+           data-cropped="true"
+           target="_blank"
+           style="max-height: 16.6667vw">
+            <img 
+              src={img_url.src} 
+              alt="Image failed to load" 
+              loading="lazy" 
+              class="shadow-lg" 
+              style="overflow: hidden" />
+        </a>
+        )
+      }
+
+    })
+  }
+</div>
+
+<!-- Fade-in on load -->
+<script lang="ts">
+  const imgs = document.querySelectorAll('#gallery img[data-fade-on-load]');
+  imgs.forEach((img) => {
+    const el = /** @type {HTMLImageElement} */ (img);
+    const reveal = () => {
+      el.classList.add('opacity-100', 'shadow-lg');
+      el.parentElement.classList.add('shadow-lg');
+    }
+
+    // If image is cached and already loaded
+    if (el.complete) {
+      if (el.naturalWidth > 0) reveal();
+      return;
+    }
+
+    el.addEventListener('load', reveal, { once: true });
+    // If it errors, at least unhide it
+    el.addEventListener('error', () => el.classList.remove('opacity-0'), { once: true });
+  });
+</script>
+
+<script>
+  // Initialize PhotoSwipe href={base_url+img_url+".jpg"}
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
+  import 'photoswipe/style.css';
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery',
+    children: 'a',
+    zoom: false,
+    loop: false,
+  pswpModule: () => import('photoswipe')
+  });
+  lightbox.init();
+</script>
+
+<!--
+Example usage
+
+import ImageGallery from "../../components/ImageGallery.astro";
+
+import i01 from './images/01-2400p.jpg';
+import i02 from './images/02-2400p.jpg';
+import i03 from './images/03-2400p.jpg';
+import i04 from './images/04-2400p.jpg';
+
+<ImageGallery images={[
+    i01,"1-02",i03,"1-04",
+    "1-01",i02,"1-03",i04,
+]}/>
+-->

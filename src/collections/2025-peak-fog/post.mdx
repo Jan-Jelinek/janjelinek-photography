@@ -7,7 +7,7 @@ layout: ../../layouts/PostLayout.astro
 color: '#748A59'
 rotate: 3.3
 ---
-import ImageGallery from "../../components/ImageGalleryAzure.astro";
+import ImageGallery from "../../components/ImageGallery.astro";
 import Footnote from "../../components/Footnote.astro";
 import PaginationLinks from "../../components/PaginationLinks.astro";
 
@@ -16,8 +16,8 @@ import PaginationLinks from "../../components/PaginationLinks.astro";
     "2-01","2-02","2-03","2-04",
 ]} />
 
-<Footnote>
-Photos were taken on Mount Qixing and Qingtiangang Grassland.
+<Footnote location="Mount Qixing and Qingtiangang Grassland">
+fog!!
 </Footnote>
 
 <PaginationLinks postId={frontmatter.sequence} />

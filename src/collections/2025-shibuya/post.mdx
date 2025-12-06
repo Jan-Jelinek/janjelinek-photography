@@ -7,18 +7,18 @@ layout: ../../layouts/PostLayout.astro
 color: '#AB4B09'
 rotate: -2.5
 ---
-import ImageGallery from "../../components/ImageGalleryAzure.astro";
+import ImageGallery from "../../components/ImageGallery.astro";
 import Footnote from "../../components/Footnote.astro";
 import PaginationLinks from "../../components/PaginationLinks.astro";
 
 <ImageGallery base_url="https://stjjp.blob.core.windows.net/images/2025-shibuya/" images={[
     "01","02","03","04",
     "05","06","07","08",
-    "09","10","11(R)","12",
+    "09","10","11v","12",
 ]} />
 
 <Footnote>
-    These images were taken during a photography lesson with [Karl Doyle](https://www.instagram.com/karl_doyle_photography/).
+Took a photography lesson with [Karl Doyle](https://www.instagram.com/karl_doyle_photography/) in Shibuya.
 </Footnote>
 
 <PaginationLinks postId={frontmatter.sequence} />

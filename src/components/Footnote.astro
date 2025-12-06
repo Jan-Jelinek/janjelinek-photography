@@ -1,7 +1,20 @@
 ---
-
+const { location } = Astro.props;
 ---
 
-<div class="px-[4%] sm:px-[8%] md:px-[12%] lg:px-[20%]  pt-10 md:pt-12 lg:pt-16  pb-10 md:pb-12 lg:pb-16">
+{location != null && (
+    <div class="px-[4%] sm:px-[8%] md:px-[12%] lg:px-[20%]  pt-2" style="display: flex; flex-direction: row;">
+        <div style="margin-top: 3px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+        </div>
+        <div style="margin-left: 4px; font-family: monospace; font-style: italic;">
+            {location}
+        </div>
+    </div>
+)}
+
+<div class="px-[4%] sm:px-[8%] md:px-[12%] lg:px-[20%]  pt-8 md:pt-10 lg:pt-14  pb-8 md:pb-10 lg:pb-14">
     <slot />
 </div>
