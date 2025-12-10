@@ -21,8 +21,7 @@ const { base_url, images } = Astro.props;
              data-pswp-height={srcset_lg_h}
              data-cropped="true"
              target="_blank"
-             class="relative block overflow-hidden bg-gray-50"
-             style="aspect-ratio: 3/2"
+             class="relative block bg-gray-50 aspect-3/2 overflow-y-hidden"
           >
             <img
               src={`${base_url+img_url}-720.webp`}
@@ -35,19 +34,19 @@ const { base_url, images } = Astro.props;
         )
       }
       else {
+        const isHorizontal = img_url.width > img_url.height;
         return (
           <a href={img_url.src}
            data-pswp-width={img_url.width} 
            data-pswp-height={img_url.height}
            data-cropped="true"
            target="_blank"
-           style="max-height: 16.6667vw">
+           class="relative block bg-gray-50 aspect-3/2 overflow-y-hidden"
+          >
             <img 
               src={img_url.src} 
               alt="Image failed to load" 
-              loading="lazy" 
-              class="shadow-lg" 
-              style="overflow: hidden" />
+              class=`${isHorizontal ? "" : "mt-[-25%]"}`/>
         </a>
         )
       }
@@ -102,7 +101,7 @@ import i02 from './images/02-2400p.jpg';
 import i03 from './images/03-2400p.jpg';
 import i04 from './images/04-2400p.jpg';
 
-<ImageGallery images={[
+<ImageGallery base_url="https://.../images/collection-name/" images={[
     i01,"1-02",i03,"1-04",
     "1-01",i02,"1-03",i04,
 ]}/>
