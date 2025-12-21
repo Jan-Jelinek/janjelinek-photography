@@ -9,7 +9,12 @@ const posts = (await getCollection('posts')).sort(
 ---
 
 <BaseLayout page="Travel Photography">
-	<div class="grid  grid-cols-2 xs:grid-cols-3 md:grid-cols-4  gap-3 sm:gap-4  mt-6 sm:mt-8 md:mt-10"> <!-- grid-cols-2 xs:grid-cols-3 sm: -->
+	<div class="grid
+	            gap-6       2xs:gap-4   xs:gap-3       sm:gap-6   md:gap-4
+				mt-3                                   sm:mt-6    md:mt-10
+				mx-1        2xs:mx-10   xs:mx-0
+				text-lg     2xs:text-xl xs:text-lg     sm:text-xl md:text-lg     lg:text-xl
+				grid-cols-1             xs:grid-cols-2            md:grid-cols-3            2xl:grid-cols-4">
 	{posts.map(post => (
 		<PostThumbnail post={post} />
 	))}

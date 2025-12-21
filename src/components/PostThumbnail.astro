@@ -8,14 +8,14 @@ const { post } = Astro.props;
 ---
 
 <a href={`/collections/${post.data.slug}`} 
-   class="shadow-lg zoom"
-   style={`--overlay-color: ${post.data.color}; rotate: ${post.data.rotate}deg;`}>
-  <div class="bg-white p-[6%]">
+   class="shadow-sm box zoom bg-white"
+   style={`--color: ${post.data.color}; rotate: ${post.data.rotate}deg;`}>
+  <div class="p-[6%]">
     <div class="overlay">
       <img src={post.data.cover.src} alt={`${post.data.title} collection thumbnail image`} />
     </div>
-    <div class="text-md sm:text-xl md:text-lg lg:text-xl" style="font-family: cursive;">
-      <div class="flex justify-center w-full pt-2 whitespace-nowrap" style={`color: ${post.data.color};`}>
+    <div style="font-family: cursive;">
+      <div class="flex justify-center w-full pt-2 whitespace-nowrap prop-color">
         {post.data.title}
       </div>
     </div>
@@ -24,14 +24,24 @@ const { post } = Astro.props;
 </a>
 
 <style>
-.overlay::before {
-  content: '';
-  z-index: 2;
-  width: 88%;
-  aspect-ratio: 1;
-  display: block;
+.prop-color {
+  color: var(--color);
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay::after {
+  content: "";
   position: absolute;
-  background: linear-gradient(25deg, var(--overlay-color) 0%, rgba(0, 0, 0, 0) 36%);
+  inset: 0;
+  background: linear-gradient(
+    25deg,
+    var(--color) 0%,
+    rgba(0,0,0,0) 26%
+  );
 }
 
 .zoom {
@@ -41,18 +51,5 @@ const { post } = Astro.props;
   transform: scale(1.12);
   z-index: 3;
   box-shadow: var(--shadow-xl);
-}
-
-.throw {
-  position: relative;
-  animation-name: ThrowAnimation;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-out;
-}
-
-@keyframes ThrowAnimation {
-  0%   {left:0vw; top:-100vh;}
-  50%  {left:0vw; top:-100vh;transform: rotate(0.5turn);}
-  100% {left:0px; top:0px;transform: rotate(0turn);}
 }
 </style>

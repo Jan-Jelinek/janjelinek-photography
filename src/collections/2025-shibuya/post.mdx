@@ -5,7 +5,7 @@ title: Shibuya Ghosts
 cover: ./cover.webp
 layout: ../../layouts/PostLayout.astro
 color: '#AB4B09'
-rotate: -2.5
+rotate: -2.0
 ---
 import ImageGallery from "../../components/ImageGallery.astro";
 import Footnote from "../../components/Footnote.astro";
@@ -17,8 +17,8 @@ import PaginationLinks from "../../components/PaginationLinks.astro";
     "09","10","11v","12",
 ]} />
 
-<Footnote>
-Took a photography lesson with [Karl Doyle](https://www.instagram.com/karl_doyle_photography/) in Shibuya.
+<Footnote location="Shibuya, Tokyo">
+Took a photography lesson with [<span class="text-cyan-800">Karl Doyle</span>](https://www.instagram.com/karl_doyle_photography/). Super smart guy and a great teacher. Highly recommend!
 </Footnote>
 
 <PaginationLinks postId={frontmatter.sequence} />

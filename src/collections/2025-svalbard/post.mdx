@@ -1,11 +1,11 @@
 ---
-sequence: 3
+sequence: 4
 slug: 2025-svalbard
-title: Midnight Sun
+title: Under the Midnight Sun
 cover: ./cover.webp
 layout: ../../layouts/PostLayout.astro
 color: '#6F89AB'
-rotate: 0.8
+rotate: -1.2
 ---
 import ImageGallery from "../../components/ImageGallery.astro";
 import Footnote from "../../components/Footnote.astro";
@@ -13,26 +13,34 @@ import PaginationLinks from "../../components/PaginationLinks.astro";
 
 <ImageGallery base_url="https://stjjp.blob.core.windows.net/images/2025-svalbard/" images={[
     "1-01","1-02","1-03","1-04",
-    "1-05","1-06","1-07","1-08",
-    "1-09","1-10","2-1","2-2",
-    "2-3","2-4","2-5","2-6",
+    "1-05","1-06","1-08","1-09",
+
     "4-01","4-02","4-03","4-04",
     "4-05","4-06","4-07","4-08",
-    "4-09","4-10","5-1","5-2",
-    "5-3","5-4","5-5","5-6",
-    "5-7","5-8","6-1","6-2",
+
+    "2-1","2-3","2-4","2-5",
+
+    "5-1","5-2","5-3","5-4",
+    "5-5","5-6","5-8","5-7",
+
+    "6-7","6-8","6-1","6-2",
     "6-3","6-4","6-5","6-6",
-    "6-7","6-8","7-1","7-2",
-    "7-3","7-4","7-5","7-6",
-    "7-7","8-1","8-2","8-3",
-    "9-1","9-2","9-3","9-4",
-    "9-5","9-6","9-7","9-8",
+
+    "7-2","7-3","7-4","7-5",
+    "7-7","8-2","8-1","8-3",
+
+    "4-09","9-1","9-8","9-2",
+    "9-3","9-4","4-10","9-6",
 ]} />
 
-<Footnote>
-    Shot in Svalbard, 2025.
+{/* Removed these images from the collection, but not from azure: "1-07","1-10","2-2","2-6","7-1","7-6","9-5","9-7", */}
 
-    Almost all of these pictures are unedited. I'll go back and fix some of them when I have some time maybe.
+<Footnote location="Svalbard">
+I learned an old proverb used by Russian whale hunters: "The sea brings us sorrow, but without the sea, we would have twice as much sorrow."
+
+It's something I should remember whenever I crash out because the code won't compile. The code brings us sorrow, but without the code, we would have twice as much sorrow.
+<br/>
+Anyway, Svalbard was much better than I expected. Lots of interesting people up here. I think I'll come back someday, in winter. I want to see the dark season and sleep in an ice cave.
 </Footnote>
 
 <PaginationLinks postId={frontmatter.sequence} />
