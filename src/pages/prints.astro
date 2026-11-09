@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const preview = "https://stjjp.blob.core.windows.net/images/2025-peak-fog/1-01";
+---
+
+<BaseLayout title="Prints — Jan Jelinek Photography" current="prints">
+  <section class="site-container grid flex-1 items-center gap-12 pt-16 pb-16 sm:pt-24 sm:pb-20 lg:grid-cols-2 lg:gap-16">
+    <div class="flex flex-col gap-6">
+      <span class="text-[13px] tracking-[0.08em] text-dim uppercase">Prints</span>
+      <h1 class="font-display text-[clamp(56px,8vw,112px)] leading-[0.95] font-light tracking-[-0.025em] text-strong">
+        <span class="text-muted">(not)</span><br /><em class="italic">Coming soon.</em>
+      </h1>
+      <div class="max-w-[440px] text-[17px] leading-relaxed text-pretty text-muted">
+        <p class="pb-4">
+          A limited edition run will be printed on 5 grit sandpaper. One size option, frame not included.
+        </p>
+        <p>
+          You will be notified when the shop is live via cryptic symbolism in your dreams 🌞
+        </p>
+      </div>
+    </div>
+
+    <figure class="flex w-full max-w-[480px] flex-col gap-3 justify-self-center lg:justify-self-end">
+      <div class="bg-line p-5 sm:p-7">
+        <img
+          src={`${preview}-1200.jpg`}
+          alt="Stone steps climbing into fog on Mount Qixing"
+          loading="lazy"
+          class="block aspect-square w-full object-cover"
+        />
+      </div>
+      <figcaption class="flex justify-between gap-4 text-[13px] text-muted">
+        <span>Peak Weather, 01 — first edition</span>
+        <span class="text-dim">30000 cm x 42 m³ · $4.00 CAD</span>
+      </figcaption>
+    </figure>
+  </section>
+</BaseLayout>

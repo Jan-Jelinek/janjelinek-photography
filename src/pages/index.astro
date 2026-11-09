@@ -1,22 +1,133 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro'
-import PostThumbnail from '../components/PostThumbnail.astro'
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import InstagramLink from "../components/InstagramLink.astro";
 
-const posts = (await getCollection('posts')).sort(
+const posts = (await getCollection("posts")).sort(
   (a, b) => b.data.sequence - a.data.sequence,
 );
+
+const pad = (n: number) => String(n).padStart(2, "0");
+// Slugs start with the year, e.g. "2025-svalbard".
+const yearOf = (slug: string) => slug.slice(0, 4);
+const metaOf = (data: { place?: string; slug: string }) =>
+  [data.place, yearOf(data.slug)].filter(Boolean).join(" · ");
+
+const hero = "https://stjjp.blob.core.windows.net/images/2025-travels/1-01";
 ---
 
-<BaseLayout page="Travel Photography">
-	<div class="grid
-	            gap-6       2xs:gap-4   xs:gap-3       sm:gap-6   md:gap-4
-				mt-3                                   sm:mt-6    md:mt-10
-				mx-1        2xs:mx-10   xs:mx-0
-				text-lg     2xs:text-xl xs:text-lg     sm:text-xl md:text-lg     lg:text-xl
-				grid-cols-1             xs:grid-cols-2            md:grid-cols-3            2xl:grid-cols-4">
-	{posts.map(post => (
-		<PostThumbnail post={post} />
-	))}
-	</div>
+<BaseLayout>
+  <section class="relative flex min-h-[520px] items-end overflow-hidden sm:min-h-[640px] lg:min-h-[760px]">
+    <img
+      src={`${hero}-1800.jpg`}
+      srcset={`${hero}-1200.jpg 1200w, ${hero}-1800.jpg 1800w, ${hero}-2400.jpg 2400w`}
+      sizes="100vw"
+      alt="Fireworks pouring off Taipei 101 at night"
+      fetchpriority="high"
+      class="absolute inset-0 size-full object-cover object-[center_40%]"
+    />
+    <div aria-hidden="true" class="hero-fade absolute inset-0"></div>
+    <div class="site-container relative flex flex-wrap items-end justify-between gap-6 pb-10 sm:pb-14">
+      <h1 class="max-w-[760px] font-display text-[clamp(44px,7vw,96px)] leading-[0.98] font-light tracking-[-0.02em] text-balance text-strong">
+        Four years, four latitudes, one camera.
+      </h1>
+      <a href="/collections/2025-travels" class="flex flex-col gap-1 text-[13px] tracking-[0.06em] text-muted uppercase transition-colors hover:text-strong">
+        <span>Six Months in Asia</span>
+        <span class="text-dim">Taipei · 2025</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="collections" class="site-container scroll-mt-4 pt-14 pb-12 sm:pt-[72px]">
+    <div class="flex items-baseline justify-between gap-6 border-b border-line pb-5">
+      <h2 class="text-[13px] font-medium tracking-[0.08em] text-muted uppercase">Collections</h2>
+      <span class="text-[13px] text-dim">{pad(posts.length)}</span>
+    </div>
+
+    <ul>
+      {posts.map((post, i) => (
+        <li>
+          <a href={`/collections/${post.data.slug}`} class="collection-row border-b border-line py-5 sm:py-7">
+            <span class="num text-[13px] text-dim">{pad(posts.length - i)}</span>
+            <span class="title font-display text-[26px] leading-tight font-light tracking-[-0.01em] text-strong sm:text-[40px]">
+              {post.data.title}
+            </span>
+            <span class="meta text-[13px] tracking-[0.04em] text-muted">{metaOf(post.data)}</span>
+            <img src={post.data.cover.src} alt="" loading="lazy" class="thumb object-cover" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section id="about" class="site-container grid items-start gap-8 pt-6 pb-20 md:grid-cols-2 md:gap-12">
+    <p class="max-w-[560px] font-display text-[24px] leading-[1.3] font-light text-pretty text-fg italic sm:text-[28px]">
+      "If you cross the glacier, you get to walk on the moon"
+    </p>
+    <div class="flex flex-col gap-3 text-[15px] leading-relaxed text-muted">
+      <p>
+        Jan Jelinek travels the world alone with just his backpack and a camera, sharing his experiences online.
+      </p>
+      <InstagramLink />
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .hero-fade {
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--bg) 15%, transparent) 0%,
+      transparent 35%,
+      color-mix(in srgb, var(--bg) 92%, transparent) 100%
+    );
+  }
+
+  .collection-row {
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr) 6rem;
+    grid-template-areas:
+      "num title thumb"
+      "num meta  thumb";
+    column-gap: 1rem;
+    row-gap: 0.25rem;
+    align-items: center;
+  }
+  .num { grid-area: num; }
+  .title { grid-area: title; align-self: end; }
+  .meta { grid-area: meta; align-self: start; }
+  .thumb {
+    grid-area: thumb;
+    width: 6rem;
+    height: 4rem;
+    justify-self: end;
+    transition: opacity 0.2s;
+  }
+  .num,
+  .meta {
+    transition: color 0.2s;
+  }
+  .collection-row:hover .num,
+  .collection-row:hover .meta {
+    color: var(--strong);
+  }
+  .collection-row:hover .thumb {
+    opacity: 0.85;
+  }
+
+  @media (width >= 48rem) {
+    .collection-row {
+      grid-template-columns: 64px minmax(0, 1fr) 160px 180px;
+      grid-template-areas: "num title meta thumb";
+      column-gap: 2rem;
+    }
+    .title,
+    .meta {
+      align-self: center;
+    }
+    .thumb {
+      width: 180px;
+      height: 120px;
+    }
+  }
+</style>

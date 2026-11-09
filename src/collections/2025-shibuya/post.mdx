@@ -3,22 +3,19 @@ sequence: 2
 slug: 2025-shibuya
 title: Shibuya Ghosts
 cover: ./cover.webp
-layout: ../../layouts/PostLayout.astro
-color: '#AB4B09'
-rotate: -2.0
+place: Tokyo
+# Each row is a list of image IDs; add "v" for portrait shots ("11v").
+# A row can also be text:   - text: A line between photos.
+rows:
+  - ["01"]
+  - ["02", "03", "04"]
+  - ["05", "06"]
+  - ["07"]
+  - ["08", "09", "10"]
+  - ["11v", "12"]
+# Optional, keyed by image ID. Either field can be left out.
+captions:
+  # "01": { text: "The scramble, 11:40 pm", exposure: "4 s · f/8" }
 ---
-import ImageGallery from "../../components/ImageGallery.astro";
-import Footnote from "../../components/Footnote.astro";
-import PaginationLinks from "../../components/PaginationLinks.astro";
 
-<ImageGallery base_url="https://stjjp.blob.core.windows.net/images/2025-shibuya/" images={[
-    "01","02","03","04",
-    "05","06","07","08",
-    "09","10","11v","12",
-]} />
-
-<Footnote location="Shibuya, Tokyo">
-Took a photography lesson with [<span class="text-cyan-800">Karl Doyle</span>](https://www.instagram.com/karl_doyle_photography/). Super smart guy and a great teacher. Highly recommend!
-</Footnote>
-
-<PaginationLinks postId={frontmatter.sequence} />
+Took a photography lesson with [Karl Doyle](https://www.instagram.com/karl_doyle_photography/). Super smart guy and a great teacher. Highly recommend!

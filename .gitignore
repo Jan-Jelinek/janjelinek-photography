@@ -22,3 +22,21 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local preview photos (`py r2sync push <collection>` uploads them)
+# (not .webp: collection covers are committed webp files)
+src/collections/**/*.jpg
+src/collections/**/*.JPG
+src/collections/**/*.jpeg
+src/collections/**/*.JPEG
+src/collections/**/*.png
+src/collections/**/*.PNG
+src/collections/**/*.tif
+src/collections/**/*.TIF
+src/collections/**/*.tiff
+src/collections/**/*.TIFF
+src/collections/**/photos.json.tmp
+
+# r2sync
+__pycache__/
+.r2sync-fake/

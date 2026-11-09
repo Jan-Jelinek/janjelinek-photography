@@ -1,15 +1,102 @@
 ---
-import { getCollection, render } from 'astro:content';
-// 1. Generate a new path for every collection entry
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Gallery from "../../components/Gallery.astro";
+
 export async function getStaticPaths() {
-  const posts = await getCollection('posts');
-  return posts.map(post => ({
+  // Same order as the home page list: newest first.
+  const posts = (await getCollection("posts")).sort(
+    (a, b) => b.data.sequence - a.data.sequence,
+  );
+  return posts.map((post, i) => ({
     params: { id: post.id },
-    props: { post },
+    // Collection numbers count up from the oldest, so "next" is the newer one (earlier in this list).
+    props: { post, index: i, total: posts.length, previous: posts[i + 1], next: posts[i - 1] },
   }));
 }
-// 2. For your template, you can get the entry directly from the prop
-const { post } = Astro.props;
+
+interface Props {
+  post: CollectionEntry<"posts">;
+  index: number;
+  total: number;
+  previous?: CollectionEntry<"posts">;
+  next?: CollectionEntry<"posts">;
+}
+
+const { post, index, total, previous, next } = Astro.props;
 const { Content } = await render(post);
+const { title, slug, place, rows, captions } = post.data;
+
+const pad = (n: number) => String(n).padStart(2, "0");
+const frames = rows.reduce((n, row) => n + (Array.isArray(row) ? row.length : 0), 0);
+// Slugs start with the year, e.g. "2025-svalbard".
+const facts = [
+  { label: "Place", value: place },
+  { label: "Year", value: slug.slice(0, 4) },
+  { label: "Frames", value: String(frames) },
+].filter((f) => f.value);
 ---
-<Content />
+
+<BaseLayout title={`${title} — Jan Jelinek Photography`} current="collection">
+  <section class="site-container grid items-end gap-10 border-b border-line pt-10 pb-10 sm:pt-14 sm:pb-12 md:grid-cols-2 md:gap-12">
+    <div class="flex flex-col gap-5">
+      <span class="text-[13px] tracking-[0.08em] text-dim uppercase">Collection {pad(total - index)} of {pad(total)}</span>
+      <h1 class="font-display text-[clamp(48px,6.5vw,88px)] leading-[0.98] font-light tracking-[-0.02em] text-balance text-strong">
+        {title}
+      </h1>
+    </div>
+    <div class="flex max-w-[560px] flex-col gap-6 md:min-w-[min(420px,100%)] md:justify-self-end">
+      <div class="intro flex flex-col gap-4 text-[16px] leading-[1.65] text-pretty text-muted">
+        <Content />
+      </div>
+      <dl class="grid grid-cols-3 gap-4 text-[13px]">
+        {facts.map((fact) => (
+          <div class="flex flex-col gap-1">
+            <dt class="text-[11px] tracking-[0.06em] text-dim uppercase">{fact.label}</dt>
+            <dd class="text-muted">{fact.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <Gallery slug={slug} title={title} dir={post.filePath!.replace(/\/[^/]+$/, "")} rows={rows} captions={captions} />
+
+  {(previous || next) && (
+    <nav aria-label="Other collections" class="site-container">
+      <div class="grid gap-6 border-t border-line pt-12 pb-16 sm:grid-cols-2">
+        {previous ? (
+          <a href={`/collections/${previous.data.slug}`} class="group flex flex-col gap-2.5">
+            <span class="text-[11px] tracking-[0.08em] text-dim uppercase">← Previous</span>
+            <span class="font-display text-[26px] font-light text-strong transition-opacity group-hover:opacity-80 sm:text-[32px]">{previous.data.title}</span>
+          </a>
+        ) : (
+          <div class="hidden sm:block"></div>
+        )}
+        {next && (
+          <a href={`/collections/${next.data.slug}`} class="group flex flex-col gap-2.5 sm:items-end sm:text-right">
+            <span class="text-[11px] tracking-[0.08em] text-dim uppercase">Next →</span>
+            <span class="font-display text-[26px] font-light text-strong transition-opacity group-hover:opacity-80 sm:text-[32px]">{next.data.title}</span>
+          </a>
+        )}
+      </div>
+    </nav>
+  )}
+</BaseLayout>
+
+<style>
+  /* The intro is the post's MDX body, so its elements need :global(). */
+  .intro :global(blockquote) {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.35;
+    color: var(--fg);
+  }
+  .intro :global(a) {
+    color: var(--strong);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+</style>

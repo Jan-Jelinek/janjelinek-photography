@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import InstagramLink from "../components/InstagramLink.astro";
+import { Picture } from "astro:assets";
+import portrait from "../../assets/about/portrait.jpg";
+
+// Placeholders from the design are kept in [brackets]. Fill them in before going live.
+const facts = [
+  { label: "Based in", value: "Canada" },
+  { label: "Shooting since", value: "2025" },
+  { label: "Camera", value: "Fujifilm X-T5" },
+];
+---
+
+<BaseLayout title="About — Jan Jelinek Photography" current="about">
+  <section class="site-container grid items-start gap-12 pt-10 pb-16 sm:pt-14 sm:pb-[72px] lg:grid-cols-2 lg:gap-16">
+    <figure class="flex flex-col gap-4">
+      <div class="bg-line p-5 sm:p-7">
+        <Picture
+          src={portrait}
+          alt="Jan Jelinek in Longyearbyen, Svalbard"
+          widths={[480, 720, 1000, 1368]}
+          sizes="(min-width: 1024px) min(calc(50vw - 136px), 564px), calc(100vw - 72px)"
+          formats={["avif", "webp"]}
+          priority
+          class="block aspect-[4/5] w-full object-cover"
+        />
+      </div>
+      <figcaption class="text-[13px] text-dim">me (left) ^</figcaption>
+    </figure>
+
+    <div class="flex flex-col gap-10">
+      <div class="font-display text-[clamp(40px,5vw,64px)] leading-[1.02] font-light tracking-[-0.02em] text-balance text-strong">
+        <div>
+          I like to travel
+        </div>
+        <div class="mt-3 text-[0.55em] leading-[1.15] text-muted">
+          ... to an unhealthy and financially irresponsible degree.
+        </div>
+      </div>
+
+      <div class="flex max-w-[560px] flex-col gap-[18px] text-[17px] leading-[1.65] text-fg">
+        <p class="text-pretty">
+          one of my favorite hobbies has always been doomscrolling google earth.
+          i loved finding unique and interesting places, then researching them
+          and finding those small, obscure blogs people made about their travels.
+          now i get to run my own :)
+        </p>
+        <p class="text-pretty">
+          i find that the joy of travel comes at the cost of yearning.
+          you visit a special place.
+          you make memories.
+          you go back home.
+          but a piece of your heart stays there.
+          and when in a liminal state, those shards ambush you.
+          like souls trying to drag you into the underworld, those pieces try to take you back.
+        </p>
+        <p class="text-pretty">
+          a fiery beach party that takes place every full moon.
+          an island of domesticated rabbits.
+          a city, at the top of the world, that you can't leave without a gun.
+        </p>
+        <p class="text-pretty">
+          i only hope that my work can create within others the desire to see the world for themselves
+        </p>
+      </div>
+
+      <dl class="grid grid-cols-[repeat(auto-fit,minmax(min(160px,100%),1fr))] gap-x-8 gap-y-6 border-t border-line pt-8 text-sm">
+        {facts.map((fact) => (
+          <div class="flex flex-col gap-1.5">
+            <dt class="text-[11px] tracking-[0.08em] text-dim uppercase">{fact.label}</dt>
+            <dd class="text-fg">{fact.value}</dd>
+          </div>
+        ))}
+        <div class="flex flex-col gap-1.5">
+          <dt class="text-[11px] tracking-[0.08em] text-dim uppercase">Contact</dt>
+          <dd>
+            <InstagramLink />
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+</BaseLayout>

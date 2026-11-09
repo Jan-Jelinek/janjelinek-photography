@@ -4,3 +4,54 @@
   --breakpoint-2xs: 25rem;
   --breakpoint-xs: 30rem;
 }
+
+/* Darkroom theme. Tokens only exist once BaseLayout sets data-theme on <html>. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-strong: var(--strong);
+  --color-muted: var(--muted);
+  --color-dim: var(--dim);
+  --color-line: var(--line);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e0e0d;
+  --fg: #e8e4dc;
+  --strong: #ffffff;
+  --muted: #b8b3a8;
+  --dim: #8d887d;
+  --line: #2a2927;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f2ee;
+  --fg: #2a2824;
+  --strong: #0e0e0d;
+  --muted: #5c584f;
+  --dim: #767166;
+  --line: #d9d5cc;
+}
+
+:root[data-theme="dark"] .theme-icon-moon,
+:root[data-theme="light"] .theme-icon-sun {
+  display: none;
+}
+
+@utility site-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1400px;
+  padding-inline: 1rem;
+
+  @media (width >= 40rem) {
+    padding-inline: 2rem;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 3rem;
+  }
+}
