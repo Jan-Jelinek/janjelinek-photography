@@ -135,7 +135,7 @@ def cmd_push(args) -> int:
     if not upload and not already:
         print("  no photos from rows on disk, nothing to push")
     if coll.unreferenced_local:
-        print(f"  not in rows, left alone: {', '.join(coll.unreferenced_local)}")
+        print(f"  not in rows or asides, left alone: {', '.join(coll.unreferenced_local)}")
     if args.dry_run:
         return 0
 
@@ -211,7 +211,7 @@ def cmd_run(args) -> int:
         drop = set()
         for file in sorted(set(entries) - set(files)):
             if file in coll.referenced:
-                lines.append(f"  KEPT     {file}  deleted from master but still in rows; remove it from rows first")
+                lines.append(f"  KEPT     {file}  deleted from master but still used; remove it from rows/commentary first")
             else:
                 lines.append(f"  drop     {file}  deleted from master")
                 drop.add(file)
@@ -299,16 +299,16 @@ def cmd_check(args) -> int:
             elif entries[file]["etag"] != etag:
                 lines.append((False, "changed", file, "replaced in master; `py r2sync run` converts it"))
             if file not in coll.referenced:
-                lines.append((False, "unused", file, "in master, not in rows"))
+                lines.append((False, "unused", file, "in master, not in rows or asides"))
         for file in sorted(set(entries) - set(files)):
             lines.append((file in coll.referenced, "NO MASTER" if file in coll.referenced else "no master", file,
-                          "deleted from master" + (" but still in rows" if file in coll.referenced else "")))
+                          "deleted from master" + (" but still used" if file in coll.referenced else "")))
         for file in coll.unreferenced_local:
-            lines.append((False, "candidate", file, "on your PC, not in rows"))
+            lines.append((False, "candidate", file, "on your PC, not in rows or asides"))
 
         uploaded = sum(1 for f in coll.referenced if f in entries)
         legacy = f", {coll.legacy} old Azure IDs" if coll.legacy else ""
-        print(f"{name}  ({uploaded}/{len(coll.referenced)} photos in rows uploaded{legacy})")
+        print(f"{name}  ({uploaded}/{len(coll.referenced)} photos used are uploaded{legacy})")
         for problem, tag, file, note in lines:
             problems += problem
             print(f"  {'!!' if problem else '  '} {tag:<13} {file}  {note}")
@@ -326,7 +326,7 @@ def cmd_check(args) -> int:
 
 
 def cmd_unused(args) -> int:
-    """Local only (no .env needed): photos in collection folders that rows don't use. Deletes nothing."""
+    """Local only (no .env needed): photos in collection folders that rows and asides don't use. Deletes nothing."""
     colls = posts.all_collections()
     if args.collection:
         if args.collection not in colls:
@@ -339,13 +339,13 @@ def cmd_unused(args) -> int:
         if not unused:
             continue
         found += len(unused)
-        print(f"{name}  ({len(unused)} not in rows)")
+        print(f"{name}  ({len(unused)} not used)")
         for file in unused:
             print(f"  {coll.local[file].relative_to(posts.REPO).as_posix()}")
     if found:
-        print(f"\n{found} photo(s) not used by any rows. Delete them if you're done with them (nothing was deleted).")
+        print(f"\n{found} photo(s) not used in rows or asides. Delete them if you're done with them (nothing was deleted).")
     else:
-        print("No unused photos: every photo in the collection folders is in rows.")
+        print("No unused photos: every photo in the collection folders is used in rows or asides.")
     return 0
 
 
@@ -368,7 +368,7 @@ def main() -> int:
     p = sub.add_parser("check", help="report what's out of sync (changes nothing)")
     p.set_defaults(fn=cmd_check)
 
-    p = sub.add_parser("unused", help="list local photos that rows don't use (local only, deletes nothing)")
+    p = sub.add_parser("unused", help="list local photos that rows and asides don't use (local only, deletes nothing)")
     p.add_argument("collection", nargs="?", help="only this collection (default: all)")
     p.set_defaults(fn=cmd_unused)
 

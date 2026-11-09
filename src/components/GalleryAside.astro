@@ -1,0 +1,146 @@
+---
+// An aside ("director's commentary") next to a photo's row: optional snapshots, then text.
+interface Snapshot {
+  width: number;
+  height: number;
+  src: string;
+  srcset: string;
+  avifSrcset?: string;
+  lqip?: string;
+  badge?: string;
+  href: string;
+  lightboxSrcset: string;
+  lightboxWidth: number;
+  lightboxHeight: number;
+}
+
+interface Props {
+  aside: {
+    number: string;
+    /** Frame number of the photo it's about. */
+    frame: string;
+    /** Paragraphs, each a list of lines. */
+    paragraphs: string[][];
+    photos: Snapshot[];
+  };
+  /** Width of the margin column on wide screens, px. */
+  width: number;
+}
+
+const { aside, width } = Astro.props;
+const { number, frame, paragraphs, photos } = aside;
+const round = (n: number) => Number(n.toFixed(4));
+
+// Thumbnails: one shows (nearly) its own shape; several become squares, at most 4 shown (+N on the last).
+const MAX_TILES = 4;
+const shown = Math.min(photos.length, MAX_TILES);
+const extra = photos.length - shown;
+const cols = photos.length === 1 ? 1 : photos.length === 3 ? 3 : 2;
+const clamp = (n: number, min: number, max: number) => Math.min(Math.max(n, min), max);
+const tileRatio = photos.length === 1 ? round(clamp(photos[0].width / photos[0].height, 4 / 5, 16 / 9)) : 1;
+// Below 1024px the aside sits under its row, up to 560px wide.
+const sizes = `(min-width: 1024px) ${Math.round(width / cols)}px, min(${Math.round(560 / cols)}px, ${Math.round(100 / cols)}vw)`;
+const textId = `aside-${number}-text`;
+---
+
+<aside class="flex flex-col gap-4" aria-label={`Aside ${number}, about frame ${frame}`}>
+  <div class="flex items-center gap-2.5 text-[11px] tracking-[0.08em] text-dim uppercase">
+    <span aria-hidden="true" class="block h-px w-5 bg-current"></span>
+    <span>Aside {number}</span>
+  </div>
+
+  {photos.length > 0 && (
+    <div class="aside-gallery grid gap-1.5" style={`grid-template-columns: repeat(${cols}, minmax(0, 1fr))`}>
+      {photos.map((photo, i) => (
+        <a
+          href={photo.href}
+          target="_blank"
+          class:list={["aside-item relative block overflow-hidden bg-line bg-cover", i >= shown && "hidden"]}
+          style={photo.lqip ? `background-image: url(${photo.lqip})` : undefined}
+          data-pswp-srcset={photo.lightboxSrcset}
+          data-pswp-width={photo.lightboxWidth}
+          data-pswp-height={photo.lightboxHeight}
+          data-cropped="true"
+        >
+          <picture class="block">
+            {photo.avifSrcset && <source type="image/avif" srcset={photo.avifSrcset} sizes={sizes} />}
+            <img
+              src={photo.src}
+              srcset={photo.srcset}
+              sizes={sizes}
+              width={photo.width}
+              height={photo.height}
+              alt={`Snapshot ${i + 1} of ${photos.length} for aside ${number}`}
+              loading="lazy"
+              decoding="async"
+              class="block w-full object-cover"
+              style={`aspect-ratio: ${tileRatio}`}
+            />
+          </picture>
+          {i === shown - 1 && extra > 0 && (
+            <span class="absolute inset-0 flex items-center justify-center bg-black/55 text-[15px] text-white">+{extra}</span>
+          )}
+          {photo.badge && (
+            <span class="absolute top-1 left-1 rounded-full bg-black/75 px-1.5 py-0.5 text-[9px] font-medium tracking-[0.06em] text-white uppercase">
+              {photo.badge}
+            </span>
+          )}
+        </a>
+      ))}
+    </div>
+  )}
+
+  {paragraphs.length > 0 && (
+    <div class="flex flex-col items-start gap-1">
+      <div id={textId} class="aside-text flex flex-col gap-3 font-display text-[19px] leading-[1.45] font-light text-pretty text-fg">
+        {paragraphs.map((lines) => (
+          <p>{lines.map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
+        ))}
+      </div>
+      <button
+        type="button"
+        hidden
+        class="aside-more flex h-11 items-center gap-2 text-[11px] tracking-[0.08em] text-strong uppercase transition-opacity hover:opacity-70"
+        aria-expanded="false"
+        aria-controls={textId}
+      >
+        <span>Read more</span>
+        <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M6 9l6 6 6-6"></path>
+        </svg>
+      </button>
+    </div>
+  )}
+</aside>
+
+<style>
+  /* Long text is cut to 5 lines (fading out) until "Read more". */
+  .aside-text:not(.open) {
+    max-height: calc(1.45em * 5);
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, #000 calc(100% - 2.2em), transparent);
+  }
+  .aside-more[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  // After fonts load (they change how many lines the text takes): short asides drop the clamp,
+  // long ones get the "Read more" button.
+  document.fonts.ready.then(() => {
+    for (const text of document.querySelectorAll<HTMLElement>(".aside-text")) {
+      const button = text.parentElement?.querySelector<HTMLButtonElement>(".aside-more");
+      if (!button || text.scrollHeight <= text.clientHeight + 1) {
+        text.classList.add("open");
+        continue;
+      }
+      button.hidden = false;
+      button.addEventListener("click", () => {
+        const open = text.classList.toggle("open");
+        button.setAttribute("aria-expanded", String(open));
+        button.querySelector("span")!.textContent = open ? "Show less" : "Read more";
+      });
+    }
+  });
+</script>

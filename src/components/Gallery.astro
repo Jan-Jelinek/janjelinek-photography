@@ -5,6 +5,7 @@ import { resolve } from "node:path";
 import { getImage } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import GalleryPhoto from "./GalleryPhoto.astro";
+import GalleryAside from "./GalleryAside.astro";
 import { publicUrl } from "../lib/images";
 
 interface Caption {
@@ -22,9 +23,11 @@ interface Props {
   dir: string;
   rows: (RowItem[] | { text: string } | { "text-r": string })[];
   captions: Record<string, Caption>;
+  /** Asides, keyed by the photo they sit next to: text and/or image file names. */
+  commentary: Record<string, string | string[]>;
 }
 
-const { slug, title, dir, rows, captions } = Astro.props;
+const { slug, title, dir, rows, captions, commentary } = Astro.props;
 
 // Tallest a row's photos get on wide screens, in px.
 const MAX_ROW_HEIGHT = 800;
@@ -34,6 +37,10 @@ const WIDTHS = [720, 1200, 1800, 2400];
 // Share of the page width a row takes, by how many photos it has (4+ = full width).
 const ROW_WIDTH_BY_COUNT = [90, 96, 100];
 const rowWidth = (count: number) => ROW_WIDTH_BY_COUNT[count - 1] ?? 100;
+// Asides: margin column beside their row on wide screens (px), and the space between them (rem).
+// From 1920px wide they hang in the page margin (the row keeps its size); see the CSS below.
+const ASIDE_WIDTH = 256;
+const ASIDE_GAP_REM = 2;
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
@@ -52,6 +59,8 @@ interface Photo {
   badge?: "not uploaded" | "edited";
   /** Wallpaper JPEG for the lightbox's download button (uploaded photos; local ones in dev). */
   download?: string;
+  /** Number of the aside about this photo, shown as a badge. */
+  aside?: string;
   href: string;
   lightboxSrcset: string;
   lightboxWidth: number;
@@ -186,9 +195,36 @@ async function loadPhoto(raw: string): Promise<Photo> {
   if (entry) return r2Photo(raw, entry);
   const folder = dir.split("/").pop();
   throw new Error(
-    `Gallery: "${raw}" is in rows but isn't in ${dir}/ or uploaded. ` +
+    `Gallery: "${raw}" is used in rows or commentary but isn't in ${dir}/ or uploaded. ` +
       `If it's on your PC, run: py r2sync push ${folder}`,
   );
+}
+
+/** Blank line = new paragraph. A newline, "\n" or <br/> (or a run of them) = line break. */
+const splitText = (text: string) =>
+  text
+    .trim()
+    .split(/\n\s*\n/)
+    .map((p) => p.split(/(?:\s*(?:<br\s*\/?>|\\n|\n)\s*)+/i));
+
+// In `commentary`, a string with no spaces ending in a photo extension is an image; anything else is text.
+const ASIDE_IMAGE = /^\S+\.(jpe?g|png|webp|avif|tiff?)$/i;
+const asideFor = (raw: string) => {
+  const items = commentary[raw] ?? commentary[raw.replace(/v$/, "")];
+  return items === undefined ? undefined : [items].flat().map((s) => s.trim());
+};
+let asideCount = 0;
+
+async function loadAside(number: string, frame: string, items: string[]) {
+  return {
+    number,
+    frame,
+    paragraphs: items.filter((s) => !ASIDE_IMAGE.test(s)).flatMap(splitText),
+    // Snapshots, not frames: no download button.
+    photos: await Promise.all(
+      items.filter((s) => ASIDE_IMAGE.test(s)).map(async (file) => ({ ...(await loadPhoto(file)), download: undefined })),
+    ),
+  };
 }
 
 const round = (n: number) => Number(n.toFixed(5));
@@ -210,26 +246,27 @@ const blocks = await Promise.all(
   rows.map(async (row) => {
     if (!Array.isArray(row)) {
       const right = "text-r" in row;
-      const text = right ? row["text-r"] : row.text;
-      // Blank line = new paragraph. A newline, "\n" or <br/> (or a run of them) = line break.
-      const paragraphs = text
-        .trim()
-        .split(/\n\s*\n/)
-        .map((p) => p.split(/(?:\s*(?:<br\s*\/?>|\\n|\n)\s*)+/i));
-      return { kind: "text" as const, right, paragraphs };
+      return { kind: "text" as const, right, paragraphs: splitText(right ? row["text-r"] : row.text) };
     }
 
-    // Numbered before the first await, so frames count in reading order.
+    // Numbered before the first await, so frames and asides count in reading order.
     const groups = row.map((item) =>
-      (Array.isArray(item) ? item : [item]).map((raw) => ({ raw, number: pad(++frame) })),
+      (Array.isArray(item) ? item : [item]).map((raw) => {
+        const items = asideFor(raw);
+        return { raw, number: pad(++frame), aside: items && { number: pad(++asideCount), items } };
+      }),
+    );
+
+    const asides = await Promise.all(
+      groups.flat().flatMap(({ number, aside }) => (aside ? [loadAside(aside.number, number, aside.items)] : [])),
     );
 
     const columns = await Promise.all(
       groups.map(async (group, i) => {
         const photos = await Promise.all(
-          group.map(async ({ raw, number }) => {
+          group.map(async ({ raw, number, aside }) => {
             const photo = await loadPhoto(raw);
-            return { ...photo, number, caption: captions[photo.key] ?? captions[raw] };
+            return { ...photo, number, aside: aside?.number, caption: captions[photo.key] ?? captions[raw] };
           }),
         );
         return {
@@ -250,12 +287,19 @@ const blocks = await Promise.all(
 
     return {
       kind: "photos" as const,
+      asides,
       columns: columns.map((c) => {
         const share = c.ratio / R;
+        const vw = `${Math.round(share * width)}vw`;
+        // From 1024px an aside row gives up the margin column, so its photos are that much narrower
+        // (from 1920px the aside hangs in the page margin instead, and the photos are back to normal).
+        const asidePx = Math.round(share * (ASIDE_WIDTH + ASIDE_GAP_REM * 16));
         return {
           ...c,
           basis: `calc((100%${minusRem(spare)}) * ${round(share)}${minusRem(c.ratio * c.innerGaps * g)})`,
-          sizes: `(min-width: 640px) ${Math.round(share * width)}vw, 100vw`,
+          sizes: asides.length
+            ? `(min-width: 1920px) ${vw}, (min-width: 1024px) calc(${vw} - ${asidePx}px), (min-width: 640px) ${vw}, 100vw`
+            : `(min-width: 640px) ${vw}, 100vw`,
         };
       }),
       // Row width, capped so H never exceeds MAX_ROW_HEIGHT.
@@ -265,7 +309,7 @@ const blocks = await Promise.all(
 );
 ---
 
-<section id="gallery" aria-label="Photographs" class="site-container flex flex-col py-10 sm:py-12" style={`--gallery-gap: ${GAP_REM}rem; gap: var(--gallery-gap)`}>
+<section id="gallery" aria-label="Photographs" class="site-container flex flex-col py-10 sm:py-12" style={`--gallery-gap: ${GAP_REM}rem; --aside-width: ${ASIDE_WIDTH}px; --aside-gap: ${ASIDE_GAP_REM}rem; gap: var(--gallery-gap)`}>
   {blocks.map((block) =>
     block.kind === "text" ? (
       <div
@@ -279,17 +323,24 @@ const blocks = await Promise.all(
         ))}
       </div>
     ) : (
-      <div class="photo-row" style={block.style}>
-        {block.columns.map((column) =>
-          column.stacked ? (
-            <div class="photo-stack" style={`--basis: ${column.basis}`}>
-              {column.photos.map((photo) => (
-                <GalleryPhoto photo={photo} title={title} sizes={column.sizes} />
-              ))}
-            </div>
-          ) : (
-            <GalleryPhoto photo={column.photos[0]} title={title} sizes={column.sizes} style={`--basis: ${column.basis}`} />
-          ),
+      <div class:list={[block.asides.length > 0 && "aside-row"]} style={block.style}>
+        <div class="photo-row">
+          {block.columns.map((column) =>
+            column.stacked ? (
+              <div class="photo-stack" style={`--basis: ${column.basis}`}>
+                {column.photos.map((photo) => (
+                  <GalleryPhoto photo={photo} title={title} sizes={column.sizes} />
+                ))}
+              </div>
+            ) : (
+              <GalleryPhoto photo={column.photos[0]} title={title} sizes={column.sizes} style={`--basis: ${column.basis}`} />
+            ),
+          )}
+        </div>
+        {block.asides.length > 0 && (
+          <div class="aside-col">
+            {block.asides.map((aside) => <GalleryAside aside={aside} width={ASIDE_WIDTH} />)}
+          </div>
         )}
       </div>
     ),
@@ -325,19 +376,75 @@ const blocks = await Promise.all(
       flex: 0 0 var(--basis);
     }
   }
+
+  /* A row with asides: under the photos on smaller screens, in a margin column
+     beside them from 1024px. The photo row keeps its own width rules relative
+     to whatever space is left, so the equal-height math above still holds. */
+  .aside-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-inline: auto;
+    padding-bottom: 1.5rem; /* breathing room before the next row while the aside sits underneath */
+  }
+  .aside-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 560px;
+  }
+  @media (width >= 40rem) {
+    .aside-row {
+      width: var(--row-width);
+    }
+    .aside-row > .photo-row {
+      width: 100%;
+    }
+  }
+  @media (width >= 64rem) {
+    .aside-row {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: var(--aside-gap);
+      max-width: calc(var(--row-max) + var(--aside-width) + var(--aside-gap));
+      padding-bottom: 0;
+    }
+    .aside-row > .photo-row {
+      flex: 1 1 0;
+      min-width: 0;
+      margin: 0;
+    }
+    .aside-col {
+      flex: 0 0 var(--aside-width);
+      /* Stays in view while a tall row scrolls past. */
+      position: sticky;
+      top: 2rem;
+    }
+  }
+  /* Wide screens have room in the page margin (the page is at most 1400px wide):
+     the row keeps its normal size and place, and the aside hangs outside it on
+     the right. 1920px is where it fits next to a full-width row. */
+  @media (width >= 1920px) {
+    .aside-row {
+      max-width: var(--row-max);
+    }
+    .aside-row > .photo-row {
+      flex: 0 0 100%;
+    }
+  }
 </style>
 
 <script>
   import PhotoSwipeLightbox from "photoswipe/lightbox";
   import "photoswipe/style.css";
 
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: "#gallery",
-    children: "a.pswp-item",
-    zoom: false,
-    loop: false,
-    pswpModule: () => import("photoswipe"),
-  });
+  const options = { zoom: false, loop: false, pswpModule: () => import("photoswipe") };
+
+  // Each aside's snapshots are their own little gallery, separate from the frames.
+  new PhotoSwipeLightbox({ gallery: ".aside-gallery", children: "a.aside-item", ...options }).init();
+
+  const lightbox = new PhotoSwipeLightbox({ gallery: "#gallery", children: "a.pswp-item", ...options });
 
   // Download button: saves the photo's wallpaper JPEG (data-pswp-download). Hidden when a photo has none.
   lightbox.on("uiRegister", () => {

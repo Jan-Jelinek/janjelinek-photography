@@ -15,6 +15,10 @@ const row = z.union([
   z.object({ 'text-r': z.string() }),
 ]);
 
+// An aside next to a photo's row: "DSCF0727.JPG": ["story…", "Snapchat-1.jpg", ...], or just "story…".
+// A string with no spaces ending in a photo extension is an image; anything else is text (one paragraph each).
+const aside = z.union([z.string(), z.array(z.string()).min(1)]);
+
 const stripPortrait = (id: string) => id.replace(/v$/, '');
 
 const posts = defineCollection({
@@ -28,17 +32,20 @@ const posts = defineCollection({
       rows: z.array(row).min(1),
       // nullish: a `captions:` key with only comments under it parses as null.
       captions: z.record(z.string(), caption).nullish().transform((c) => c ?? {}),
+      commentary: z.record(z.string(), aside).nullish().transform((c) => c ?? {}),
   }).superRefine((data, ctx) => {
       const ids = new Set(
         data.rows.flatMap((r) => (Array.isArray(r) ? r.flat().map(stripPortrait) : [])),
       );
-      for (const key of Object.keys(data.captions)) {
-        if (!ids.has(stripPortrait(key))) {
-          ctx.addIssue({
-            code: 'custom',
-            path: ['captions', key],
-            message: `Caption for "${key}", but no photo with that ID is in rows`,
-          });
+      for (const [field, label] of [['captions', 'Caption'], ['commentary', 'Commentary']] as const) {
+        for (const key of Object.keys(data[field])) {
+          if (!ids.has(stripPortrait(key))) {
+            ctx.addIssue({
+              code: 'custom',
+              path: [field, key],
+              message: `${label} for "${key}", but no photo with that ID is in rows`,
+            });
+          }
         }
       }
   }),

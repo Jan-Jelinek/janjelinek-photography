@@ -11,6 +11,7 @@ interface Props {
     lqip?: string;
     badge?: string;
     download?: string;
+    aside?: string;
     href: string;
     lightboxSrcset: string;
     lightboxWidth: number;
@@ -54,6 +55,12 @@ const { caption } = photo;
     {photo.badge && (
       <span class="absolute top-2 left-2 rounded-full bg-black/75 px-2.5 py-1 text-[11px] font-medium tracking-[0.06em] text-white uppercase">
         {photo.badge}
+      </span>
+    )}
+    {photo.aside && (
+      // Links the photo to its aside ("Aside 01"); the aside itself names the frame for screen readers.
+      <span aria-hidden="true" class="absolute top-3 right-3 flex size-7 items-center justify-center rounded-full border border-white/45 bg-black/70 text-[10px] tracking-[0.04em] text-white">
+        {photo.aside}
       </span>
     )}
   </a>

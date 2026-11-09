@@ -32,7 +32,7 @@ site at the bucket's `r2.dev` URL with `PUBLIC_IMAGE_BASE=https://pub-xxxx.r2.de
    - **edited**: uploaded, but your local copy is different
 3. `py r2sync push 2025-peak-fog`: uploads the photos used in rows, converts them, and moves the
    local copies to the Recycle Bin. The badges disappear.
-   Only photos in rows are uploaded; leftovers in the folder are skipped.
+   Only photos used in rows or in `commentary` asides are uploaded; leftovers in the folder are skipped.
 4. `py r2sync unused 2025-peak-fog` lists those leftovers; delete the ones you don't need.
 5. Commit `post.mdx` and `photos.json`, push.
 
