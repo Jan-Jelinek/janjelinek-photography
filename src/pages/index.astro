@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import InstagramLink from "../components/InstagramLink.astro";
+import CollectionCover from "../components/CollectionCover.astro";
+import { loadPhoto } from "../lib/photos";
 
 const posts = (await getCollection("posts")).sort(
   (a, b) => b.data.sequence - a.data.sequence,
@@ -12,30 +14,81 @@ const pad = (n: number) => String(n).padStart(2, "0");
 const yearOf = (slug: string) => slug.slice(0, 4);
 const metaOf = (data: { place?: string; slug: string }) =>
   [data.place, yearOf(data.slug)].filter(Boolean).join(" · ");
+// Where a post's photo names are looked up (folder of its post.mdx).
+const sourceOf = (post: (typeof posts)[number]) => ({
+  dir: post.filePath!.replace(/\/[^/]+$/, ""),
+  slug: post.data.slug,
+});
 
-const hero = "https://stjjp.blob.core.windows.net/images/2025-travels/1-01";
+// Covers: one of each collection's photos, cropped to a square in CollectionCover.
+const covers = await Promise.all(posts.map((post) => loadPhoto(post.data.cover.photo, sourceOf(post))));
+
+// Hero: every visit picks a random collection that has `feature:` photos (equal odds),
+// then one of its featured photos. Done in the browser, since the site is static.
+const heroes = await Promise.all(
+  posts
+    .filter((post) => post.data.feature)
+    .map((post) => {
+      const { slug, title, feature, captions } = post.data;
+      const source = sourceOf(post);
+      return Promise.all(
+        feature!.map(async (name) => {
+          const photo = await loadPhoto(name, source);
+          return {
+            src: photo.src,
+            srcset: photo.srcset,
+            avifSrcset: photo.avifSrcset ?? "",
+            alt: (captions[photo.key] ?? captions[name])?.text ?? `A photo from ${title}`,
+            href: `/collections/${slug}`,
+            title,
+            meta: metaOf(post.data),
+          };
+        }),
+      );
+    }),
+);
+if (heroes.length === 0) {
+  throw new Error("Home page hero: set `feature:` (photos from rows) in at least one collection's post.mdx.");
+}
+// Shown without JavaScript, and as the link text until the pick runs.
+const fallback = heroes[0][0];
 ---
 
 <BaseLayout>
   <section class="relative flex min-h-[520px] items-end overflow-hidden sm:min-h-[640px] lg:min-h-[760px]">
-    <img
-      src={`${hero}-1800.jpg`}
-      srcset={`${hero}-1200.jpg 1200w, ${hero}-1800.jpg 1800w, ${hero}-2400.jpg 2400w`}
-      sizes="100vw"
-      alt="Fireworks pouring off Taipei 101 at night"
-      fetchpriority="high"
-      class="absolute inset-0 size-full object-cover object-[center_40%]"
-    />
+    <!-- No src here: the script below fills in the picked photo, so only that one downloads. -->
+    <picture>
+      <source id="hero-avif" type="image/avif" sizes="100vw" />
+      <img id="hero-img" alt="" sizes="100vw" fetchpriority="high" class="absolute inset-0 size-full object-cover" />
+    </picture>
+    <noscript>
+      <img src={fallback.src} srcset={fallback.srcset} sizes="100vw" alt={fallback.alt} class="absolute inset-0 size-full object-cover" />
+    </noscript>
     <div aria-hidden="true" class="hero-fade absolute inset-0"></div>
     <div class="site-container relative flex flex-wrap items-end justify-between gap-6 pb-10 sm:pb-14">
       <h1 class="max-w-[760px] font-display text-[clamp(44px,7vw,96px)] leading-[0.98] font-light tracking-[-0.02em] text-balance text-strong">
         Four years, four latitudes, one camera.
       </h1>
-      <a href="/collections/2025-travels" class="flex flex-col gap-1 text-[13px] tracking-[0.06em] text-muted uppercase transition-colors hover:text-strong">
-        <span>Six Months in Asia</span>
-        <span class="text-dim">Taipei · 2025</span>
+      <a id="hero-link" href={fallback.href} class="flex flex-col gap-1 text-[13px] tracking-[0.06em] text-muted uppercase transition-colors hover:text-strong">
+        <span id="hero-title">{fallback.title}</span>
+        <span id="hero-meta" class="text-dim">{fallback.meta}</span>
       </a>
     </div>
+    <!-- Runs while the page is still loading, so the picked photo is there before anything shows. -->
+    <script is:inline define:vars={{ heroes }}>
+      const pick = (list) => list[Math.floor(Math.random() * list.length)];
+      const hero = pick(pick(heroes));
+      const img = document.getElementById("hero-img");
+      const avif = document.getElementById("hero-avif");
+      if (hero.avifSrcset) avif.srcset = hero.avifSrcset;
+      else avif.remove();
+      img.alt = hero.alt;
+      img.srcset = hero.srcset;
+      img.src = hero.src;
+      document.getElementById("hero-link").href = hero.href;
+      document.getElementById("hero-title").textContent = hero.title;
+      document.getElementById("hero-meta").textContent = hero.meta;
+    </script>
   </section>
 
   <section id="collections" class="site-container scroll-mt-4 pt-14 pb-12 sm:pt-[72px]">
@@ -53,7 +106,7 @@ const hero = "https://stjjp.blob.core.windows.net/images/2025-travels/1-01";
               {post.data.title}
             </span>
             <span class="meta text-[13px] tracking-[0.04em] text-muted">{metaOf(post.data)}</span>
-            <img src={post.data.cover.src} alt="" loading="lazy" class="thumb object-cover" />
+            <CollectionCover photo={covers[i]} crop={post.data.cover} size={[64, 120]} class="thumb" />
           </a>
         </li>
       ))}
@@ -85,7 +138,7 @@ const hero = "https://stjjp.blob.core.windows.net/images/2025-travels/1-01";
 
   .collection-row {
     display: grid;
-    grid-template-columns: 2rem minmax(0, 1fr) 6rem;
+    grid-template-columns: 2rem minmax(0, 1fr) 4rem;
     grid-template-areas:
       "num title thumb"
       "num meta  thumb";
@@ -96,9 +149,9 @@ const hero = "https://stjjp.blob.core.windows.net/images/2025-travels/1-01";
   .num { grid-area: num; }
   .title { grid-area: title; align-self: end; }
   .meta { grid-area: meta; align-self: start; }
-  .thumb {
+  .collection-row :global(.thumb) {
     grid-area: thumb;
-    width: 6rem;
+    width: 4rem;
     height: 4rem;
     justify-self: end;
     transition: opacity 0.2s;
@@ -111,13 +164,13 @@ const hero = "https://stjjp.blob.core.windows.net/images/2025-travels/1-01";
   .collection-row:hover .meta {
     color: var(--strong);
   }
-  .collection-row:hover .thumb {
+  .collection-row:hover :global(.thumb) {
     opacity: 0.85;
   }
 
   @media (width >= 48rem) {
     .collection-row {
-      grid-template-columns: 64px minmax(0, 1fr) 160px 180px;
+      grid-template-columns: 64px minmax(0, 1fr) 160px 120px;
       grid-template-areas: "num title meta thumb";
       column-gap: 2rem;
     }
@@ -125,8 +178,8 @@ const hero = "https://stjjp.blob.core.windows.net/images/2025-travels/1-01";
     .meta {
       align-self: center;
     }
-    .thumb {
-      width: 180px;
+    .collection-row :global(.thumb) {
+      width: 120px;
       height: 120px;
     }
   }

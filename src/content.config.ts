@@ -19,20 +19,36 @@ const row = z.union([
 // A string with no spaces ending in a photo extension is an image; anything else is text (one paragraph each).
 const aside = z.union([z.string(), z.array(z.string()).min(1)]);
 
+// The home page thumbnail: a photo from rows, cropped to a square. `zoom` 1 = the biggest square that
+// fits; `x`/`y` (0–100) = the point of the photo at the square's centre.
+const cover = z
+  .union([
+    z.string(),
+    z.object({
+      photo: z.string(),
+      zoom: z.number().min(1).default(1),
+      x: z.number().min(0).max(100).default(50),
+      y: z.number().min(0).max(100).default(50),
+    }),
+  ])
+  .transform((c) => (typeof c === 'string' ? { photo: c, zoom: 1, x: 50, y: 50 } : c));
+
 const stripPortrait = (id: string) => id.replace(/v$/, '');
 
 const posts = defineCollection({
   loader: glob({ pattern: ['**/post.mdx'], base: 'src/collections' }),
-  schema: ({ image }) => z.object({
+  schema: z.object({
       sequence: z.number(),
       slug: z.string(),
       title: z.string(),
-      cover: image(),
+      cover,
       place: z.string().optional(),
       rows: z.array(row).min(1),
       // nullish: a `captions:` key with only comments under it parses as null.
       captions: z.record(z.string(), caption).nullish().transform((c) => c ?? {}),
       commentary: z.record(z.string(), aside).nullish().transform((c) => c ?? {}),
+      // Photos from rows the home page hero may show (picked at random on each visit).
+      feature: z.array(z.string()).min(1).optional(),
   }).superRefine((data, ctx) => {
       const ids = new Set(
         data.rows.flatMap((r) => (Array.isArray(r) ? r.flat().map(stripPortrait) : [])),
@@ -48,6 +64,22 @@ const posts = defineCollection({
           }
         }
       }
+      if (!ids.has(stripPortrait(data.cover.photo))) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['cover'],
+          message: `Cover "${data.cover.photo}" isn't a photo in rows`,
+        });
+      }
+      (data.feature ?? []).forEach((name, i) => {
+        if (!ids.has(stripPortrait(name))) {
+          ctx.addIssue({
+            code: 'custom',
+            path: ['feature', i],
+            message: `Feature "${name}" isn't a photo in rows`,
+          });
+        }
+      });
   }),
 });
 

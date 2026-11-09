@@ -1,0 +1,46 @@
+---
+// A collection's cover: one of its photos cropped to a square (cover: in post.mdx).
+import type { Photo } from "../lib/photos";
+
+interface Props {
+  photo: Photo;
+  /** zoom 1 = biggest square that fits; x/y (0–100) = point of the photo at the centre. */
+  crop: { zoom: number; x: number; y: number };
+  /** Size/placement classes for the square. */
+  class?: string;
+  /** How wide the square is drawn, for picking a file size: [phone px, from-48rem px]. */
+  size: [number, number];
+}
+
+const { photo, crop, class: className, size } = Astro.props;
+
+// The photo's drawn size as % of the square, then its offset so (x, y) lands in the middle,
+// held back at the edges so the square never shows past the photo.
+const clamp = (n: number, min: number, max: number) => Math.min(Math.max(n, min), max);
+const round = (n: number) => Number(n.toFixed(3));
+const r = photo.ratio;
+const w = 100 * crop.zoom * Math.max(r, 1);
+const h = 100 * crop.zoom * Math.max(1 / r, 1);
+const left = clamp(50 - (crop.x / 100) * w, 100 - w, 0);
+const top = clamp(50 - (crop.y / 100) * h, 100 - h, 0);
+const sizes = `(min-width: 48rem) ${Math.round((size[1] * w) / 100)}px, ${Math.round((size[0] * w) / 100)}px`;
+---
+
+<span
+  class:list={["relative block overflow-hidden bg-line bg-cover", className]}
+  style={photo.lqip ? `background-image: url(${photo.lqip})` : undefined}
+>
+  <picture>
+    {photo.avifSrcset && <source type="image/avif" srcset={photo.avifSrcset} sizes={sizes} />}
+    <img
+      src={photo.src}
+      srcset={photo.srcset}
+      sizes={sizes}
+      alt=""
+      loading="lazy"
+      decoding="async"
+      class="absolute max-w-none"
+      style={`width: ${round(w)}%; height: ${round(h)}%; left: ${round(left)}%; top: ${round(top)}%`}
+    />
+  </picture>
+</span>

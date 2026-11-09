@@ -23,7 +23,7 @@ class Collection:
     name: str  # folder name, e.g. "2025-peak-fog"; also the prefix in both buckets
     dir: Path
     referenced: list[str] = field(default_factory=list)  # photo file names in rows, then aside images
-    local: dict[str, Path] = field(default_factory=dict)  # photo files on disk (cover excluded)
+    local: dict[str, Path] = field(default_factory=dict)  # photo files on disk
     legacy: int = 0  # Azure IDs in rows ("1-01"), ignored by r2sync
 
     @property
@@ -64,11 +64,10 @@ def load_collection(folder: Path) -> Collection:
     match = FRONT_MATTER.match(post.read_text(encoding="utf-8"))
     data = yaml.safe_load(match.group(1)) if match else {}
     data = data or {}
-    cover = Path(str(data.get("cover", ""))).name
     local = {
         p.name: p
         for p in sorted(folder.iterdir())
-        if p.is_file() and PHOTO.search(p.name) and p.name != cover
+        if p.is_file() and PHOTO.search(p.name)
     }
     referenced, legacy = _rows_photos(data.get("rows"))
     # Aside images count as used too: push uploads them, unused doesn't list them.
