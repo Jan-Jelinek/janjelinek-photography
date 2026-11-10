@@ -25,7 +25,7 @@ interface Props {
 
 const { post, index, total, previous, next } = Astro.props;
 const { Content } = await render(post);
-const { title, slug, place, rows, captions, commentary } = post.data;
+const { title, slug, place, rows, captions, commentary, "auto-captions": autoCaptions } = post.data;
 
 const pad = (n: number) => String(n).padStart(2, "0");
 const frames = rows.reduce((n, row) => n + (Array.isArray(row) ? row.flat().length : 0), 0);
@@ -60,7 +60,7 @@ const facts = [
     </div>
   </section>
 
-  <Gallery slug={slug} title={title} dir={post.filePath!.replace(/\/[^/]+$/, "")} rows={rows} captions={captions} commentary={commentary} />
+  <Gallery slug={slug} title={title} dir={post.filePath!.replace(/\/[^/]+$/, "")} rows={rows} captions={captions} commentary={commentary} autoCaptions={autoCaptions} />
 
   <div class="site-container flex justify-center pb-10">
     <a

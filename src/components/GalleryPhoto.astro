@@ -3,6 +3,8 @@ interface Props {
   photo: {
     number: string;
     caption?: { text?: string; exposure?: string };
+    /** Shown at the bottom of the lightbox (e.g. auto exposure). */
+    lightboxCaption?: string;
     width: number;
     height: number;
     src: string;
@@ -37,6 +39,7 @@ const { caption } = photo;
     data-pswp-width={photo.lightboxWidth}
     data-pswp-height={photo.lightboxHeight}
     data-pswp-download={photo.download}
+    data-pswp-caption={photo.lightboxCaption}
   >
     <picture class="block">
       {photo.avifSrcset && <source type="image/avif" srcset={photo.avifSrcset} sizes={sizes} />}

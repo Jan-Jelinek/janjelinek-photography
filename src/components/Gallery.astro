@@ -1,7 +1,7 @@
 ---
 import GalleryPhoto from "./GalleryPhoto.astro";
 import GalleryAside from "./GalleryAside.astro";
-import { loadPhoto as loadPhotoFrom } from "../lib/photos";
+import { exposureText, loadPhoto as loadPhotoFrom } from "../lib/photos";
 
 interface Caption {
   text?: string;
@@ -20,9 +20,11 @@ interface Props {
   captions: Record<string, Caption>;
   /** Asides, keyed by the photo they sit next to: text and/or image file names. */
   commentary: Record<string, string | string[]>;
+  /** Fill each caption's exposure from the photo's camera data. */
+  autoCaptions?: boolean;
 }
 
-const { slug, title, dir, rows, captions, commentary } = Astro.props;
+const { slug, title, dir, rows, captions, commentary, autoCaptions = false } = Astro.props;
 
 // Tallest a row's photos get on wide screens, in px.
 const MAX_ROW_HEIGHT = 800;
@@ -107,7 +109,10 @@ const blocks = await Promise.all(
         const photos = await Promise.all(
           group.map(async ({ raw, number, aside }) => {
             const photo = await loadPhoto(raw);
-            return { ...photo, number, aside: aside?.number, caption: captions[photo.key] ?? captions[raw] };
+            const manual = captions[photo.key] ?? captions[raw];
+            // Auto captions only show in the lightbox; hand-written captions still show under the photo.
+            const exposure = manual?.exposure ?? (autoCaptions ? exposureText(photo.exposure) : undefined);
+            return { ...photo, number, aside: aside?.number, caption: manual, lightboxCaption: exposure };
           }),
         );
         return {
@@ -274,6 +279,29 @@ const blocks = await Promise.all(
       flex: 0 0 100%;
     }
   }
+
+  /* Lightbox exposure caption (PhotoSwipe's own markup, hence :global). Fades with the other controls. */
+  :global(.pswp__exposure) {
+    position: absolute;
+    left: 50%;
+    bottom: 1.25rem;
+    transform: translateX(-50%);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    background: rgb(0 0 0 / 0.55);
+    color: rgb(255 255 255 / 0.9);
+    font: 500 13px/1.4 var(--font-ui);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  :global(.pswp--ui-visible .pswp__exposure) {
+    opacity: 1;
+  }
+  :global(.pswp:not(.pswp--ui-visible) .pswp__exposure) {
+    opacity: 0;
+  }
 </style>
 
 <script>
@@ -312,6 +340,20 @@ const blocks = await Promise.all(
           if (url) (el as HTMLAnchorElement).href = url;
           else el.removeAttribute("href");
           el.style.display = url ? "" : "none";
+        });
+      },
+    });
+
+    // Exposure caption at the bottom (data-pswp-caption, from auto captions). Hidden when a photo has none.
+    lightbox.pswp?.ui?.registerElement({
+      name: "exposure",
+      className: "pswp__exposure",
+      appendTo: "root",
+      onInit: (el, pswp) => {
+        pswp.on("change", () => {
+          const text = (pswp.currSlide?.data.element as HTMLElement | undefined)?.dataset.pswpCaption ?? "";
+          el.textContent = text;
+          el.style.display = text ? "" : "none";
         });
       },
     });

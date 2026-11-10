@@ -49,6 +49,9 @@ const posts = defineCollection({
       commentary: z.record(z.string(), aside).nullish().transform((c) => c ?? {}),
       // Photos from rows the home page hero may show (picked at random on each visit).
       feature: z.array(z.string()).min(1).optional(),
+      // Show each photo's aperture · shutter · ISO under it (from the camera data). A caption's own
+      // `exposure` still wins.
+      'auto-captions': z.boolean().default(false),
   }).superRefine((data, ctx) => {
       const ids = new Set(
         data.rows.flatMap((r) => (Array.isArray(r) ? r.flat().map(stripPortrait) : [])),

@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { readFileSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 import { getImage } from "astro:assets";
+import exifr from "exifr";
 import type { ImageMetadata } from "astro";
 import { publicUrl } from "./images";
 
@@ -25,12 +26,28 @@ export interface Photo {
   badge?: "not uploaded" | "edited";
   /** Wallpaper JPEG for the lightbox's download button (uploaded photos; local ones in dev). */
   download?: string;
+  /** Camera settings, for auto captions (uploaded and local photos; not Azure). */
+  exposure?: Exposure;
   /** Number of the aside about this photo, shown as a badge (gallery only). */
   aside?: string;
   href: string;
   lightboxSrcset: string;
   lightboxWidth: number;
   lightboxHeight: number;
+}
+
+/** Formatted like r2sync stores them: "f/4", "1/300s", 125. */
+export interface Exposure {
+  aperture?: string;
+  shutter?: string;
+  iso?: number;
+}
+
+/** "f/4 · 1/300s · ISO 125" (missing parts left out), or undefined if there's nothing to show. */
+export function exposureText(e?: Exposure): string | undefined {
+  if (!e) return undefined;
+  const parts = [e.aperture, e.shutter, e.iso && `ISO ${e.iso}`].filter(Boolean);
+  return parts.length ? parts.join(" · ") : undefined;
 }
 
 /** Which collection a photo name belongs to. */
@@ -48,6 +65,7 @@ interface ManifestEntry {
   lqip?: string;
   variants: { edge: number; w: number; h: number; avif: string; webp: string }[];
   download?: { key: string; w: number; h: number };
+  exif?: Exposure & Record<string, unknown>;
 }
 const manifests = import.meta.glob<Record<string, ManifestEntry>>("/src/collections/*/photos.json", {
   eager: true,
@@ -69,6 +87,7 @@ function r2Photo(file: string, entry: ManifestEntry): Photo {
     avifSrcset: v.map((x) => `${publicUrl(x.avif)} ${x.w}w`).join(", "),
     lqip: entry.lqip,
     download: entry.download && publicUrl(entry.download.key),
+    exposure: entry.exif && { aperture: entry.exif.aperture, shutter: entry.exif.shutter, iso: entry.exif.iso },
     href: publicUrl(largest.webp),
     // The lightbox shows one format, so WebP (works everywhere).
     lightboxSrcset: webpSrcset,
@@ -106,7 +125,32 @@ const localFiles = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 );
 
-async function localPhoto(file: string, meta: ImageMetadata, badge: Photo["badge"]): Promise<Photo> {
+// Same format as r2sync/convert.py exif_summary(), so local and uploaded captions match.
+const trimNum = (n: number) => String(Number(n.toPrecision(12)));
+async function readExposure(path: string): Promise<Exposure | undefined> {
+  const tags = await exifr.parse(path, ["FNumber", "ExposureTime", "ISO"]).catch(() => undefined);
+  if (!tags) return undefined;
+  const { FNumber: f, ExposureTime: t, ISO: iso } = tags as { FNumber?: number; ExposureTime?: number; ISO?: number };
+  return {
+    aperture: f ? `f/${trimNum(Math.round(f * 10) / 10)}` : undefined,
+    shutter: t ? (t >= 1 ? `${trimNum(t)}s` : `1/${Math.round(1 / t)}s`) : undefined,
+    iso: iso ? Math.trunc(Array.isArray(iso) ? iso[0] : iso) : undefined,
+  };
+}
+
+// Camera settings of a local file, remembered until the file changes.
+const exposureCache = new Map<string, { stamp: string; exposure?: Exposure }>();
+async function exposureOf(path: string): Promise<Exposure | undefined> {
+  const { mtimeMs, size } = statSync(path);
+  const stamp = `${mtimeMs}:${size}`;
+  const hit = exposureCache.get(path);
+  if (hit?.stamp === stamp) return hit.exposure;
+  const exposure = await readExposure(path);
+  exposureCache.set(path, { stamp, exposure });
+  return exposure;
+}
+
+async function localPhoto(file: string, path: string, meta: ImageMetadata, badge: Photo["badge"]): Promise<Photo> {
   const longEdge = Math.max(meta.width, meta.height);
   const widths = WIDTHS.filter((e) => e <= longEdge).map((e) => Math.round((e / longEdge) * meta.width));
   if (widths.length === 0) widths.push(meta.width);
@@ -132,6 +176,7 @@ async function localPhoto(file: string, meta: ImageMetadata, badge: Photo["badge
     badge: import.meta.env.DEV ? badge : undefined,
     // Dev only, to try the button: in a build this would copy the full original into dist.
     download: import.meta.env.DEV ? meta.src : undefined,
+    exposure: await exposureOf(path),
   };
 }
 
@@ -158,7 +203,7 @@ export async function loadPhoto(raw: string, { dir, slug }: PhotoSource): Promis
   const local = localFiles[`/${dir}/${raw}`]?.default;
   const entry = (manifests[`/${dir}/photos.json`] ?? {})[raw];
   if (local && !(entry && sha256Of(resolve(dir, raw)) === entry.sha256)) {
-    return localPhoto(raw, local, entry ? "edited" : "not uploaded");
+    return localPhoto(raw, resolve(dir, raw), local, entry ? "edited" : "not uploaded");
   }
   if (entry) return r2Photo(raw, entry);
   const folder = dir.split("/").pop();
