@@ -8,16 +8,19 @@ const caption = z.object({
 
 // A row is either a list of image IDs ("05v" = portrait) or a block of text.
 // A nested list in a row stacks those photos into one column: ["A", ["B", "C"]].
-// `text-r:` instead of `text:` puts the text on the right, right-aligned.
+// `text-r:` instead of `text:` puts the text on the right, right-aligned; `text-f:` uses the full width.
+// Like asides, a text section can be a list mixing text and snapshot images (their own small lightbox).
+// A string with no spaces ending in a photo extension is an image, in .mp4/.mov/.m4v a video (tap to play);
+// anything else is text (one paragraph each).
+const textItems = z.union([z.string(), z.array(z.string()).min(1)]);
 const row = z.union([
   z.array(z.union([z.string(), z.array(z.string()).min(2)])).min(1),
-  z.object({ text: z.string() }),
-  z.object({ 'text-r': z.string() }),
+  z.object({ text: textItems }),
+  z.object({ 'text-r': textItems }),
+  z.object({ 'text-f': textItems }),
+  // An aside beside the photo row right above it: `- aside: ["story…", "Snapchat-1.jpg", ...]`.
+  z.object({ aside: textItems }),
 ]);
-
-// An aside next to a photo's row: "DSCF0727.JPG": ["story…", "Snapchat-1.jpg", ...], or just "story…".
-// A string with no spaces ending in a photo extension is an image; anything else is text (one paragraph each).
-const aside = z.union([z.string(), z.array(z.string()).min(1)]);
 
 // The home page thumbnail: a photo from rows, cropped to a square. `zoom` 1 = the biggest square that
 // fits; `x`/`y` (0–100) = the point of the photo at the square's centre.
@@ -46,7 +49,8 @@ const posts = defineCollection({
       rows: z.array(row).min(1),
       // nullish: a `captions:` key with only comments under it parses as null.
       captions: z.record(z.string(), caption).nullish().transform((c) => c ?? {}),
-      commentary: z.record(z.string(), aside).nullish().transform((c) => c ?? {}),
+      // Old format (asides keyed by photo, top level); asides now go inline in rows as `- aside:`. Only kept to point that out.
+      commentary: z.unknown().optional(),
       // Photos from rows the home page hero may show (picked at random on each visit).
       feature: z.array(z.string()).min(1).optional(),
       // Show each photo's aperture · shutter · ISO under it (from the camera data). A caption's own
@@ -56,17 +60,36 @@ const posts = defineCollection({
       const ids = new Set(
         data.rows.flatMap((r) => (Array.isArray(r) ? r.flat().map(stripPortrait) : [])),
       );
-      for (const [field, label] of [['captions', 'Caption'], ['commentary', 'Commentary']] as const) {
-        for (const key of Object.keys(data[field])) {
-          if (!ids.has(stripPortrait(key))) {
-            ctx.addIssue({
-              code: 'custom',
-              path: [field, key],
-              message: `${label} for "${key}", but no photo with that ID is in rows`,
-            });
-          }
+      for (const key of Object.keys(data.captions)) {
+        if (!ids.has(stripPortrait(key))) {
+          ctx.addIssue({
+            code: 'custom',
+            path: ['captions', key],
+            message: `Caption for "${key}", but no photo with that ID is in rows`,
+          });
         }
       }
+      if (data.commentary != null) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['commentary'],
+          message: 'Asides now go in rows: put `- aside: [...]` right after the photo row it belongs to',
+        });
+      }
+      // An aside row needs a photo row above it (other aside rows in between are fine).
+      let photoRowAbove = false;
+      data.rows.forEach((r, i) => {
+        if (Array.isArray(r)) photoRowAbove = true;
+        else if ('aside' in r) {
+          if (!photoRowAbove) {
+            ctx.addIssue({
+              code: 'custom',
+              path: ['rows', i],
+              message: '`aside` must come right after a photo row (it sits beside that row)',
+            });
+          }
+        } else photoRowAbove = false;
+      });
       if (!ids.has(stripPortrait(data.cover.photo))) {
         ctx.addIssue({
           code: 'custom',

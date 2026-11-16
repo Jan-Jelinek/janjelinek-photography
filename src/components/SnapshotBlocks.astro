@@ -1,0 +1,43 @@
+---
+// Text and snapshot strips in the order written (an aside, or a text section in rows).
+// All of the snapshots are numbered as one group; the caller wraps them in a .snapshot-gallery.
+import SnapshotStrip, { type Snapshot } from "./SnapshotStrip.astro";
+
+export type Block = { kind: "text"; paragraphs: string[][] } | { kind: "photos"; photos: Snapshot[] };
+
+interface Props {
+  blocks: Block[];
+  /** `sizes` for the thumbnails, given a strip's number of columns. */
+  sizes: (cols: number) => string;
+  /** For alt text, e.g. "aside 03". */
+  label: string;
+  /** Classes for each run of text. */
+  textClass: string;
+  /** Classes for each strip. */
+  stripClass?: string;
+  /** Keep each strip on one line (see SnapshotStrip). */
+  oneLine?: boolean;
+}
+
+const { blocks, sizes, label, textClass, stripClass, oneLine } = Astro.props;
+const total = blocks.reduce((n, b) => n + (b.kind === "photos" ? b.photos.length : 0), 0);
+let seen = 0;
+const items = blocks.map((block) => {
+  if (block.kind === "text") return block;
+  const first = seen;
+  seen += block.photos.length;
+  return { ...block, first };
+});
+---
+
+{items.map((block) =>
+  block.kind === "photos" ? (
+    <SnapshotStrip photos={block.photos} sizes={sizes} label={label} first={block.first} total={total} class={stripClass} oneLine={oneLine} />
+  ) : (
+    <div class={textClass}>
+      {block.paragraphs.map((lines) => (
+        <p>{lines.map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
+      ))}
+    </div>
+  ),
+)}

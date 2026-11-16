@@ -1,13 +1,14 @@
 # r2sync
 
 Moves photos from your PC → the **master** bucket (originals, private) → the **public** bucket
-(resized AVIF + WebP that the site serves from `i.jelinekphotos.com`, plus one wallpaper JPEG per photo
+(resized AVIF + WebP that the site serves from `images.jj.photography`, plus one wallpaper JPEG per photo
 for the lightbox's download button).
 
 ## Setup (once)
 
 ```
 py -m pip install -r r2sync/requirements.txt
+winget install ffmpeg      # for videos; open a new terminal afterwards
 ```
 
 `.env` in the repo root (gitignored):
@@ -16,8 +17,8 @@ py -m pip install -r r2sync/requirements.txt
 R2_ACCOUNT_ID=...          # Cloudflare → R2 → Account details
 R2_ACCESS_KEY_ID=...       # R2 → Manage API tokens → Object Read & Write,
 R2_SECRET_ACCESS_KEY=...   #   limited to both buckets
-R2_MASTER_BUCKET=jelinekphotos-master
-R2_PUBLIC_BUCKET=jelinekphotos-public
+R2_MASTER_BUCKET=...-original
+R2_PUBLIC_BUCKET=...-public
 ```
 
 The public bucket needs the custom domain connected in its R2 settings. Until then you can point the
@@ -32,11 +33,17 @@ site at the bucket's `r2.dev` URL with `PUBLIC_IMAGE_BASE=https://pub-xxxx.r2.de
    - **edited**: uploaded, but your local copy is different
 3. `py r2sync push 2025-peak-fog`: uploads the photos used in rows, converts them, and moves the
    local copies to the Recycle Bin. The badges disappear.
-   Only photos used in rows or in `commentary` asides are uploaded; leftovers in the folder are skipped.
+   Only photos used in rows, text sections or asides are uploaded; leftovers in the folder are skipped.
 4. `py r2sync unused 2025-peak-fog` lists those leftovers; delete the ones you don't need.
 5. Commit `post.mdx` and `photos.json`, push.
 
 To re-edit a photo, drop the new version in the folder under the same name and push again.
+To remove uploaded photos, take them out of the post, then `py r2sync prune <collection>` and commit `photos.json`.
+
+**Videos** (`.mp4`, `.mov`, `.m4v`) work the same way, in text sections and asides only. `push` turns
+each into a 1080p H.264 MP4 with sound (short edge 1080, so phone clips come out 1080×1920), without
+location or phone data, plus a poster image from its first frame. Locally, before pushing, the video
+plays straight from the folder (and the tile shows its first frame).
 
 ## Commands
 
@@ -44,6 +51,7 @@ To re-edit a photo, drop the new version in the folder under the same name and p
 |---|---|
 | `py r2sync push <collection>` | Local → master → public, then removes the local copies. `--keep` keeps them; `--dry-run` only shows the plan. Photos in the folder but not in rows are left alone. |
 | `py r2sync run` | Makes public match master. Use after changing the master bucket by hand in the dashboard. `--dry-run` shows the plan; `--yes` skips the "delete more than 10 files?" question. |
+| `py r2sync prune <collection>` | Deletes uploaded photos the post no longer uses (not in rows, text sections or asides): the original in master, its public files, and its `photos.json` entry. Lists them and always asks first (`--yes` skips that; `--dry-run` only lists). Permanent, so double-check commented-out photos. Leaves files on your PC alone. Commit `photos.json` after. |
 | `py r2sync unused [collection]` | Local only, no `.env` needed. Lists photos in collection folders that aren't in rows (leftovers from tinkering) so you can delete them. Deletes nothing. |
 | `py r2sync check` | Changes nothing. Reports photos not pushed, local edits, photos in rows that are missing, masters not converted, unused files. Exits with an error if the deploy would break. |
 
@@ -72,4 +80,6 @@ files that aren't really uploaded.
 Sizes and quality are at the top of `convert.py` (long edges 720/1200/1800/2400, AVIF q60, WebP q82;
 download JPEG `DOWNLOAD_EDGE` 2592 at q90, kept below 4K so it's no substitute for a print). The JPEG is
 saved as `jan-jelinek-<collection>-<file>.jpg` and contains no camera data, only Artist/Copyright.
+Videos: `VIDEO_SHORT_EDGE` 1080, x264 CRF 22 capped at 6 Mbit/s (`VIDEO_MAXRATE`), AAC 160k; HDR
+clips are tone-mapped to normal colors.
 After changing them, delete the `photos.json` files and run `py r2sync run` to rebuild public from master.

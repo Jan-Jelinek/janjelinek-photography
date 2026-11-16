@@ -1,11 +1,16 @@
 """Turns one original into the files the site serves: AVIF + WebP at a few sizes, a wallpaper JPEG,
-a tiny blurred preview, and camera info."""
+a tiny blurred preview, and camera info. Videos: a 1080p MP4 plus a poster made the same way."""
 
 from __future__ import annotations
 
 import base64
+import json
+import shutil
+import subprocess
+import tempfile
 from dataclasses import dataclass
 from io import BytesIO
+from pathlib import Path
 
 from PIL import ExifTags, Image, ImageCms, ImageOps
 
@@ -146,3 +151,80 @@ def convert(data: bytes) -> Converted:
     lqip = "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode()
 
     return Converted(width, height, variants, _download_jpg(im), lqip, exif)
+
+
+# --- Videos (text sections and asides): a 1080p H.264 MP4 plus a poster image. Needs ffmpeg. ---
+
+VIDEO_SHORT_EDGE = 1080  # "1080p": the short edge, so portrait phone clips come out 1080×1920
+VIDEO_CRF = 22  # x264 quality, lower = better/bigger (18 ≈ visually lossless, 23 = default)
+VIDEO_PRESET = "slow"
+# Cap for busy footage (water, foliage), where CRF alone can go past the phone's own bitrate.
+VIDEO_MAXRATE, VIDEO_BUFSIZE = "6M", "12M"
+AUDIO_BITRATE = "160k"
+HDR_TRANSFERS = {"arib-std-b67", "smpte2084"}  # HLG / PQ (phone HDR video)
+
+
+@dataclass
+class ConvertedVideo:
+    mp4: bytes
+    w: int
+    h: int
+    duration: float
+    poster: Converted  # first frame, made like a photo: variants + lqip (its download isn't used)
+
+
+def _tool(name: str) -> str:
+    path = shutil.which(name)
+    if not path:
+        raise RuntimeError(f"{name} not found: install ffmpeg (winget install ffmpeg) and open a new terminal")
+    return path
+
+
+def _probe(path: Path) -> dict:
+    out = subprocess.run(
+        [_tool("ffprobe"), "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=width,height,color_transfer:format=duration", "-of", "json", str(path)],
+        check=True, capture_output=True, text=True,
+    ).stdout
+    data = json.loads(out)
+    stream = (data.get("streams") or [{}])[0]
+    return {**stream, "duration": float(data.get("format", {}).get("duration") or 0)}
+
+
+def convert_video(data: bytes, suffix: str = ".mp4") -> ConvertedVideo:
+    with tempfile.TemporaryDirectory() as tmp:
+        src, out, poster = Path(tmp) / f"in{suffix}", Path(tmp) / "out.mp4", Path(tmp) / "poster.png"
+        src.write_bytes(data)
+        info = _probe(src)
+
+        # ffmpeg turns phone clips upright on its own (rotation metadata), before these filters.
+        filters = []
+        if info.get("color_transfer") in HDR_TRANSFERS:
+            filters.append(
+                "zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,"
+                "tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv"
+            )
+        e = VIDEO_SHORT_EDGE
+        # Short edge to at most 1080 (never up); -2 keeps the other side even, which H.264 needs.
+        filters.append(f"scale='if(lte(iw,ih),min({e},iw),-2)':'if(lte(iw,ih),-2,min({e},ih))'")
+        filters.append("format=yuv420p")
+
+        subprocess.run(
+            [_tool("ffmpeg"), "-v", "error", "-y", "-i", str(src),
+             "-map", "0:v:0", "-map", "0:a:0?", "-vf", ",".join(filters),
+             "-c:v", "libx264", "-preset", VIDEO_PRESET, "-crf", str(VIDEO_CRF), "-profile:v", "high",
+             "-maxrate", VIDEO_MAXRATE, "-bufsize", VIDEO_BUFSIZE,
+             "-c:a", "aac", "-b:a", AUDIO_BITRATE,
+             "-map_metadata", "-1",  # no GPS / phone info in the file
+             "-movflags", "+faststart",  # can start playing before it's fully downloaded
+             str(out)],
+            check=True, capture_output=True, text=True,
+        )
+        # Poster from the finished file, so it's upright and has the same colors.
+        subprocess.run(
+            [_tool("ffmpeg"), "-v", "error", "-y", "-i", str(out), "-frames:v", "1", str(poster)],
+            check=True, capture_output=True, text=True,
+        )
+        done = _probe(out)
+        return ConvertedVideo(out.read_bytes(), int(done["width"]), int(done["height"]),
+                              round(done["duration"], 2), convert(poster.read_bytes()))

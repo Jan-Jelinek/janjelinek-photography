@@ -4,7 +4,7 @@ A minimalist, personal photography site to showcase some of my favorite shots.
 
 Built with [Astro](https://astro.build/) and optimized for speed, responsiveness, and a great viewing experience across devices.
 
-🌐 Live site: [jelinekphotos.com](https://jelinekphotos.com)
+🌐 Live site: [jj.photography](https://jj.photography)
 
 ## Tech Stack
 

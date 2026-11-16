@@ -2,6 +2,7 @@
 
     py r2sync push <collection> [--keep] [--dry-run]
     py r2sync run [--yes] [--dry-run]
+    py r2sync prune <collection> [--yes] [--dry-run]
     py r2sync check
     py r2sync unused [collection]
 
@@ -21,7 +22,7 @@ from dotenv import load_dotenv
 
 import manifest
 import posts
-from convert import convert
+from convert import convert, convert_video
 from store import Store, open_stores
 
 CACHE_FOREVER = "public, max-age=31536000, immutable"  # safe: public file names change when the photo does
@@ -35,16 +36,13 @@ def sha256(data: bytes) -> str:
 
 def publish(coll: str, name: str, data: bytes, etag: str, public: Store) -> dict:
     """Convert one original, upload its files to public, and return its photos.json entry."""
+    if posts.VIDEO.search(name):
+        return publish_video(coll, name, data, etag, public)
     digest = sha256(data)
     version = digest[:8]
     stem = Path(name).stem
     converted = convert(data)
-    variants = []
-    for v in converted.variants:
-        base = f"{coll}/{stem}.{version}-{v.edge}"
-        public.put(f"{base}.avif", v.avif, CACHE_FOREVER)
-        public.put(f"{base}.webp", v.webp, CACHE_FOREVER)
-        variants.append({"edge": v.edge, "w": v.w, "h": v.h, "avif": f"{base}.avif", "webp": f"{base}.webp"})
+    variants = upload_variants(coll, stem, version, converted.variants, public)
     d = converted.download
     download_key = f"{coll}/{stem}.{version}-{max(d.w, d.h)}.jpg"
     public.put(download_key, d.jpg, CACHE_FOREVER, download_name=f"jan-jelinek-{coll}-{stem}.jpg".lower())
@@ -58,6 +56,36 @@ def publish(coll: str, name: str, data: bytes, etag: str, public: Store) -> dict
         "download": {"key": download_key, "w": d.w, "h": d.h},
         "lqip": converted.lqip,
         "exif": converted.exif,
+    }
+
+
+def upload_variants(coll: str, stem: str, version: str, variants, public: Store) -> list[dict]:
+    out = []
+    for v in variants:
+        base = f"{coll}/{stem}.{version}-{v.edge}"
+        public.put(f"{base}.avif", v.avif, CACHE_FOREVER)
+        public.put(f"{base}.webp", v.webp, CACHE_FOREVER)
+        out.append({"edge": v.edge, "w": v.w, "h": v.h, "avif": f"{base}.avif", "webp": f"{base}.webp"})
+    return out
+
+
+def publish_video(coll: str, name: str, data: bytes, etag: str, public: Store) -> dict:
+    """A video: 1080p MP4 plus a poster (first frame) at the photo sizes. No wallpaper download."""
+    digest = sha256(data)
+    version = digest[:8]
+    stem = Path(name).stem
+    converted = convert_video(data, Path(name).suffix.lower())
+    video_key = f"{coll}/{stem}.{version}-{min(converted.w, converted.h)}.mp4"
+    public.put(video_key, converted.mp4, CACHE_FOREVER)
+    return {
+        "sha256": digest,
+        "etag": etag,
+        "version": version,
+        "width": converted.w,
+        "height": converted.h,
+        "variants": upload_variants(coll, f"{stem}.poster", version, converted.poster.variants, public),
+        "lqip": converted.poster.lqip,
+        "video": {"key": video_key, "w": converted.w, "h": converted.h, "duration": converted.duration},
     }
 
 
@@ -211,7 +239,7 @@ def cmd_run(args) -> int:
         drop = set()
         for file in sorted(set(entries) - set(files)):
             if file in coll.referenced:
-                lines.append(f"  KEPT     {file}  deleted from master but still used; remove it from rows/commentary first")
+                lines.append(f"  KEPT     {file}  deleted from master but still used; remove it from rows/asides first")
             else:
                 lines.append(f"  drop     {file}  deleted from master")
                 drop.add(file)
@@ -322,6 +350,55 @@ def cmd_check(args) -> int:
     return 1 if problems else 0
 
 
+# --- prune ----------------------------------------------------------------------------------------
+
+
+def cmd_prune(args) -> int:
+    """Delete uploaded photos the post no longer uses: master original, public files, photos.json entry."""
+    colls = posts.all_collections()
+    coll = colls.get(args.collection)
+    if not coll:
+        sys.exit(f"No collection {args.collection!r}. Collections: {', '.join(colls)}")
+    master, public = open_stores(posts.REPO)
+    entries = manifest.load(coll.dir)
+    masters = {k.split("/", 1)[1]: k for k in master.list(f"{coll.name}/")}
+    gone = sorted((set(entries) | set(masters)) - set(coll.referenced))
+
+    print(coll.name)
+    if not gone:
+        print("  nothing to prune: every uploaded photo is used in rows, text sections or asides")
+        return 0
+    master_keys = [masters[f] for f in gone if f in masters]
+    public_keys = [k for f in gone if f in entries for k in manifest.public_keys(entries[f])]
+    for file in gone:
+        where = [w for w, there in (("master", file in masters), ("public", file in entries)) if there]
+        print(f"  prune    {file}  ({' + '.join(where)})")
+    print(f"\n{len(gone)} photo(s) not in the post: {len(master_keys)} original(s) in master, "
+          f"{len(public_keys)} public file(s).")
+    if coll.local and any(f in coll.local for f in gone):
+        print("  (copies on your PC are left alone; `py r2sync unused` lists them)")
+    if args.dry_run:
+        print("Dry run: nothing deleted.")
+        return 0
+    # Deleting from master is permanent (unless the bucket has versioning), so always ask.
+    if not confirm(f"Permanently delete these {len(gone)} photo(s) from R2?", args.yes):
+        print("  nothing deleted")
+        return 0
+
+    if master_keys:
+        master.delete(master_keys)
+    if public_keys:
+        public.delete(public_keys)
+    for file in gone:
+        entries.pop(file, None)
+    manifest.save(coll.dir, entries)
+    print(f"  deleted {len(master_keys)} original(s) and {len(public_keys)} public file(s)")
+    # Leftovers from earlier versions, same sweep as push.
+    delete_public(public, set(public.list(f"{coll.name}/")) - all_public_keys(entries), yes=False, dry=False)
+    print(f"\nNext: commit {coll.name}/{manifest.FILE}.")
+    return 0
+
+
 # --- unused ---------------------------------------------------------------------------------------
 
 
@@ -364,6 +441,12 @@ def main() -> int:
     p.add_argument("--yes", action="store_true", help="don't ask before deleting many files")
     p.add_argument("--dry-run", action="store_true", help="only show what would happen")
     p.set_defaults(fn=cmd_run)
+
+    p = sub.add_parser("prune", help="delete uploaded photos the post no longer uses (master + public + photos.json)")
+    p.add_argument("collection", help="folder name in src/collections, e.g. 2025-peak-fog")
+    p.add_argument("--yes", action="store_true", help="don't ask before deleting")
+    p.add_argument("--dry-run", action="store_true", help="only show what would be deleted")
+    p.set_defaults(fn=cmd_prune)
 
     p = sub.add_parser("check", help="report what's out of sync (changes nothing)")
     p.set_defaults(fn=cmd_check)

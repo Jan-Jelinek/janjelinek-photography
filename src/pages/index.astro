@@ -67,7 +67,7 @@ const fallback = heroes[0][0];
     <div aria-hidden="true" class="hero-fade absolute inset-0"></div>
     <div class="site-container relative flex flex-wrap items-end justify-between gap-6 pb-10 sm:pb-14">
       <h1 class="max-w-[760px] font-display text-[clamp(44px,7vw,96px)] leading-[0.98] font-light tracking-[-0.02em] text-balance text-strong">
-        Four years, four latitudes, one camera.
+        Solo Traveling the World
       </h1>
       <a id="hero-link" href={fallback.href} class="flex flex-col gap-1 text-[13px] tracking-[0.06em] text-muted uppercase transition-colors hover:text-strong">
         <span id="hero-title">{fallback.title}</span>
@@ -115,11 +115,12 @@ const fallback = heroes[0][0];
 
   <section id="about" class="site-container grid items-start gap-8 pt-6 pb-20 md:grid-cols-2 md:gap-12">
     <p class="max-w-[560px] font-display text-[24px] leading-[1.3] font-light text-pretty text-fg italic sm:text-[28px]">
-      "If you cross the glacier, you get to walk on the moon"
+      "I'm not a good photographer, I've never studied this.
+      I just take thousands of shots and hope that at least 1/500 of them aren't awful."
     </p>
     <div class="flex flex-col gap-3 text-[15px] leading-relaxed text-muted">
       <p>
-        Jan Jelinek travels the world alone with just his backpack and a camera, sharing his experiences online.
+        Check me out on instagram
       </p>
       <InstagramLink />
     </div>
@@ -177,6 +178,9 @@ const fallback = heroes[0][0];
     .title,
     .meta {
       align-self: center;
+    }
+    .meta {
+      text-align: right;
     }
     .collection-row :global(.thumb) {
       width: 120px;

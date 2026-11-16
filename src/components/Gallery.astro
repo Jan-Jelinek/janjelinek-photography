@@ -1,6 +1,7 @@
 ---
 import GalleryPhoto from "./GalleryPhoto.astro";
 import GalleryAside from "./GalleryAside.astro";
+import SnapshotBlocks from "./SnapshotBlocks.astro";
 import { exposureText, loadPhoto as loadPhotoFrom } from "../lib/photos";
 
 interface Caption {
@@ -10,21 +11,25 @@ interface Caption {
 
 /** An image ID, or a list of IDs stacked into one column. */
 type RowItem = string | string[];
+/** A text section or aside: one string, or a list of text and image file names. */
+type TextItems = string | string[];
 
 interface Props {
   slug: string;
   title: string;
   /** Folder holding the post, e.g. "src/collections/2025-peak-fog". */
   dir: string;
-  rows: (RowItem[] | { text: string } | { "text-r": string })[];
+  /**
+   * Photo rows; text sections: text (left, max 640px), text-r (right), text-f (full width);
+   * and asides: `aside` right after a photo row sits beside that row.
+   */
+  rows: (RowItem[] | { text: TextItems } | { "text-r": TextItems } | { "text-f": TextItems } | { aside: TextItems })[];
   captions: Record<string, Caption>;
-  /** Asides, keyed by the photo they sit next to: text and/or image file names. */
-  commentary: Record<string, string | string[]>;
   /** Fill each caption's exposure from the photo's camera data. */
   autoCaptions?: boolean;
 }
 
-const { slug, title, dir, rows, captions, commentary, autoCaptions = false } = Astro.props;
+const { slug, title, dir, rows, captions, autoCaptions = false } = Astro.props;
 
 // Tallest a row's photos get on wide screens, in px.
 const MAX_ROW_HEIGHT = 800;
@@ -37,6 +42,8 @@ const rowWidth = (count: number) => ROW_WIDTH_BY_COUNT[count - 1] ?? 100;
 // From 1920px wide they hang in the page margin (the row keeps its size); see the CSS below.
 const ASIDE_WIDTH = 256;
 const ASIDE_GAP_REM = 2;
+// Snapshot strips in text sections are at most 640px wide (even in text-f).
+const TEXT_SNAPSHOT_SIZES = (cols: number) => `min(${Math.round(640 / cols)}px, ${Math.round(100 / cols)}vw)`;
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
@@ -50,24 +57,30 @@ const splitText = (text: string) =>
     .split(/\n\s*\n/)
     .map((p) => p.split(/(?:\s*(?:<br\s*\/?>|\\n|\n)\s*)+/i));
 
-// In `commentary`, a string with no spaces ending in a photo extension is an image; anything else is text.
-const ASIDE_IMAGE = /^\S+\.(jpe?g|png|webp|avif|tiff?)$/i;
-const asideFor = (raw: string) => {
-  const items = commentary[raw] ?? commentary[raw.replace(/v$/, "")];
-  return items === undefined ? undefined : [items].flat().map((s) => s.trim());
-};
-let asideCount = 0;
+// In asides and text sections, a string with no spaces ending in a photo or video extension is a
+// snapshot; anything else is text.
+const SNAPSHOT = /^\S+\.(jpe?g|png|webp|avif|tiff?|mp4|mov|m4v)$/i;
+const listOf = (items: TextItems) => [items].flat().map((s) => s.trim());
 
-async function loadAside(number: string, frame: string, items: string[]) {
-  return {
-    number,
-    frame,
-    paragraphs: items.filter((s) => !ASIDE_IMAGE.test(s)).flatMap(splitText),
-    // Snapshots, not frames: no download button.
-    photos: await Promise.all(
-      items.filter((s) => ASIDE_IMAGE.test(s)).map(async (file) => ({ ...(await loadPhoto(file)), download: undefined })),
+// Items in the order written: each run of text is one text block, each run of images one thumbnail strip.
+async function loadBlocks(items: string[]) {
+  const runs: { images: boolean; items: string[] }[] = [];
+  for (const item of items) {
+    const images = SNAPSHOT.test(item);
+    if (runs.at(-1)?.images === images) runs.at(-1)!.items.push(item);
+    else runs.push({ images, items: [item] });
+  }
+  return Promise.all(
+    runs.map(async (run) =>
+      run.images
+        ? {
+            kind: "photos" as const,
+            // Snapshots, not frames: no download button.
+            photos: await Promise.all(run.items.map(async (file) => ({ ...(await loadPhoto(file)), download: undefined }))),
+          }
+        : { kind: "text" as const, paragraphs: run.items.flatMap(splitText) },
     ),
-  };
+  );
 }
 
 const round = (n: number) => Number(n.toFixed(5));
@@ -84,35 +97,49 @@ const minusRem = (n: number) => (n >= 0 ? ` - ${round(n)}rem` : ` + ${round(-n)}
  *   widths + (k-1)g = W   →   H = (W - g(k-1-C)) / R
  * where R = Σ column ratios and C = Σ over stacks of rS(n-1).
  */
+// Each `aside` row joins the photo row above it (the schema checks there is one), numbered in order.
+type Section = Exclude<(typeof rows)[number], { aside: TextItems }>;
+const sections: { row: Section; asides: { number: string; items: string[] }[] }[] = [];
+let asideCount = 0;
+for (const row of rows) {
+  if (!Array.isArray(row) && "aside" in row) {
+    sections.at(-1)?.asides.push({ number: pad(++asideCount), items: listOf(row.aside).filter(Boolean) });
+  } else {
+    sections.push({ row, asides: [] });
+  }
+}
+
 let frame = 0;
 const blocks = await Promise.all(
-  rows.map(async (row) => {
+  sections.map(async ({ row, asides: rowAsides }) => {
     if (!Array.isArray(row)) {
-      const right = "text-r" in row;
-      return { kind: "text" as const, right, paragraphs: splitText(right ? row["text-r"] : row.text) };
+      const align = "text-r" in row ? "right" : "text-f" in row ? "full" : "left";
+      const items = "text-r" in row ? row["text-r"] : "text-f" in row ? row["text-f"] : row.text;
+      return { kind: "text" as const, align, blocks: await loadBlocks(listOf(items).filter(Boolean)) };
     }
 
-    // Numbered before the first await, so frames and asides count in reading order.
-    const groups = row.map((item) =>
-      (Array.isArray(item) ? item : [item]).map((raw) => {
-        const items = asideFor(raw);
-        return { raw, number: pad(++frame), aside: items && { number: pad(++asideCount), items } };
-      }),
-    );
+    // Numbered before the first await, so frames count in reading order.
+    const groups = row.map((item) => (Array.isArray(item) ? item : [item]).map((raw) => ({ raw, number: pad(++frame) })));
+    // The aside badge goes on the row's top-right photo (top of the last column), nearest the aside.
+    const marked = groups.at(-1)![0];
 
     const asides = await Promise.all(
-      groups.flat().flatMap(({ number, aside }) => (aside ? [loadAside(aside.number, number, aside.items)] : [])),
+      rowAsides.map(async ({ number, items }) => ({ number, frame: marked.number, blocks: await loadBlocks(items) })),
     );
 
     const columns = await Promise.all(
       groups.map(async (group, i) => {
         const photos = await Promise.all(
-          group.map(async ({ raw, number, aside }) => {
+          group.map(async ({ raw, number }) => {
+            if (/\.(mp4|mov|m4v)$/i.test(raw)) {
+              throw new Error(`"${raw}" is a video: videos only go in text sections and asides, not photo rows.`);
+            }
             const photo = await loadPhoto(raw);
             const manual = captions[photo.key] ?? captions[raw];
             // Auto captions only show in the lightbox; hand-written captions still show under the photo.
             const exposure = manual?.exposure ?? (autoCaptions ? exposureText(photo.exposure) : undefined);
-            return { ...photo, number, aside: aside?.number, caption: manual, lightboxCaption: exposure };
+            const aside = number === marked.number ? asides[0]?.number : undefined;
+            return { ...photo, number, aside, caption: manual, lightboxCaption: exposure };
           }),
         );
         return {
@@ -160,13 +187,19 @@ const blocks = await Promise.all(
     block.kind === "text" ? (
       <div
         class:list={[
-          "gallery-text flex max-w-[640px] flex-col gap-4 py-8 sm:py-10 font-display text-[22px] leading-[1.35] font-light text-pretty text-fg sm:text-[26px]",
-          block.right && "self-end text-right",
+          "gallery-text snapshot-gallery flex flex-col gap-6 py-8 sm:py-10",
+          block.align === "full" ? "w-full" : "max-w-[640px]",
+          block.align === "right" && "self-end items-end",
         ]}
       >
-        {block.paragraphs.map((lines) => (
-          <p>{lines.map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
-        ))}
+        <SnapshotBlocks
+          blocks={block.blocks}
+          sizes={TEXT_SNAPSHOT_SIZES}
+          label="this section"
+          textClass={`flex flex-col gap-4 font-display text-[22px] leading-[1.35] font-light text-pretty text-fg sm:text-[26px]${block.align === "right" ? " text-right" : ""}`}
+          stripClass="w-full max-w-[640px]"
+          oneLine
+        />
       </div>
     ) : (
       <div class:list={[block.asides.length > 0 && "aside-row"]} style={block.style}>
@@ -296,6 +329,13 @@ const blocks = await Promise.all(
     pointer-events: none;
     transition: opacity 0.25s;
   }
+  /* Sized by PhotoSwipe; max-width: none undoes Tailwind's video { max-width: 100% } (as PhotoSwipe does for img). */
+  :global(.pswp__video) {
+    position: absolute;
+    max-width: none;
+    background: #000;
+    object-fit: contain;
+  }
   :global(.pswp--ui-visible .pswp__exposure) {
     opacity: 1;
   }
@@ -310,8 +350,43 @@ const blocks = await Promise.all(
 
   const options = { zoom: false, loop: false, pswpModule: () => import("photoswipe") };
 
-  // Each aside's snapshots are their own little gallery, separate from the frames.
-  new PhotoSwipeLightbox({ gallery: ".aside-gallery", children: "a.aside-item", ...options }).init();
+  // Each aside's / text section's snapshots are their own little gallery, separate from the frames.
+  const snapshots = new PhotoSwipeLightbox({ gallery: ".snapshot-gallery", children: "a.snapshot-item", ...options });
+
+  // Videos (data-pswp-video): a <video> slide with controls and sound. Only plays when tapped.
+  snapshots.addFilter("itemData", (data) => {
+    const el = data.element as HTMLElement | undefined;
+    if (el?.dataset.pswpVideo) {
+      data.type = "video";
+      data.videoSrc = el.dataset.pswpVideo;
+      data.poster = el.dataset.pswpPoster;
+    }
+    return data;
+  });
+  snapshots.on("contentLoad", (e) => {
+    const { content } = e;
+    if (content.type !== "video") return;
+    e.preventDefault();
+    const video = document.createElement("video");
+    video.src = content.data.videoSrc as string;
+    if (content.data.poster) video.poster = content.data.poster as string;
+    video.controls = true;
+    video.playsInline = true;
+    video.preload = "metadata";
+    video.className = "pswp__video";
+    // Let the video's own controls get taps and drags instead of PhotoSwipe (swipe / close).
+    for (const type of ["pointerdown", "mousedown", "touchstart"]) {
+      video.addEventListener(type, (event) => event.stopPropagation());
+    }
+    // PhotoSwipe's types only know <img>/<div>; any element works (it's sized via setDisplayedSize).
+    content.element = video as unknown as HTMLDivElement;
+    content.onLoaded();
+  });
+  // Nothing keeps playing once you move on or close.
+  const pauseVideos = () => snapshots.pswp?.element?.querySelectorAll("video").forEach((v) => v.pause());
+  snapshots.on("change", pauseVideos);
+  snapshots.on("close", pauseVideos);
+  snapshots.init();
 
   const lightbox = new PhotoSwipeLightbox({ gallery: "#gallery", children: "a.pswp-item", ...options });
 

@@ -1,0 +1,114 @@
+---
+// A strip of snapshot thumbnails (in an aside or a text section). Opens in the lightbox of the nearest
+// .snapshot-gallery, separate from the frames. One photo shows (nearly) its own shape; several become
+// squares, at most 4 shown (+N on the last). A video shows its poster with a play button and only
+// plays in the lightbox, when tapped.
+import type { Video } from "../lib/photos";
+
+export interface Snapshot {
+  width: number;
+  height: number;
+  src: string;
+  srcset: string;
+  avifSrcset?: string;
+  lqip?: string;
+  badge?: string;
+  href: string;
+  lightboxSrcset: string;
+  lightboxWidth: number;
+  lightboxHeight: number;
+  video?: Video;
+}
+
+interface Props {
+  photos: Snapshot[];
+  /** `sizes` for the thumbnails, given the number of columns. */
+  sizes: (cols: number) => string;
+  /** For alt text: "Snapshot {first + i + 1} of {total} for {label}". */
+  label: string;
+  first?: number;
+  total?: number;
+  class?: string;
+  /** Keep every tile on one line (4 shown at most). Otherwise 4 make a 2×2 grid. */
+  oneLine?: boolean;
+}
+
+const { photos, sizes: sizesFor, label, first = 0, total = photos.length, class: className, oneLine = false } = Astro.props;
+const MAX_TILES = 4;
+const round = (n: number) => Number(n.toFixed(4));
+const clamp = (n: number, min: number, max: number) => Math.min(Math.max(n, min), max);
+const cols = oneLine ? Math.min(photos.length, MAX_TILES) : photos.length === 1 ? 1 : photos.length === 3 ? 3 : 2;
+const shown = Math.min(photos.length, MAX_TILES);
+const tileRatio = photos.length === 1 ? round(clamp(photos[0].width / photos[0].height, 4 / 5, 16 / 9)) : 1;
+const sizes = sizesFor(cols);
+---
+
+<div class:list={["grid gap-1.5", className]} style={`grid-template-columns: repeat(${cols}, minmax(0, 1fr))`}>
+  {photos.map((photo, i) => (
+    <a
+      href={photo.href}
+      target="_blank"
+      class:list={["snapshot-item relative block overflow-hidden bg-line bg-cover", i >= shown && "hidden"]}
+      style={photo.lqip ? `background-image: url(${photo.lqip})` : undefined}
+      data-pswp-srcset={photo.video ? undefined : photo.lightboxSrcset}
+      data-pswp-width={photo.lightboxWidth}
+      data-pswp-height={photo.lightboxHeight}
+      data-pswp-video={photo.video?.src}
+      data-pswp-poster={photo.video?.poster}
+      data-cropped="true"
+      aria-label={photo.video ? `Play video ${first + i + 1} of ${total} for ${label}` : undefined}
+    >
+      {photo.video && !photo.src ? (
+        // Not uploaded yet, so no poster: the browser shows the video's first frame (it doesn't play here).
+        <video
+          src={`${photo.video.src}#t=0.1`}
+          preload="metadata"
+          muted
+          playsinline
+          aria-hidden="true"
+          class="pointer-events-none block w-full object-cover"
+          style={`aspect-ratio: ${tileRatio}`}
+        />
+      ) : (
+        <picture class="block">
+          {photo.avifSrcset && <source type="image/avif" srcset={photo.avifSrcset} sizes={sizes} />}
+          <img
+            src={photo.src}
+            srcset={photo.srcset}
+            sizes={sizes}
+            width={photo.width}
+            height={photo.height}
+            alt={photo.video ? "" : `Snapshot ${first + i + 1} of ${total} for ${label}`}
+            loading="lazy"
+            decoding="async"
+            class="block w-full object-cover"
+            style={`aspect-ratio: ${tileRatio}`}
+          />
+        </picture>
+      )}
+      {photo.video && !(i === shown - 1 && photos.length > shown) && (
+        <span aria-hidden="true" class="absolute inset-0 flex items-center justify-center">
+          <span class="play flex size-12 items-center justify-center rounded-full bg-black/55 text-white backdrop-blur-sm transition-transform">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z" /></svg>
+          </span>
+        </span>
+      )}
+      {i === shown - 1 && photos.length > shown && (
+        <span class="absolute inset-0 flex items-center justify-center bg-black/55 text-[15px] text-white">
+          +{photos.length - shown}
+        </span>
+      )}
+      {photo.badge && (
+        <span class="absolute top-1 left-1 rounded-full bg-black/75 px-1.5 py-0.5 text-[9px] font-medium tracking-[0.06em] text-white uppercase">
+          {photo.badge}
+        </span>
+      )}
+    </a>
+  ))}
+</div>
+
+<style>
+  .snapshot-item:hover .play {
+    transform: scale(1.08);
+  }
+</style>

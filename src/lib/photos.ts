@@ -1,5 +1,6 @@
-// Turns a photo name from a post (rows, commentary, feature) into the URLs and sizes the site needs.
+// Turns a photo name from a post (rows, asides, feature) into the URLs and sizes the site needs.
 // Shared by the gallery and the home page hero.
+import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { readFileSync, statSync } from "node:fs";
 import { resolve } from "node:path";
@@ -28,12 +29,22 @@ export interface Photo {
   download?: string;
   /** Camera settings, for auto captions (uploaded and local photos; not Azure). */
   exposure?: Exposure;
+  /** Set for a video (text sections and asides only): the tile shows the poster, the lightbox plays it. */
+  video?: Video;
   /** Number of the aside about this photo, shown as a badge (gallery only). */
   aside?: string;
   href: string;
   lightboxSrcset: string;
   lightboxWidth: number;
   lightboxHeight: number;
+}
+
+export interface Video {
+  src: string;
+  width: number;
+  height: number;
+  /** Still for the lightbox before it plays (uploaded videos; local ones show their first frame). */
+  poster?: string;
 }
 
 /** Formatted like r2sync stores them: "f/4", "1/300s", 125. */
@@ -66,6 +77,8 @@ interface ManifestEntry {
   variants: { edge: number; w: number; h: number; avif: string; webp: string }[];
   download?: { key: string; w: number; h: number };
   exif?: Exposure & Record<string, unknown>;
+  /** Videos: the MP4. width/height/variants/lqip are then the poster's (same size as the video). */
+  video?: { key: string; w: number; h: number; duration: number };
 }
 const manifests = import.meta.glob<Record<string, ManifestEntry>>("/src/collections/*/photos.json", {
   eager: true,
@@ -93,6 +106,13 @@ function r2Photo(file: string, entry: ManifestEntry): Photo {
     lightboxSrcset: webpSrcset,
     lightboxWidth: largest.w,
     lightboxHeight: largest.h,
+    ...(entry.video && {
+      href: publicUrl(entry.video.key),
+      download: undefined,
+      video: { src: publicUrl(entry.video.key), width: entry.video.w, height: entry.video.h, poster: publicUrl(largest.webp) },
+      lightboxWidth: entry.video.w,
+      lightboxHeight: entry.video.h,
+    }),
   };
 }
 
@@ -180,6 +200,57 @@ async function localPhoto(file: string, path: string, meta: ImageMetadata, badge
   };
 }
 
+// --- Local preview video: "PXL_0001.mp4" next to post.mdx, played straight from the folder. ---
+const VIDEO = /\.(mp4|mov|m4v)$/i;
+const localVideos = import.meta.glob<string>("/src/collections/**/*.{mp4,MP4,mov,MOV,m4v,M4V}", {
+  query: "?url",
+  import: "default",
+  eager: true,
+});
+
+// Upright size of a video (phone clips are often stored sideways with a rotation flag), via ffprobe.
+const videoSizeCache = new Map<string, { stamp: string; size: [number, number] }>();
+function videoSizeOf(path: string): [number, number] {
+  const { mtimeMs, size } = statSync(path);
+  const stamp = `${mtimeMs}:${size}`;
+  const hit = videoSizeCache.get(path);
+  if (hit?.stamp === stamp) return hit.size;
+  let result: [number, number] = [1920, 1080];
+  try {
+    const out = execFileSync(
+      "ffprobe",
+      ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height:stream_side_data=rotation", "-of", "json", path],
+      { encoding: "utf8" },
+    );
+    const stream = JSON.parse(out).streams?.[0] ?? {};
+    const rotation = Number(stream.side_data_list?.find((d: { rotation?: number }) => d.rotation !== undefined)?.rotation ?? 0);
+    result = Math.abs(rotation) % 180 === 90 ? [stream.height, stream.width] : [stream.width, stream.height];
+  } catch {
+    console.warn(`[videos] couldn't read the size of ${path} (is ffmpeg installed?); assuming 16:9`);
+  }
+  videoSizeCache.set(path, { stamp, size: result });
+  return result;
+}
+
+function localVideo(file: string, path: string, url: string, badge: Photo["badge"]): Photo {
+  const [width, height] = videoSizeOf(path);
+  return {
+    key: file,
+    ratio: width / height,
+    width,
+    height,
+    // No poster yet: the tile shows the video's own first frame.
+    src: "",
+    srcset: "",
+    href: url,
+    lightboxSrcset: "",
+    lightboxWidth: width,
+    lightboxHeight: height,
+    badge: import.meta.env.DEV ? badge : undefined,
+    video: { src: url, width, height },
+  };
+}
+
 // sha256 of a local file, remembered until the file changes (dev re-renders on every reload).
 const hashCache = new Map<string, { stamp: string; sha: string }>();
 function sha256Of(path: string): string {
@@ -199,11 +270,17 @@ function sha256Of(path: string): string {
  * A name without an extension is a legacy Azure ID.
  */
 export async function loadPhoto(raw: string, { dir, slug }: PhotoSource): Promise<Photo> {
-  if (!LOCAL.test(raw)) return azurePhoto(raw, slug);
-  const local = localFiles[`/${dir}/${raw}`]?.default;
+  const video = VIDEO.test(raw);
+  if (!video && !LOCAL.test(raw)) return azurePhoto(raw, slug);
   const entry = (manifests[`/${dir}/photos.json`] ?? {})[raw];
-  if (local && !(entry && sha256Of(resolve(dir, raw)) === entry.sha256)) {
-    return localPhoto(raw, resolve(dir, raw), local, entry ? "edited" : "not uploaded");
+  const fresh = () => !(entry && sha256Of(resolve(dir, raw)) === entry.sha256);
+  const badge = entry ? "edited" : "not uploaded";
+  if (video) {
+    const url = localVideos[`/${dir}/${raw}`];
+    if (url && fresh()) return localVideo(raw, resolve(dir, raw), url, badge);
+  } else {
+    const local = localFiles[`/${dir}/${raw}`]?.default;
+    if (local && fresh()) return localPhoto(raw, resolve(dir, raw), local, badge);
   }
   if (entry) return r2Photo(raw, entry);
   const folder = dir.split("/").pop();
