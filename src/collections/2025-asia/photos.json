@@ -1,0 +1,6016 @@
+{
+  "250128_0080_bj_photo_image_017.jpg": {
+    "download": {
+      "h": 1080,
+      "key": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-1920.jpg",
+      "w": 1920
+    },
+    "etag": "085dbdd61d6a70ca7ffd7083c351c077",
+    "exif": {},
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBACdASoYAA4APu1iqk4ppaQiMAgBMB2JbACdH8ABXRAfRatbFQ93gAD50+iBTYWCngPz49LtwBGuZuumEf7/oNxWDOikM4AUM+2HZudrZiXnpxhlBoSX9L0YgIZZJvgmeSXZJDcuj79ndO5rO26ZaDAck2pOOxCoB286f6Pi4SsnA9SsuCoKHFZ5OVI4AAA=",
+    "sha256": "0e6ea58274b39d7a6ab01f998c3fbc3010922087ae00fd8d65d6d7a2a6146a56",
+    "variants": [
+      {
+        "avif": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-720.avif",
+        "edge": 720,
+        "h": 405,
+        "w": 720,
+        "webp": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-720.webp"
+      },
+      {
+        "avif": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-1200.avif",
+        "edge": 1200,
+        "h": 675,
+        "w": 1200,
+        "webp": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-1200.webp"
+      },
+      {
+        "avif": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-1800.avif",
+        "edge": 1800,
+        "h": 1012,
+        "w": 1800,
+        "webp": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-1800.webp"
+      },
+      {
+        "avif": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-1920.avif",
+        "edge": 1920,
+        "h": 1080,
+        "w": 1920,
+        "webp": "2025-asia/250128_0080_bj_photo_image_017.0e6ea582-1920.webp"
+      }
+    ],
+    "version": "0e6ea582",
+    "width": 1920
+  },
+  "DSCF0105.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0105.d8a089de-2592.jpg",
+      "w": 2592
+    },
+    "etag": "7dd5e91beca5cf5c54c820bc3bb15033",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/150s",
+      "taken": "2025-05-17T13:23:55"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC2yBodSLnQUar1Q4AA/uaPBGireTYsH3SOOnqrZIRr8vfZaNiR0ob5wX6Mx5MOkNQE33OPEsM07kU9dkf+ub7RVdtz/gUjJsLZ9xuYlHgOexDNiWk6uJTxPWXh9UfLqlVKG4Ncx9EAsXg22FwA",
+    "sha256": "d8a089de1ad94ba509c54c75cfb2bebb82fb0e5bff5d9a499ff1c2380029ef4e",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0105.d8a089de-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0105.d8a089de-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0105.d8a089de-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0105.d8a089de-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0105.d8a089de-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0105.d8a089de-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0105.d8a089de-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0105.d8a089de-2400.webp"
+      }
+    ],
+    "version": "d8a089de",
+    "width": 7728
+  },
+  "DSCF0156.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0156.acd472e8-2592.jpg",
+      "w": 2592
+    },
+    "etag": "3fe6a36c25ce61a748f005d29bebe072",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/160s",
+      "taken": "2025-05-17T14:10:54"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC7AB5u+y+CWfB+AAD5YUnxdXitr7Cj6dnVI7w6cLEdf7aQqEfjelSJ+inDqbOnQ26sL/btv5y7YsnrCJURWXIx8G5Jmni/AwxQLAQedJL6AwJAAA==",
+    "sha256": "acd472e8fb785ff7811b8bac97d8d19c45d5e54f1e1928710d0b1fdfb4730baa",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0156.acd472e8-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0156.acd472e8-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0156.acd472e8-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0156.acd472e8-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0156.acd472e8-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0156.acd472e8-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0156.acd472e8-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0156.acd472e8-2400.webp"
+      }
+    ],
+    "version": "acd472e8",
+    "width": 7728
+  },
+  "DSCF0160.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0160.55ef5dbf-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ac5af63659cb5df8672a9ddaae8a7713",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 500,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/40s",
+      "taken": "2025-05-17T14:11:45"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZACdMoC4AKEQRPxKz5btgqC7BswgQAD2v4U8lpz6YRA4TYMztpYOvdGvqHWsjfJbsMionJA0fxzdT01ZbVPAPegSo0Dts40y5qGY8I+yvVxVgLCyF1W1slEAHmhdmmnFK1LvDasLlx5zJysImfOt7a7ShokfwYLzq+hKUlczfsGvZ7QakX2HpiHAjsUTCebXRAAA",
+    "sha256": "55ef5dbfe2766ea4461f07d9bcf1bc30d54367762f1be6aa9852afee646a3ff9",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0160.55ef5dbf-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0160.55ef5dbf-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0160.55ef5dbf-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0160.55ef5dbf-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0160.55ef5dbf-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0160.55ef5dbf-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0160.55ef5dbf-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0160.55ef5dbf-2400.webp"
+      }
+    ],
+    "version": "55ef5dbf",
+    "width": 7728
+  },
+  "DSCF0197.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0197.a1ecdfad-2592.jpg",
+      "w": 2592
+    },
+    "etag": "70124c6417d49b1cb584cd206636e62e",
+    "exif": {
+      "aperture": "f/4",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/150s",
+      "taken": "2025-05-17T15:22:08"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoYABAAPu1mqk2ppaQiMAgBMB2JZQC06B4C9cxFyfo6pZMCAM2SqUAcsnOgFU/Uki2+oeGK/sj7cMoYTABl99rnXW8TjPwo1RbwAA==",
+    "sha256": "a1ecdfade1f86c43a85cfd6eb011b4b02325313f19b706ce8ff8b5fc6bc72dc8",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0197.a1ecdfad-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0197.a1ecdfad-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0197.a1ecdfad-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0197.a1ecdfad-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0197.a1ecdfad-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0197.a1ecdfad-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0197.a1ecdfad-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0197.a1ecdfad-2400.webp"
+      }
+    ],
+    "version": "a1ecdfad",
+    "width": 7728
+  },
+  "DSCF0255.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0255.ab69dda4-2592.jpg",
+      "w": 2592
+    },
+    "etag": "8e7f5ccdfd85d54872d520ff847dfb6b",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/210s",
+      "taken": "2025-05-17T15:38:38"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwBACdASoYABAAPu1kqk4ppaQiMAgBMB2JZQCdACHej3m2bCeg19H5kc4A/lCzmoYwwcbaC75eup69k4c+dCdq/INvvLu8oi71od+RVkKEAAAA",
+    "sha256": "ab69dda4b65167da755d8304e71d7206c94269b9ffb967afa30f4f3a8f546e52",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0255.ab69dda4-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0255.ab69dda4-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0255.ab69dda4-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0255.ab69dda4-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0255.ab69dda4-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0255.ab69dda4-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0255.ab69dda4-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0255.ab69dda4-2400.webp"
+      }
+    ],
+    "version": "ab69dda4",
+    "width": 7728
+  },
+  "DSCF0270.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0270.fb4d11df-2592.jpg",
+      "w": 2592
+    },
+    "etag": "02ce56d7521aab4bca8d2661c50c2037",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 1600,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/40s",
+      "taken": "2025-05-17T15:47:34"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwBACdASoYABAAPu1iqU2ppaQiMAgBMB2JYwCdAYvW24ELKW6hjE9ju4SgQAD+7oxJN5ve+7wzCTR/bZm9PUERhGCiSCybuobx6LzyZyWIPcdvSMZLmdZ16g1Zy0GVi0JSj+f7eppnE2QZ6ypJj19gCm+si3UAAAA=",
+    "sha256": "fb4d11df33cc905eb7bfec4d9787f6121757d5eb8edc30d1f44a2e81c17a316b",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0270.fb4d11df-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0270.fb4d11df-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0270.fb4d11df-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0270.fb4d11df-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0270.fb4d11df-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0270.fb4d11df-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0270.fb4d11df-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0270.fb4d11df-2400.webp"
+      }
+    ],
+    "version": "fb4d11df",
+    "width": 7728
+  },
+  "DSCF0294.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0294.743d48c7-2592.jpg",
+      "w": 2592
+    },
+    "etag": "fb93e8023c8fe9ba5d2602bac6a58622",
+    "exif": {
+      "aperture": "f/3.2",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/80s",
+      "taken": "2025-05-17T15:54:06"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCw7CLq/tN276JMuZEAAP7w30+GJylqdNNn7exz180wY5TSbVTUzS/Dh+dcm5X78aBwjeC+CQ/f5wMmnaTeyppdv+kwwNodpK+Egbg9kt0lIbkbD+Tb0T1kMUAF5rzQzu0gAAA=",
+    "sha256": "743d48c7bc5f1372cbea860c7356333564b69870faa1d7e00ea5faddd124f88c",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0294.743d48c7-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0294.743d48c7-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0294.743d48c7-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0294.743d48c7-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0294.743d48c7-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0294.743d48c7-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0294.743d48c7-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0294.743d48c7-2400.webp"
+      }
+    ],
+    "version": "743d48c7",
+    "width": 7728
+  },
+  "DSCF0297.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0297.b282f3b4-2592.jpg",
+      "w": 2592
+    },
+    "etag": "4101bb71199b8e09688c7e2dba6144b6",
+    "exif": {
+      "aperture": "f/3.2",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/80s",
+      "taken": "2025-05-17T15:54:24"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoYABAAPu1mqk2ppaQiMAgBMB2JZQDE2CHW8GVUi1KWJMAA/u/C5rEBrs/zo7rNZgRaEbybgJ5th+XyUWz4CVhExIqIh8izmnlj1NvcBlp6V26RLCQAAA==",
+    "sha256": "b282f3b4e22b7a3f21bf2f868d775603d126f6f1a43f0024ddae02828b62ee53",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0297.b282f3b4-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0297.b282f3b4-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0297.b282f3b4-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0297.b282f3b4-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0297.b282f3b4-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0297.b282f3b4-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0297.b282f3b4-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0297.b282f3b4-2400.webp"
+      }
+    ],
+    "version": "b282f3b4",
+    "width": 7728
+  },
+  "DSCF0392.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0392.0abca4c6-2592.jpg",
+      "w": 2592
+    },
+    "etag": "340b757ff7a584c9c5c15eadf1f09069",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/58s",
+      "taken": "2025-05-17T16:35:12"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JaQAAYcEny6P6Nb4IuFPAAOJz2WxieubdrJgaPuH50pytQ9f1cpgroOEW2pvKPCZoZ0/rOJG8CQ0RNm4nTWPKuofgh9hgAAA=",
+    "sha256": "0abca4c654d8ed95c2ee0586672fad60e7445070788cae727bff4a1bf2f4d209",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0392.0abca4c6-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0392.0abca4c6-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0392.0abca4c6-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0392.0abca4c6-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0392.0abca4c6-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0392.0abca4c6-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0392.0abca4c6-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0392.0abca4c6-2400.webp"
+      }
+    ],
+    "version": "0abca4c6",
+    "width": 7728
+  },
+  "DSCF0396.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0396.220af71f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ce2628832796944e08921858cc71bd09",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 1000,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-01T00:01:53"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JaQAAW+yy/dTpEQl6LQAA/vKj2fCuTUAOWwJqGoFZILnQvyWyCw8EchMo0iT0AAA=",
+    "sha256": "220af71fac884dd188ae6e86ce390d0e19113dcfe57aa3c3ff85d581c73690cc",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0396.220af71f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0396.220af71f-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0396.220af71f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0396.220af71f-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0396.220af71f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0396.220af71f-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0396.220af71f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0396.220af71f-2400.webp"
+      }
+    ],
+    "version": "220af71f",
+    "width": 7728
+  },
+  "DSCF0403.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0403.106383c4-2592.jpg",
+      "w": 2592
+    },
+    "etag": "a29a05e5c3838abae7416a76aea39acb",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 3200,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/125s",
+      "taken": "2025-05-17T16:40:27"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JZwAAUqPAYpN8rynrgAD+6Y8nBZI6w6wkGdL+28wQrqKu6xn5tcWXsAAAAA==",
+    "sha256": "106383c41126b0001b1a979287bb4c66dd73728522194d90a70df21d1b1d8148",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0403.106383c4-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0403.106383c4-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0403.106383c4-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0403.106383c4-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0403.106383c4-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0403.106383c4-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0403.106383c4-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0403.106383c4-2400.webp"
+      }
+    ],
+    "version": "106383c4",
+    "width": 7728
+  },
+  "DSCF0430.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0430.da7ebd35-2592.jpg",
+      "w": 2592
+    },
+    "etag": "c9d4408acd2f4a66056e23f1b43d3cd9",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1.5s",
+      "taken": "2025-05-17T17:21:23"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwDImBxuH6VqL/fa5UuYAP6oRcdhoEcb9Nk5xXVZdkik15Xf9oi5MmC/q+ZsJrVEXH49jHXGU3BitUupYbdsbg1oWforySZttV7BsqU5faRq79gBTCxwMEIktD2/lbMYBZN6k591Cj2r8EAAAA==",
+    "sha256": "da7ebd35fada0e605145c16050ece44cbe38d32535e0ce1e92f9d6b278abd892",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0430.da7ebd35-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0430.da7ebd35-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0430.da7ebd35-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0430.da7ebd35-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0430.da7ebd35-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0430.da7ebd35-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0430.da7ebd35-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0430.da7ebd35-2400.webp"
+      }
+    ],
+    "version": "da7ebd35",
+    "width": 7728
+  },
+  "DSCF0491.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0491.66432a03-2592.jpg",
+      "w": 2592
+    },
+    "etag": "7f701a26fcf52ca501cd0d12442a511b",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/850s",
+      "taken": "2025-05-19T13:59:12"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZQAAXAimTLaYcr4NXKtIAP7Dg9jy+X361ZS+3E7F9R3sBW4X9uwtq/NLTPNMNEtd+Hv9DctcCH+ppl92KmqnGg9+9zG/gyFrmYwnrHwcsxQoNmg03I/YyzPQViwddkAAAA==",
+    "sha256": "66432a031e1d1b045c1b343c392012f40d1e5f4cf5fb8277123a7d7d75b865d5",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0491.66432a03-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0491.66432a03-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0491.66432a03-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0491.66432a03-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0491.66432a03-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0491.66432a03-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0491.66432a03-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0491.66432a03-2400.webp"
+      }
+    ],
+    "version": "66432a03",
+    "width": 7728
+  },
+  "DSCF0506e.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0506e.36deb46e-2592.jpg",
+      "w": 2592
+    },
+    "etag": "b1254cf9c7c18104bd17c2e64ad00c58",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/680s",
+      "taken": "2025-05-19T14:31:54"
+    },
+    "height": 4397,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZwDImCIcr8defoSkCiG/RwAA/ugT0Edcu02aNQhmhWmiu0+0Ts6GyIZiB9LubIsfUsmQmPbD3eM4FWSRF8oDZNXV/HtEtqa08Hux5gKGcAAA",
+    "sha256": "36deb46e516edf8c22270da73c3bfed1303e67db5616cde7b4caf5c428adcd8a",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0506e.36deb46e-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0506e.36deb46e-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0506e.36deb46e-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0506e.36deb46e-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0506e.36deb46e-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0506e.36deb46e-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0506e.36deb46e-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0506e.36deb46e-2400.webp"
+      }
+    ],
+    "version": "36deb46e",
+    "width": 6595
+  },
+  "DSCF0518.JPG": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/DSCF0518.744d9d58-2592.jpg",
+      "w": 1728
+    },
+    "etag": "d64500a4d3d1e4479329b29197485779",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/750s",
+      "taken": "2025-05-19T14:36:21"
+    },
+    "height": 7728,
+    "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JZwDE2YxE4TdfCLJp20TbieXiAAD8+u5Sz/775lp0rtesFIFbWvd/pXlxy18fVjLIW4mVdZkpYUDvu4NVuWCF2ssCLmdtWixqKDJzIhIXmWhA2wGuYFWvk7erqeFBebwWt+ZS/kUfMOAZc/aj6th2ZFmLlaX8jtr53UdjUR1Zq+9LS1pUbM/8O3QfFuEWAAA=",
+    "sha256": "744d9d58e8456e4ad4ef6680830d670c5a5300ad8d9414dd5f32c87fa9e11fc7",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0518.744d9d58-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 480,
+        "webp": "2025-asia/DSCF0518.744d9d58-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0518.744d9d58-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 800,
+        "webp": "2025-asia/DSCF0518.744d9d58-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0518.744d9d58-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0518.744d9d58-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0518.744d9d58-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1600,
+        "webp": "2025-asia/DSCF0518.744d9d58-2400.webp"
+      }
+    ],
+    "version": "744d9d58",
+    "width": 5152
+  },
+  "DSCF0625e.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0625e.0e08c35a-2592.jpg",
+      "w": 2592
+    },
+    "etag": "200cf661765305066858e11673b3e205",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/170s",
+      "taken": "2025-05-20T15:09:21"
+    },
+    "height": 2576,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQAOcC0WVX8xBIw6MHcZKpyAAP6Bc+OXsJW+ID6OvMqAUEHGK2R//rzPdbJyevrNmJWPk7ZGsghMQeGLl5ztCWoGN5DipKsmPs1in3taf+ejQHP5wZUsO/WCw3XTmvk7Tf4hJ8X6CTIwGgR/Nj1TZkxMgDvwClLgQAAA",
+    "sha256": "0e08c35a28e7fbd286871da0e8343ae86a65356ad2f4cc192a302c4cd160c379",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0625e.0e08c35a-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0625e.0e08c35a-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0625e.0e08c35a-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0625e.0e08c35a-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0625e.0e08c35a-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0625e.0e08c35a-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0625e.0e08c35a-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0625e.0e08c35a-2400.webp"
+      }
+    ],
+    "version": "0e08c35a",
+    "width": 3864
+  },
+  "DSCF0643.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0643.85b90e76-2592.jpg",
+      "w": 2592
+    },
+    "etag": "14085a871f70477a6eb68088afd93baf",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/180s",
+      "taken": "2025-05-20T15:19:24"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQAAL5MLvquq8aRht6+0p5HgA/smvX/gWCLulgz01CvhBMadM7XnkZPyzVlqTaGKChAGxRUJyyj4buA2Rmvn0Ozmrzw05dSI179v8ZJtku2d6BD6UdiAVLninIC9FCx1eHQYFmyzJepky2oK7p9NmlTrZ4+DksstjB+omymKgK+1uhQf/wbKiGAA=",
+    "sha256": "85b90e7624ac2466f6843ad7d00da5f79cb37e3e727f45c1ab9c214646ee2245",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0643.85b90e76-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0643.85b90e76-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0643.85b90e76-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0643.85b90e76-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0643.85b90e76-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0643.85b90e76-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0643.85b90e76-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0643.85b90e76-2400.webp"
+      }
+    ],
+    "version": "85b90e76",
+    "width": 7728
+  },
+  "DSCF0679e.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0679e.06cb18bc-2592.jpg",
+      "w": 2592
+    },
+    "etag": "60a31d99430b624102684dedd3bba36d",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/52s",
+      "taken": "2025-05-20T15:36:54"
+    },
+    "height": 3828,
+    "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZQCw7Yyeu3jQgxeWK8AA9ZngyAIlVc9Ix4Aj5xL0DsNJuFez+J8ECmPqBPcHwR4uxifP00kDdIIOK76ClicwGy5Pm3vxQGthoeGMoYd9jyyiG60NNUNA+nTUEQ49WVtvU5qyQu/Moe6JEjHAAA==",
+    "sha256": "06cb18bc6d93e42aca3e6d17be56ca4b8fb10a5f4b14c613851d90db307271b0",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0679e.06cb18bc-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0679e.06cb18bc-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0679e.06cb18bc-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0679e.06cb18bc-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0679e.06cb18bc-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0679e.06cb18bc-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0679e.06cb18bc-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0679e.06cb18bc-2400.webp"
+      }
+    ],
+    "version": "06cb18bc",
+    "width": 5742
+  },
+  "DSCF0703.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0703.95d0b356-2592.jpg",
+      "w": 2592
+    },
+    "etag": "33c76f512482c867e4f606decec1012e",
+    "exif": {
+      "aperture": "f/3.2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/150s",
+      "taken": "2025-05-20T15:47:25"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoYABAAPu1iqk4ppaQiMAgBMB2JZQC2yBnf8V74IpkilUAA/uv+EO+Z9whtMY5ks2Pz/lmqngPyIOZBt8MchaajKgAAAA==",
+    "sha256": "95d0b3563458f130c9f553fbe6988e8d4a364a298d2f25fdd2bfe0f837661ad9",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0703.95d0b356-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0703.95d0b356-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0703.95d0b356-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0703.95d0b356-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0703.95d0b356-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0703.95d0b356-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0703.95d0b356-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0703.95d0b356-2400.webp"
+      }
+    ],
+    "version": "95d0b356",
+    "width": 7728
+  },
+  "DSCF0741.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0741.30f96cdd-2592.jpg",
+      "w": 2592
+    },
+    "etag": "5dade37ea12acd4b271bdba3939600ae",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/450s",
+      "taken": "2025-05-20T16:13:56"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoYABAAPu1Ct1apoqakGAEwHYlkAABbSAMmxTx3XAtAvrQAAP7uh/P/c1c6HwczoZNkIzJpiPeiUtkCcDMsewekcWOoCq7nVb0sVCYiDfUPH/vQrTEVBRe/su77ZNxSbxq4xAFFwAA=",
+    "sha256": "30f96cdd28f45f26b9673d8b2e16bca9b00026c1f5e7b88c70948620cd1fe8d5",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0741.30f96cdd-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0741.30f96cdd-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0741.30f96cdd-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0741.30f96cdd-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0741.30f96cdd-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0741.30f96cdd-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0741.30f96cdd-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0741.30f96cdd-2400.webp"
+      }
+    ],
+    "version": "30f96cdd",
+    "width": 7728
+  },
+  "DSCF0789e.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0789e.fe7ba8a6-2592.jpg",
+      "w": 2592
+    },
+    "etag": "dd593e25d879f74bb7de51e9ad278ab0",
+    "exif": {
+      "aperture": "f/2.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/105s",
+      "taken": "2025-05-20T16:54:49"
+    },
+    "height": 3808,
+    "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCdACLr4aaO5uG93ENggADv72tv8UCRpY5HLU/A0mTh/tuQiNvOLn49GjHitknlueydA3v58mk+6BpGdFwlFQ7neoNPeQqnqM4iTv0+1ms6ULBNaG+sFLrz/yR5DkEmWHRNVepU4+sBk1JAAA==",
+    "sha256": "fe7ba8a622a7db4e6e8e227b69a34a20099037048d038bcf52bc91f7e8411684",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0789e.fe7ba8a6-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0789e.fe7ba8a6-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0789e.fe7ba8a6-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0789e.fe7ba8a6-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0789e.fe7ba8a6-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0789e.fe7ba8a6-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0789e.fe7ba8a6-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0789e.fe7ba8a6-2400.webp"
+      }
+    ],
+    "version": "fe7ba8a6",
+    "width": 5713
+  },
+  "DSCF0835.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0835.df07f92f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "b12d0d6a29c81780c3797bc2181c1dfd",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 200,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-05-20T17:18:03"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQDG9CHT4x9uxaq4e9xIuAD+i4MY3mJOPEyWPsXe2p/tfhs+vkkOdQpZED/nUSrxet0EAnlNfGMGHrOc9GYOnOeOZMBgAAA=",
+    "sha256": "df07f92f19fc86abd8e54038963b54b6fa494f66fc500d980c32f0fe86a9618f",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0835.df07f92f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0835.df07f92f-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0835.df07f92f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0835.df07f92f-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0835.df07f92f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0835.df07f92f-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0835.df07f92f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0835.df07f92f-2400.webp"
+      }
+    ],
+    "version": "df07f92f",
+    "width": 7728
+  },
+  "DSCF0842.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0842.0326b19b-2592.jpg",
+      "w": 2592
+    },
+    "etag": "27f7ee5923804589fb72ef33c31f7f0a",
+    "exif": {
+      "aperture": "f/3.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/105s",
+      "taken": "2025-05-20T17:28:25"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADQAwCdASoYABAAPu1iqU2ppaQiMAgBMB2JYgCdABmn1XACsX367SAA/tyRasjf/db9eqk5XVjxEoNAEFNMMtdDhHNI5wgS1XgKRGXBTPjivrpAA5kKBLJax86rlcwOJFYN24xjAfMG5NWu5Wufxlo6dGd0HyA2Hr+zoCiTGXXbQSBRxRtMxn8zWqgokZfmgYAAAA==",
+    "sha256": "0326b19bbf9a33cd6cbdadf21e9a10e03afc75638b8ca48616123c9d3f586cc2",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0842.0326b19b-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0842.0326b19b-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0842.0326b19b-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0842.0326b19b-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0842.0326b19b-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0842.0326b19b-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0842.0326b19b-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0842.0326b19b-2400.webp"
+      }
+    ],
+    "version": "0326b19b",
+    "width": 7728
+  },
+  "DSCF0975.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF0975.03b32e2e-2592.jpg",
+      "w": 2592
+    },
+    "etag": "bf786513ac8d0f0589adc9ec759942d7",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 400,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-02T14:45:41"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQC2yB8rAmLZMMUgWahk8ADiXAnXVzKCWZ4HJc1wjKWqOM3CTVYWB1b576h+GKALFNCHDGLY9P71Bd/XWcBbvTvzzUiMT6MhbLpJSS1btHu+9Xysh0SKPHnUvfaMkJp4sDbdPgzFWdMqrVgAAA==",
+    "sha256": "03b32e2e22da4936eab1e3b7a57b608212973eeb30524666f7635c31b4eb3d6b",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF0975.03b32e2e-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF0975.03b32e2e-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0975.03b32e2e-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF0975.03b32e2e-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0975.03b32e2e-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF0975.03b32e2e-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF0975.03b32e2e-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF0975.03b32e2e-2400.webp"
+      }
+    ],
+    "version": "03b32e2e",
+    "width": 7728
+  },
+  "DSCF1197.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF1197.b9187f76-2592.jpg",
+      "w": 2592
+    },
+    "etag": "23647d3ebc9e64a8f595fc7b6a325862",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/600s",
+      "taken": "2025-01-06T13:09:26"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBOmUAS4QVV7WPrsNXRl9014AP7o6Z5Nn/vfhk7Ej/mAu3QH6Vgr6Ywea/b4VqFT8Nlh80XJnL66y0jC29FeSHPbg65UFLbccbUxoU0KOiTbjy10wI2CAn7IKy6F5w0UmW7ms1WJIM7GNKyue3tK6JP34CxewTAGQAAA",
+    "sha256": "b9187f76e4d170c4535f2614cb805ee72791768518027a1dec1ac3c57ace94bf",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF1197.b9187f76-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF1197.b9187f76-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1197.b9187f76-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF1197.b9187f76-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1197.b9187f76-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF1197.b9187f76-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1197.b9187f76-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF1197.b9187f76-2400.webp"
+      }
+    ],
+    "version": "b9187f76",
+    "width": 7728
+  },
+  "DSCF1598.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF1598.f0e4ca33-2592.jpg",
+      "w": 2592
+    },
+    "etag": "cc9739b3631672000aab7e7e5e0c457b",
+    "exif": {
+      "aperture": "f/3.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/240s",
+      "taken": "2025-01-07T13:33:26"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZwDKACLWvv+k8DJfsiVo6luAAP7kLR1JFb82uUL5Y5NRFmTZ/LsKbYBnGxIRF2av/Qyp/3nGZVa8vPgTlHuHrKfVfbQj50TdZYVbvp1AF+wfMCJhdj021y+blIfnJZlX3QWVjvjuLbd2resAuOBNv8iO/3PR7DrrAAAA",
+    "sha256": "f0e4ca33baf011b10f6cc31b95f5ce15b44019e69b2b8569ee999cd226d0a200",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF1598.f0e4ca33-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF1598.f0e4ca33-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1598.f0e4ca33-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF1598.f0e4ca33-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1598.f0e4ca33-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF1598.f0e4ca33-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1598.f0e4ca33-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF1598.f0e4ca33-2400.webp"
+      }
+    ],
+    "version": "f0e4ca33",
+    "width": 7728
+  },
+  "DSCF1779.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF1779.5475af10-2592.jpg",
+      "w": 2592
+    },
+    "etag": "5e7a9c2673f2f79e025354ba55d3c2c3",
+    "exif": {
+      "aperture": "f/8",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 1250,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-07T14:01:44"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBibMX1LdbfLd+x9588sAAD9USNhCduNF5Z8YxLB8iM1wHkPAxk7mIgOVRRqJl+NVAthp3iHsCyvusZcy8ne9HcF1s8PtzP6jtPr6hsX6RSI879v2j185dsrTMUPdBcCKeweU8VoCbO7wClpLhCzBLJsWj3YNpdffekNKbQw/MYOvj5v0AAA",
+    "sha256": "5475af10704b1c5908c9f4e3af510ef3e88cfddf2b651ef421d47586abc31903",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF1779.5475af10-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF1779.5475af10-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1779.5475af10-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF1779.5475af10-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1779.5475af10-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF1779.5475af10-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1779.5475af10-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF1779.5475af10-2400.webp"
+      }
+    ],
+    "version": "5475af10",
+    "width": 7728
+  },
+  "DSCF1847.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF1847.f8e61b0f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "58ce3d0f6fa3b3d78f25a33a1d9a415a",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/125s",
+      "taken": "2025-01-07T14:33:30"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQAD5gHD+ban7sJrvhnwoiYAAP5M0HHhAcqpCQ9Ow820v+uhKQo5z2agKhligellFoP20CsWFSnnkwk5VMWDQDZVtl9B/KBhoiMP/j4TF9CkbfR38DL+Z5uiZoJwtqRPcL0cnxsxyWG1kpJlXkPKO0WLv5Bms0++lbQ+2o0lrFVYAAA=",
+    "sha256": "f8e61b0f3b952eb06219bbef5deeb08744724652b99889fd23d36136d9bf4f9b",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF1847.f8e61b0f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF1847.f8e61b0f-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1847.f8e61b0f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF1847.f8e61b0f-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1847.f8e61b0f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF1847.f8e61b0f-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1847.f8e61b0f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF1847.f8e61b0f-2400.webp"
+      }
+    ],
+    "version": "f8e61b0f",
+    "width": 7728
+  },
+  "DSCF1968.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF1968.d1fae190-2592.jpg",
+      "w": 2592
+    },
+    "etag": "5808ae47672fb547c3a48557b431d78c",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 500,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-07T16:50:36"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBYhlTwXIoTvXdO+b884rcAAAP7u3lrOvnBFmQwLSbUX2QPDZNDnTbYP+k20Gk7w9QBltkVft3Je/RKnc+NxEDOA2OTrz7T8at3Lvh7vr+1d7425RnTWqznXRy477bovp2my3nMh26efsBsRWhwk8ZI/7sBkt7zWsnhGnMsF5Ik7KaAA04oge4vyjt8oAAA=",
+    "sha256": "d1fae190d4f3dd060377b3600631f548c27f846974ce11c4011941910e7e174b",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF1968.d1fae190-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF1968.d1fae190-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1968.d1fae190-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF1968.d1fae190-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1968.d1fae190-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF1968.d1fae190-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1968.d1fae190-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF1968.d1fae190-2400.webp"
+      }
+    ],
+    "version": "d1fae190",
+    "width": 7728
+  },
+  "DSCF1970.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF1970.f5a65285-2592.jpg",
+      "w": 2592
+    },
+    "etag": "3fd311b333ac72b4f70979db1d7b0a9e",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 800,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-07T16:52:19"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQC7ACPtppe3nm1jScGtMsAA/kiTIOsVXVlD5mCj/lkzSwBkDmq7Etb30Av3m6Zt0/qLJMTu3/uM9u1U7Ai97/ULXymafS0I/bt9fAUxp9GT0E3gb1MzRqmDBlIIMAYKciMTsGjUT1YINAA=",
+    "sha256": "f5a652854de0ea2383220e2b3eff54d58f139082b0653adb451273f5acf92da7",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF1970.f5a65285-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF1970.f5a65285-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1970.f5a65285-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF1970.f5a65285-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1970.f5a65285-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF1970.f5a65285-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF1970.f5a65285-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF1970.f5a65285-2400.webp"
+      }
+    ],
+    "version": "f5a65285",
+    "width": 7728
+  },
+  "DSCF2560.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF2560.a56f9407-2592.jpg",
+      "w": 2592
+    },
+    "etag": "6b59ec8c8d29a7be017b5d25162fa1e8",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/1000s",
+      "taken": "2025-01-12T14:58:15"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCdMoAlvBGYb/Zcq+aSpaLo6AD+6Zz3rrK0zPDMv+hxFiZ55vtdNWNwcONoQBK/UXUR0YLX+DlVeJq+PTEwSUAPqsMlo5vt2VQszm/3YkdsbPxPSCsuCWn6qHLmEqfs2XqKqRToUJX1HvKt+1zBAFc45MzfISfkwqrPIXW0vuBjFVJzYSD/dMyxpgAA",
+    "sha256": "a56f94078659551380171174c317db545482ac726a8ce4da57cc857551669a13",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF2560.a56f9407-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF2560.a56f9407-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2560.a56f9407-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF2560.a56f9407-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2560.a56f9407-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF2560.a56f9407-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2560.a56f9407-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF2560.a56f9407-2400.webp"
+      }
+    ],
+    "version": "a56f9407",
+    "width": 7728
+  },
+  "DSCF2603.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF2603.657f97d9-2592.jpg",
+      "w": 2592
+    },
+    "etag": "878b8ba2847ce60b97901cce43abe7ef",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 200,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-12T15:11:15"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC7ACP/9YFsqHCD7OWu0AD+pWnlaOfTUVSelXc0FtirjtWk0iyLaDK9TnGHoE54Hw0bPkwz/pbgkbJKCtIOeAA=",
+    "sha256": "657f97d961752fca16ca580775945c3060a8cdb76d702ca4ec15797a21ed5884",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF2603.657f97d9-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF2603.657f97d9-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2603.657f97d9-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF2603.657f97d9-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2603.657f97d9-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF2603.657f97d9-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2603.657f97d9-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF2603.657f97d9-2400.webp"
+      }
+    ],
+    "version": "657f97d9",
+    "width": 7728
+  },
+  "DSCF2680.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF2680.70768a3d-2592.jpg",
+      "w": 2592
+    },
+    "etag": "84f4ea460bfdaf344dc309e78483d337",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/320s",
+      "taken": "2025-01-12T17:16:21"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZQCdACHhu9qX3b40wxakAP7eHK2gaJugGlcKsO3BRVE1ndNgNoTB+fFwnHUW15o9qVNEbQkRSVwA",
+    "sha256": "70768a3da971464350382c5ac6ff87f1aed41cdfab89a7107025057f892dccb7",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF2680.70768a3d-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF2680.70768a3d-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2680.70768a3d-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF2680.70768a3d-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2680.70768a3d-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF2680.70768a3d-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2680.70768a3d-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF2680.70768a3d-2400.webp"
+      }
+    ],
+    "version": "70768a3d",
+    "width": 7728
+  },
+  "DSCF2707.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF2707.5f11ce08-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ddd9765feed797010484330f7f982bbe",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 4000,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-12T17:49:46"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoYABAAPu1oqk6ppiQiMAgBMB2JQBOgBD0wcLeDkIL3wWv8AAD+rpZm7kHAgJwJvPX0jTb95HPUog+RmhbBX1YEQWHrwpzl/ZV4JfusYnSMpVHMit22SkkEI8nsmiEgAAA=",
+    "sha256": "5f11ce08b5c4bb3022ae5151daf4edabb4b7d72b4f822c60a95de24d65313f4f",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF2707.5f11ce08-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF2707.5f11ce08-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2707.5f11ce08-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF2707.5f11ce08-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2707.5f11ce08-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF2707.5f11ce08-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2707.5f11ce08-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF2707.5f11ce08-2400.webp"
+      }
+    ],
+    "version": "5f11ce08",
+    "width": 7728
+  },
+  "DSCF2709.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF2709.4f227353-2592.jpg",
+      "w": 2592
+    },
+    "etag": "dca1990da727ea9c56c3b53b9dbb5492",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 10000,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-12T17:49:49"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCAAXYEgGMCdbz5QBhwEmQZ1KMAAP7u35A9LCZDVovoDhfzhTEGjmcX6Ej1WwRvQW5HBitTlXFf8FgT96vgY2plFx+JkrIPfQSbfAbs3r19m+ockblboPgF57espMn+h6haeoYJUpSw0M32hwwwmnuXzT+KCIouuYOm2REb4dvOaMYs35mEBKHkXHS6v4DiAAAA",
+    "sha256": "4f22735367cc1cda15ae8820f45b2d57a17e55e91aff0d0e5b594b56f5dee61c",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF2709.4f227353-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF2709.4f227353-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2709.4f227353-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF2709.4f227353-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2709.4f227353-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF2709.4f227353-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2709.4f227353-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF2709.4f227353-2400.webp"
+      }
+    ],
+    "version": "4f227353",
+    "width": 7728
+  },
+  "DSCF2782.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF2782.7adf6212-2592.jpg",
+      "w": 2592
+    },
+    "etag": "91bb16f2079c7672cdd8d94f6ee31ef0",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/400s",
+      "taken": "2025-01-13T12:30:19"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdACHSoiStF23tsAD+jreFHKqqvdRtj3LMEsuANBGAULOU+OrN1BM2qp7yh2lglUEN0FOnfY1uyC7qCGK/qMeGH+E9WRUCQVnrl4edflnkTaQ3FCQNupUI5gAA",
+    "sha256": "7adf621297b3a6f3aa918ec72c06463b01c0943a6de203fc8db04d495074c532",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF2782.7adf6212-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF2782.7adf6212-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2782.7adf6212-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF2782.7adf6212-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2782.7adf6212-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF2782.7adf6212-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2782.7adf6212-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF2782.7adf6212-2400.webp"
+      }
+    ],
+    "version": "7adf6212",
+    "width": 7728
+  },
+  "DSCF2922.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF2922.ccb118c1-2592.jpg",
+      "w": 2592
+    },
+    "etag": "c6164be5bf9461eaae914cf04679d0dc",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/500s",
+      "taken": "2025-01-13T13:14:26"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JagCdMoADStULrwJHwlPUJmr5AAD9y4+3/smGiBRHxv+i8BWkSxMopV79rz8mC9VnIA6V6bwrW0tXQhRzg61Ve91De+2X2dPspRIYW97PNRsJtcwaGhv2H67swAAA",
+    "sha256": "ccb118c108d4aa1e851b00103c8100a5a0ef58f047b36dbe263f4975e9e5dcc1",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF2922.ccb118c1-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF2922.ccb118c1-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2922.ccb118c1-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF2922.ccb118c1-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2922.ccb118c1-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF2922.ccb118c1-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF2922.ccb118c1-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF2922.ccb118c1-2400.webp"
+      }
+    ],
+    "version": "ccb118c1",
+    "width": 7728
+  },
+  "DSCF3461.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF3461.455cae3b-2592.jpg",
+      "w": 2592
+    },
+    "etag": "0ca43250d4f43f6d7b661860c531233e",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/400s",
+      "taken": "2025-01-15T13:05:53"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoYABAAPu1oqk6ppiQiMAgBMB2JZQCdACHXG7Z++1pbbZt7oAD+i6B4KCv35fTDAokDmJjHLakhFWhg2TRsTN0Cm0zOtVPPHK3hxSWtEUilTYM0mH/2WPlJ/69cEAAA",
+    "sha256": "455cae3b47d4ce87b1333a47cad60606e98d755a579eb2621a59b9b59980288f",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF3461.455cae3b-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF3461.455cae3b-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3461.455cae3b-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF3461.455cae3b-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3461.455cae3b-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF3461.455cae3b-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3461.455cae3b-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF3461.455cae3b-2400.webp"
+      }
+    ],
+    "version": "455cae3b",
+    "width": 7728
+  },
+  "DSCF3628.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF3628.d94aef5e-2592.jpg",
+      "w": 2592
+    },
+    "etag": "c785f8656b5167b9310540f3d62ea968",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/600s",
+      "taken": "2025-01-16T10:16:29"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwAwCdASoYABAAPu1mqk4ppaOiMAgBMB2JYwCdACHW3g2riaSsdAD+UVzaNQ2+in7oTxv0SrfJim3FAENKHLfTYWrmfOlNQxshbFUO4na0EaoyxhpFqDplXS2OuS9HMvSiljK8MLrkx7dscNdlU2Bi0+9hRwAA",
+    "sha256": "d94aef5e3fd2f9199b8cdffce69503905ea149b7487454c1e5d538323e42add7",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF3628.d94aef5e-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF3628.d94aef5e-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3628.d94aef5e-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF3628.d94aef5e-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3628.d94aef5e-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF3628.d94aef5e-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3628.d94aef5e-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF3628.d94aef5e-2400.webp"
+      }
+    ],
+    "version": "d94aef5e",
+    "width": 7728
+  },
+  "DSCF3718.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF3718.cee34558-2592.jpg",
+      "w": 2592
+    },
+    "etag": "5c8422cf11cde068ccaa4a74ecb7675a",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/480s",
+      "taken": "2025-01-16T12:21:02"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBWAA3EkIHHww22LuGkAoAD+1v/H8V25HziTPmQic+a3GCLtTzlJc1afumV3O5Bg2FThHv6hwZz+71TJ0lzRXMCB/kXv1Zt/LUzmFX7YlM/HXXJiy7QCNHYHJ2Etzqn61c2a8J96hMkBjyvG/wGoRSGTcYAA",
+    "sha256": "cee345585be7f69498fcba68215e8077347ca97c46f3c0ce1aee2a58639f75e3",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF3718.cee34558-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF3718.cee34558-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3718.cee34558-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF3718.cee34558-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3718.cee34558-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF3718.cee34558-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3718.cee34558-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF3718.cee34558-2400.webp"
+      }
+    ],
+    "version": "cee34558",
+    "width": 7728
+  },
+  "DSCF3793.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF3793.0ce6c0f8-2592.jpg",
+      "w": 2592
+    },
+    "etag": "fdff0b11fed8442e41906f3640a751d4",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/170s",
+      "taken": "2025-01-16T12:40:08"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoYABAAPu1kqk4ppaQiMAgBMB2JZwAAN8eCzFBWPzKDyYAAzUQyeEusHjnFvYH7wK6BKVfJZIz2pQtTyu0wxNDW5JkDiM5n9i99AccFOw+8j5ag3hiJxLLpiBRLXKTBnO0nx4apIAA=",
+    "sha256": "0ce6c0f8240ce9e19d94f892d7446bd16b9f87d1072c69263219c1af5694f853",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF3793.0ce6c0f8-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF3793.0ce6c0f8-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3793.0ce6c0f8-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF3793.0ce6c0f8-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3793.0ce6c0f8-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF3793.0ce6c0f8-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3793.0ce6c0f8-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF3793.0ce6c0f8-2400.webp"
+      }
+    ],
+    "version": "0ce6c0f8",
+    "width": 7728
+  },
+  "DSCF3807.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF3807.480cf918-2592.jpg",
+      "w": 2592
+    },
+    "etag": "08678cc45639aff73c781495d1bba7b1",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/600s",
+      "taken": "2025-01-16T13:12:41"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JZTuAHWAHPuAA/qCf70fdamvaXCOtNP4Tk9Js69cLqOJKA+4AAA==",
+    "sha256": "480cf918a947167d2f93f0ea1a411e25e444172346b356b08dcd2f5b4915e841",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF3807.480cf918-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF3807.480cf918-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3807.480cf918-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF3807.480cf918-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3807.480cf918-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF3807.480cf918-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF3807.480cf918-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF3807.480cf918-2400.webp"
+      }
+    ],
+    "version": "480cf918",
+    "width": 7728
+  },
+  "DSCF4278.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF4278.fb0efd54-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ba42c265c82ce31a27c096adab6ec090",
+    "exif": {
+      "aperture": "f/14",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 320,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-17T16:25:23"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYABAAPu1kqk4ppaQiMAgBMB2JZQC7ACHgTlOZvKYia+gfqEAA/vN0q9gvRIwngWLSe7H+fjzgUxxWzY53KifBTwctrf/p8nZM52FX7ZRV3QmafxmOPq+Myd+54uqotkNtYi8AAAA=",
+    "sha256": "fb0efd54d2cfaa1ffa004a850ffe70ebb0309a314a48d768985145fa856ad891",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF4278.fb0efd54-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF4278.fb0efd54-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF4278.fb0efd54-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF4278.fb0efd54-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF4278.fb0efd54-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF4278.fb0efd54-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF4278.fb0efd54-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF4278.fb0efd54-2400.webp"
+      }
+    ],
+    "version": "fb0efd54",
+    "width": 7728
+  },
+  "DSCF4814.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF4814.2658bb0f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "a399695ab35689832db24da049da4dae",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 3200,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-26T20:00:53"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JZwAAW+kn09wVQGByingAAP7w1HyoiD3QYbtjZOCx/TsfSB7UUZs0RDo/0D7mzQ664TlIOwRzQZ5ku1M+cq8uvBltPrwPAAA=",
+    "sha256": "2658bb0f568b6e07152182ff031c8a11fa2ed87c323d6f6ae27c26f37478b8c3",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF4814.2658bb0f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF4814.2658bb0f-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF4814.2658bb0f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF4814.2658bb0f-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF4814.2658bb0f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF4814.2658bb0f-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF4814.2658bb0f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF4814.2658bb0f-2400.webp"
+      }
+    ],
+    "version": "2658bb0f",
+    "width": 7728
+  },
+  "DSCF5000.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF5000.3092d4c8-2592.jpg",
+      "w": 2592
+    },
+    "etag": "c4c0380e53564f714fbf04fec6fbe506",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/1250s",
+      "taken": "2025-01-28T16:42:08"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoYABAAPu1iqk2ppaQiMAgBMB2JZwDKACFZeCxqRrr3huxq8AD+7UhMd9LWWgWJB/DLHn21CghMDVmWCMCNZ7sX55FxOpQe38gdEfLFTG9jQ/17CqyiZRWtyAT/wmcwJF2sfAAA",
+    "sha256": "3092d4c800256d3c9b016b0094c8ac0b77712083aa155ca3b70da5ff5eee05ff",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF5000.3092d4c8-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF5000.3092d4c8-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5000.3092d4c8-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF5000.3092d4c8-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5000.3092d4c8-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF5000.3092d4c8-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5000.3092d4c8-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF5000.3092d4c8-2400.webp"
+      }
+    ],
+    "version": "3092d4c8",
+    "width": 7728
+  },
+  "DSCF5018.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF5018.46b3f10e-2592.jpg",
+      "w": 2592
+    },
+    "etag": "8b4e58a06b4bc17952b72acd7fd884e3",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/680s",
+      "taken": "2025-01-28T16:45:33"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoYABAAPu1iqU2ppaQiMAgBMB2JQBOgA8a0S1iEsvUAANxoGqKtO9uiDZZW5gS6Hizqn49ZAdiAuIi1fBsDjRfm89UjVvd3nqOEN+F+pcnNOW0oAAA=",
+    "sha256": "46b3f10e4c735750c5eb5c30feb612914ec0f166bbd2817cc91737fac997c7b0",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF5018.46b3f10e-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF5018.46b3f10e-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5018.46b3f10e-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF5018.46b3f10e-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5018.46b3f10e-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF5018.46b3f10e-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5018.46b3f10e-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF5018.46b3f10e-2400.webp"
+      }
+    ],
+    "version": "46b3f10e",
+    "width": 7728
+  },
+  "DSCF5024.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF5024.7f57c335-2592.jpg",
+      "w": 2592
+    },
+    "etag": "cc0f79055a2d0ae41ed277d7570d9a59",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 800,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-28T18:31:30"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADQAwCdASoYABAAPu1iqU2ppaQiMAgBMB2JQBYdg1q3bTOj+i3w8AAA9T0/eLHd5sXcyZDfzedgzk+N6TrbfKCnc4uuliZB7ZA5evXvu5xoV8lonjw6ffvKAYNuQvrnVVEFAqGWnS/nXQgA",
+    "sha256": "7f57c33565c75e78d306c3c4821af63f14636ce69572d122f36aaa3693102be0",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF5024.7f57c335-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF5024.7f57c335-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5024.7f57c335-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF5024.7f57c335-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5024.7f57c335-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF5024.7f57c335-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF5024.7f57c335-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF5024.7f57c335-2400.webp"
+      }
+    ],
+    "version": "7f57c335",
+    "width": 7728
+  },
+  "DSCF6520.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF6520.40abd57b-2592.jpg",
+      "w": 2592
+    },
+    "etag": "5675b6776fface23d0ff6e8945991486",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 500,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-29T21:57:04"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JaAC7AdwLhUdl64P7H4rS+U8SkBEAAP7kYI0Zm/x5/32zqghelL7nLUKieZlJnew9atnUulcakTLmjUCMyM7OFspok+s23nmmeoEWtGQ4R+kBq91j999UIsq1k6sASD97Dkqntka/cmSLiWbFpi7YvJ+8mH8spkFT0l6KWC3bvUZoF5ag7THe8dWz5OuYx8umrAAA",
+    "sha256": "40abd57be568d8176fba40ad003296233b7590f4fd2daf260b3d72139be18a1a",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF6520.40abd57b-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF6520.40abd57b-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6520.40abd57b-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF6520.40abd57b-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6520.40abd57b-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF6520.40abd57b-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6520.40abd57b-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF6520.40abd57b-2400.webp"
+      }
+    ],
+    "version": "40abd57b",
+    "width": 7728
+  },
+  "DSCF6832.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF6832.837ab23e-2592.jpg",
+      "w": 2592
+    },
+    "etag": "235b21bc23ccce9183be6c7cd7b22dc9",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 6400,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-30T20:05:56"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZQAAW8JHjNqXVUI4AP7jDHdXwETn9HOYpomfMlO5QNStXzFGdtOD4bSMsTy+5IRargbRFHUkIfqENFTG1xvnPaXp257btw2Nmwfp34qAAAAA",
+    "sha256": "837ab23e1b030e166bd8bb9b027ec9ee0c25aacec7cc0c04abc3e1e865b96d8e",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF6832.837ab23e-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF6832.837ab23e-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6832.837ab23e-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF6832.837ab23e-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6832.837ab23e-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF6832.837ab23e-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6832.837ab23e-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF6832.837ab23e-2400.webp"
+      }
+    ],
+    "version": "837ab23e",
+    "width": 7728
+  },
+  "DSCF6835.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF6835.f4fe46b2-2592.jpg",
+      "w": 2592
+    },
+    "etag": "b8b26efe7d1adceae9c9c692f6295139",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 8000,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-30T20:06:02"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZQDG9CHj4x+LmdUxlqDgAP7l2E3mW7Bm0XUXODeU6TLJE9sibC39sUhjtveCc6B5r+MfnOMuKIh7z8XeCE6h5OSy+GDk9qPNqwfM0+RvuVMTyexadhgp46YwS+/uoPyfQ32N8BT/Q8BmofkCe0xU5ALHJ2cmcgAAAA==",
+    "sha256": "f4fe46b24138da3afdd146dfc10eea3c4a26d50fa841f5fbb4b7b19043f227f7",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF6835.f4fe46b2-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF6835.f4fe46b2-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6835.f4fe46b2-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF6835.f4fe46b2-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6835.f4fe46b2-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF6835.f4fe46b2-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF6835.f4fe46b2-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF6835.f4fe46b2-2400.webp"
+      }
+    ],
+    "version": "f4fe46b2",
+    "width": 7728
+  },
+  "DSCF7150.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7150.15438ae7-2592.jpg",
+      "w": 2592
+    },
+    "etag": "53ef228e68070a16c2be6e95dfda4ecf",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 1600,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-01-30T20:22:39"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADQAwCdASoYABAAPu1kqU2ppaQiMAgBMB2JQBadBDpCmWeQ26/nAgAA/vDTVhup+AepjGXLbYVGmSjb3ffe+NOtVGkHepevSPUkwBRjNHWfS1U8DyplOqJzGgbw1OgkJh4z1pA691Ol6Tt0v1HLL6p/rWsatiAeb8sA01/U4AA=",
+    "sha256": "15438ae71f45ff0312b8fdf45cedb41ddb4ba4010caa3eeb0be49d5528713ea3",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7150.15438ae7-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7150.15438ae7-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7150.15438ae7-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7150.15438ae7-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7150.15438ae7-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7150.15438ae7-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7150.15438ae7-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7150.15438ae7-2400.webp"
+      }
+    ],
+    "version": "15438ae7",
+    "width": 7728
+  },
+  "DSCF7403e.JPG": {
+    "download": {
+      "h": 881,
+      "key": "2025-asia/DSCF7403e.65823d98-2592.jpg",
+      "w": 2592
+    },
+    "etag": "a7b7f4aaa5731b75ce4feb164b6db27d",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/450s",
+      "taken": "2025-01-31T13:48:17"
+    },
+    "height": 2627,
+    "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoYAAgAPu1iqk2ppaQiMAgBMB2JYwCdMoADUhedQ1FvqZuQAAD+o0pFWhf28mZmPZzMe3Uk9psfsQB2F8cCge5Ce2NfO9ZZM8dY1L2Y8IRAtkjJhjwYAA==",
+    "sha256": "65823d98eb226c14cf38c139f61abe143d2e8cd8547cbd70fbc00d952d531f94",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7403e.65823d98-720.avif",
+        "edge": 720,
+        "h": 245,
+        "w": 720,
+        "webp": "2025-asia/DSCF7403e.65823d98-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7403e.65823d98-1200.avif",
+        "edge": 1200,
+        "h": 408,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7403e.65823d98-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7403e.65823d98-1800.avif",
+        "edge": 1800,
+        "h": 612,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7403e.65823d98-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7403e.65823d98-2400.avif",
+        "edge": 2400,
+        "h": 816,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7403e.65823d98-2400.webp"
+      }
+    ],
+    "version": "65823d98",
+    "width": 7728
+  },
+  "DSCF7426.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7426.6511641f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "42e532899e697d5d4f263fe79c8044ee",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/120s",
+      "taken": "2025-01-31T13:58:37"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZgCdAYxiqSY/WycOwsD8YSb4AP7sR+g9Q8v0JGtUugRbKEov8KQEJgL5G3EPbK5Sb4ZsDonCXU0snJc/tlI6p7Sx7Zuh2TIL/ogGfmTFJL6FN7lkuOyJzJgLHyl3g3nkBseb4PdcBb/GE0TBr9o5QgcJhQo+kcwI1Lph7X/z0iys6jzbJKcDuHZ4OZCgWyO3qhBVyjJYAAAA",
+    "sha256": "6511641f92232e9b37e264fdae288c23865713a898b951cc246acb6e43c99756",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7426.6511641f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7426.6511641f-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7426.6511641f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7426.6511641f-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7426.6511641f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7426.6511641f-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7426.6511641f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7426.6511641f-2400.webp"
+      }
+    ],
+    "version": "6511641f",
+    "width": 7728
+  },
+  "DSCF7447.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7447.6865a7d0-2592.jpg",
+      "w": 2592
+    },
+    "etag": "00a7618d82df903a102aab0ce4e4e151",
+    "exif": {
+      "aperture": "f/3.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/250s",
+      "taken": "2025-01-31T14:29:45"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYgC7ACHgQ2CSYCZoaLhYRpAA/u+C4ktqf9p1LTWDQ3AjVIv/+94Txy7h3M4E1x6Rtp1sNSIXoOJQJkujN/scJiLnr1Sm7aqdJ+E7gfxO8XYQRon65LsJCzn+8KEyg6aYaWrYkf5ZjfFqCp6OhAAA",
+    "sha256": "6865a7d0a6141f2dcd3d1d2531189660955fb143ad0aa7d3591a320e65792b79",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7447.6865a7d0-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7447.6865a7d0-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7447.6865a7d0-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7447.6865a7d0-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7447.6865a7d0-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7447.6865a7d0-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7447.6865a7d0-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7447.6865a7d0-2400.webp"
+      }
+    ],
+    "version": "6865a7d0",
+    "width": 7728
+  },
+  "DSCF7695e.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7695e.46136bbb-2592.jpg",
+      "w": 2592
+    },
+    "etag": "2acbe76eb3e586a634c1bf0f3ba950cc",
+    "exif": {
+      "aperture": "f/3.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/240s",
+      "taken": "2025-01-31T15:56:38"
+    },
+    "height": 3069,
+    "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JYwCsACHJVeg9gO4uAAD+eOaYlX/62iSbe9tXqj2j8bJD8nCHMF8feRZA4YPepC+jDGZx4h+vawjobEi64Gy7IHDj661yrgYdhY8AAAA=",
+    "sha256": "46136bbb6ab9d32b09c7bb18f5fc8352afaeb462c91d18c0919528c5ce6beeff",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7695e.46136bbb-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7695e.46136bbb-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7695e.46136bbb-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7695e.46136bbb-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7695e.46136bbb-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7695e.46136bbb-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7695e.46136bbb-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7695e.46136bbb-2400.webp"
+      }
+    ],
+    "version": "46136bbb",
+    "width": 4604
+  },
+  "DSCF7722.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7722.f46d26f7-2592.jpg",
+      "w": 2592
+    },
+    "etag": "efa56dbe1972426267ad45245117a82c",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 3200,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-02-01T19:44:22"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBOgMXSVGFzTw62INc2nwTkAAP6H6BRmbLQwyApy7tVDmrKhbu7SoVUPe8CfGANeYx2N5c/2EgN57wy2LGSGFqtlwDWe/+P1nSl92q5kYl+zl6Kw/Z5COOdYC/wMnkIwHgcsoaD7l0P8Wqv2h60n8v2QJ/ePlpf3g5y7rKg/cJ46UTN4NcwElaZKDiykAAA=",
+    "sha256": "f46d26f70dbf2ce1d1516a5fc93ed4f22be775456607495bde870677d757eb45",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7722.f46d26f7-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7722.f46d26f7-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7722.f46d26f7-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7722.f46d26f7-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7722.f46d26f7-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7722.f46d26f7-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7722.f46d26f7-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7722.f46d26f7-2400.webp"
+      }
+    ],
+    "version": "f46d26f7",
+    "width": 7728
+  },
+  "DSCF7842.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7842.249fa193-2592.jpg",
+      "w": 2592
+    },
+    "etag": "d0e1167d839236f3ff64530bb7b2b446",
+    "exif": {
+      "aperture": "f/2.2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/100s",
+      "taken": "2025-02-06T13:08:53"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBYdsYTbz7IcPMvKnv6ZnAAOe03AAP7sq4Sol3t0Nw+26ZQmc8M3iKPABYSYYHPJD3MdVkRRXZkBAciOQhs2p0WFa2Njlf3cuRZm4T72V0HifS9eVmVwV5p/dmb7aIMGS2uZowALwEdBYK9iFJmtoqgvB2HiT+31LAAA",
+    "sha256": "249fa193ca9ea6c71dd7349c1ede34af63d210ef8f3f540b81472ae016f91c24",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7842.249fa193-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7842.249fa193-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7842.249fa193-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7842.249fa193-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7842.249fa193-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7842.249fa193-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7842.249fa193-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7842.249fa193-2400.webp"
+      }
+    ],
+    "version": "249fa193",
+    "width": 7728
+  },
+  "DSCF7893.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7893.b7b1b159-2592.jpg",
+      "w": 2592
+    },
+    "etag": "4f3e32ddfe8aa2e8badfad6f605ecac6",
+    "exif": {
+      "aperture": "f/2.2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/110s",
+      "taken": "2025-02-06T13:38:04"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCsAYxsobh9Qf31siMrkVKlPNAA/vF5NFwKVKGNbjMPAR8Osj02otAck1rc7Rhaqjll7et6HBu8945yVKr8p7DvVBNQyv+T+muFsiVnA2ActR4Ks1IQDogoQbiF9vSiLToG5C3KUr4nD9BWXyjBH4mM3X1ZVQBr3dXoAAA=",
+    "sha256": "b7b1b159bb29fa027c4b9fc1bb80aafab8095a7782d1c8b8453b0f38faf3ded5",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7893.b7b1b159-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7893.b7b1b159-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7893.b7b1b159-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7893.b7b1b159-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7893.b7b1b159-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7893.b7b1b159-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7893.b7b1b159-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7893.b7b1b159-2400.webp"
+      }
+    ],
+    "version": "b7b1b159",
+    "width": 7728
+  },
+  "DSCF7910.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7910.981bd57b-2592.jpg",
+      "w": 2592
+    },
+    "etag": "3ff2839977377f2f8726e05c5ec6adda",
+    "exif": {
+      "aperture": "f/2.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/140s",
+      "taken": "2025-02-06T13:51:57"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC7ACFZbGJ3fCJb8O2WYTeAAPJjFO3DY3BhgKG4qTLQ779ZbgpoAQhvN/aTuBJIjcqU7pfkR9YhfYtTNL7atJGxeJ+dupd0vTSo7VWtU2r0IvKvtt0v8IGvvBez/0yLIGfTiWYuNPiPuf9gnwJ8sEuMXhQAgQAAAA==",
+    "sha256": "981bd57b47279ef760df65c5b3abd506dfa938a884e4d83e814e80b6eeab9166",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7910.981bd57b-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7910.981bd57b-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7910.981bd57b-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7910.981bd57b-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7910.981bd57b-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7910.981bd57b-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7910.981bd57b-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7910.981bd57b-2400.webp"
+      }
+    ],
+    "version": "981bd57b",
+    "width": 7728
+  },
+  "DSCF7970.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF7970.a66d6430-2592.jpg",
+      "w": 2592
+    },
+    "etag": "469b3b3808380dd9d03a0da961741959",
+    "exif": {
+      "aperture": "f/4",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/350s",
+      "taken": "2025-02-16T12:12:41"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdAB7HRnA8YPG+H1I3QAD+sjpd3W1uaUGtx4I1nHN3kYukTEKeS2Q/hStKP6OFa6D0aiYuH8JZZrIGTBFepAQHhPNS5nmGYr/jTtDOHF8mudQMM6r0JpVoAA==",
+    "sha256": "a66d6430672332b323b2620e32def76564776dbcf52fcf5db43faa464ea378ba",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF7970.a66d6430-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF7970.a66d6430-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7970.a66d6430-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF7970.a66d6430-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7970.a66d6430-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF7970.a66d6430-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF7970.a66d6430-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF7970.a66d6430-2400.webp"
+      }
+    ],
+    "version": "a66d6430",
+    "width": 7728
+  },
+  "DSCF8039.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8039.49273b00-2592.jpg",
+      "w": 2592
+    },
+    "etag": "9970c79b7a4e89ab7ba6e7a654f55b74",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/400s",
+      "taken": "2025-02-16T14:28:47"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoYABAAPu1kqk4ppaQiMAgBMB2JZACxG1yB0Z9FP2Q7r7/JeAD+UtfbwYeNWSlN+nmT932w6q1w0YZFwLByIO+CSr/nEdjIddJnrkeVvrSE3KWfQWzAqD7WuqBASWu1g4APyxmQAAA=",
+    "sha256": "49273b007ccdf110f7f8a9b65a58ce32e9b4531f8b35a5bc7b75451e886d30d3",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8039.49273b00-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8039.49273b00-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8039.49273b00-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8039.49273b00-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8039.49273b00-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8039.49273b00-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8039.49273b00-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8039.49273b00-2400.webp"
+      }
+    ],
+    "version": "49273b00",
+    "width": 7728
+  },
+  "DSCF8215.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8215.6f7fd856-2592.jpg",
+      "w": 2592
+    },
+    "etag": "15a21f2cc8979f18894e8a6af526e7ab",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/600s",
+      "taken": "2025-03-02T12:44:03"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JaQAD49iq5fl+YF8uRgyiAAD9revYG/QYPMTnUscrnDINLjRav7A1JyLV4nfYVhik/LvzgTqt+BHjNzijWm970AhBa0j58sPnYgQWdFJbswiBZg5Nqo7TG2EKcCioYWC6KdNoipcWr4KPuBMjQYGBvzeaB6xxdFyEJc3n883fCR9AaRNl7l8vr1u3/0AjeGpKvlrCE9POrMjfeoxcvO/nkdclf8fbha6RuLEhgAA=",
+    "sha256": "6f7fd8567220c61e1be8d1daff3ea367439b809e7d17006d227944c2e747db69",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8215.6f7fd856-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8215.6f7fd856-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8215.6f7fd856-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8215.6f7fd856-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8215.6f7fd856-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8215.6f7fd856-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8215.6f7fd856-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8215.6f7fd856-2400.webp"
+      }
+    ],
+    "version": "6f7fd856",
+    "width": 7728
+  },
+  "DSCF8230.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8230.7022745e-2592.jpg",
+      "w": 2592
+    },
+    "etag": "4284ce5c5c84166bee03856a3af8c4de",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/900s",
+      "taken": "2025-03-02T12:48:42"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCdAAyj3UPw/J7y6BAA5JJD/Mewv1HLxhCb7f7yXrJAWQcJp22U9q5WGrpybI0qi2w3oHeEGxqrazXj/aPPLg/uXML0mw0prWPgqv7/mR60xKEoDApe9RHUGrvBddAP3hZgAAA=",
+    "sha256": "7022745e653d48bf6b961f6723a66b7ce4b06c876e8749d007e9bdb4619c5683",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8230.7022745e-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8230.7022745e-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8230.7022745e-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8230.7022745e-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8230.7022745e-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8230.7022745e-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8230.7022745e-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8230.7022745e-2400.webp"
+      }
+    ],
+    "version": "7022745e",
+    "width": 7728
+  },
+  "DSCF8240.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8240.a0d45140-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ccf15ad34d63cba177d41dc11c2b1c55",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/640s",
+      "taken": "2025-03-02T12:52:55"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQCsBagBPYwnAiHiKLjuKAD+3u3PFTv/HNNSxQmO9PA4/EZ9B5tz0hTwwe0bRvAvADCbkUa8Vuu3hQvmiclF7hF/PFJx1CAaZMdZVcBra5EKFRTeUitX0tZsPP/gZLEfj6IYVbE2uAAA",
+    "sha256": "a0d45140e4fbfb41a8b2004681e6a57fcb77e55d9a148d0f5de11cca12a68c74",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8240.a0d45140-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8240.a0d45140-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8240.a0d45140-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8240.a0d45140-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8240.a0d45140-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8240.a0d45140-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8240.a0d45140-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8240.a0d45140-2400.webp"
+      }
+    ],
+    "version": "a0d45140",
+    "width": 7728
+  },
+  "DSCF8414.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8414.0933dfea-2592.jpg",
+      "w": 2592
+    },
+    "etag": "be993ad3e97ae7b9155b94ebd375ba70",
+    "exif": {
+      "aperture": "f/3.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/280s",
+      "taken": "2025-03-07T12:31:08"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JaACw7AsNR0BIF7EAAP6/gq4NttV0Rs782pMBNrK0eRYfFDGuZ5C/W5VDbbWmcGFmaKaBJLLF+1S53uQbgwK80LGhrVvCfb1dS1jEPrF2vUdnR8b6cIoPJau3P/eI/N/EV7rTYenAzEjx6RQAAA==",
+    "sha256": "0933dfea369a36f265f318bf8b83e1984468a18a235362815fdf0ac70137c3b4",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8414.0933dfea-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8414.0933dfea-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8414.0933dfea-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8414.0933dfea-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8414.0933dfea-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8414.0933dfea-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8414.0933dfea-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8414.0933dfea-2400.webp"
+      }
+    ],
+    "version": "0933dfea",
+    "width": 7728
+  },
+  "DSCF8420.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8420.a7972d60-2592.jpg",
+      "w": 2592
+    },
+    "etag": "695a04aca1c1428cc36d63a4eb8f997d",
+    "exif": {
+      "aperture": "f/4",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/320s",
+      "taken": "2025-03-07T12:33:33"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbAC7ABeCuWhjV5F8tkIbxgAA/uwABDxwdxuvhoJjZ5oNrAkw4FJPH+dSblxtnFgF++KLR2X33b9sReVzhqWQxOc7TyL1cJrJ4amFDhgobehr4IMG2zx25jcYKw0AYvFd5IhbgHWWIslUZAibRFKhXSvuBbep7sRGFzsAAAA=",
+    "sha256": "a7972d60d7fa9bd31084f3db112b2a096fbf59736710c5ef3596e81323817e1a",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8420.a7972d60-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8420.a7972d60-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8420.a7972d60-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8420.a7972d60-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8420.a7972d60-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8420.a7972d60-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8420.a7972d60-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8420.a7972d60-2400.webp"
+      }
+    ],
+    "version": "a7972d60",
+    "width": 7728
+  },
+  "DSCF8442.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8442.8e2d0efb-2592.jpg",
+      "w": 2592
+    },
+    "etag": "1cb9d8abced549c2d9cf1a10cbb33653",
+    "exif": {
+      "aperture": "f/3.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/250s",
+      "taken": "2025-03-07T13:13:56"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQC7AYyyl2/9HC4Vob/bTb3eAAD8hZ/Xo3ILziF9ZDpr7qUKh0CnDHDMQ3dvc+4Qsd+gzMcmgj3iRNcZ3aYdyo/B2z/W8uu7wA/801gIbVEkBXl9kXZLN9K/KW0Uxjmn5RhAcLtUwzLbDgyyZQ170JmTgGmiKbL+lvMNVbqFdTi8+8Ge75wtgkAAAA==",
+    "sha256": "8e2d0efbde81047ba16624a7335587fec32d79d5bef0ed915986c48860926df4",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8442.8e2d0efb-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8442.8e2d0efb-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8442.8e2d0efb-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8442.8e2d0efb-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8442.8e2d0efb-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8442.8e2d0efb-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8442.8e2d0efb-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8442.8e2d0efb-2400.webp"
+      }
+    ],
+    "version": "8e2d0efb",
+    "width": 7728
+  },
+  "DSCF8734.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8734.6e9f0d5b-2592.jpg",
+      "w": 2592
+    },
+    "etag": "f25a8a3d2d177db0e7b920349cb6730b",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/500s",
+      "taken": "2025-03-23T14:28:55"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JQBOkGxBgcYJ7RhLGyQA0AP6Oum4c95gattqwG0V2N7TCvO7ofclijozbAa5ciWd1ieWAd1ts8+vGJvwpyBMAAAA=",
+    "sha256": "6e9f0d5bef1c05e329cc941fc0852cd4c061650a6abac2fd41e6d9737f907511",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8734.6e9f0d5b-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8734.6e9f0d5b-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8734.6e9f0d5b-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8734.6e9f0d5b-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8734.6e9f0d5b-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8734.6e9f0d5b-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8734.6e9f0d5b-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8734.6e9f0d5b-2400.webp"
+      }
+    ],
+    "version": "6e9f0d5b",
+    "width": 7728
+  },
+  "DSCF8744.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8744.a9b6485f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "d58f4771b6c7a3a9fad6ee9cf1c0ae17",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/600s",
+      "taken": "2025-03-23T14:33:25"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwAwCdASoYABAAPu1kqU2ppaOiMAgBMB2JZACdACHcW0bjFH4hyAD+5xqYchXMXZbhTYrlbhwTAoE1hdX5PPqdhNCVr8uWlvxLpbr+CRyX/qNdI8HZT6N1QbWxoeMQGeeDTXALtF/MMtTQMNcuaiGgAAA=",
+    "sha256": "a9b6485f91651a83ec1a1c71443c90b3d0f0b0d3924903155310db55a8930e01",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8744.a9b6485f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8744.a9b6485f-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8744.a9b6485f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8744.a9b6485f-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8744.a9b6485f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8744.a9b6485f-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8744.a9b6485f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8744.a9b6485f-2400.webp"
+      }
+    ],
+    "version": "a9b6485f",
+    "width": 7728
+  },
+  "DSCF8837.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8837.83e273bc-2592.jpg",
+      "w": 2592
+    },
+    "etag": "aa61559ac719a22e7b10de15b763db43",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 10000,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-03-29T23:42:41"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoYABAAPu1iqk4ppaQiMAgBMB2JZQC06CHhmQBiRCFocq/LAAD+6+5BqsvtsWCS5NE77KtEItetN13B9IrlKe/90jPzwoJnlq/qrzPmA/DRWgAA",
+    "sha256": "83e273bc4d2996288a500e76fb93a9e6dfac98316a8a254409699159288e3803",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8837.83e273bc-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8837.83e273bc-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8837.83e273bc-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8837.83e273bc-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8837.83e273bc-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8837.83e273bc-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8837.83e273bc-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8837.83e273bc-2400.webp"
+      }
+    ],
+    "version": "83e273bc",
+    "width": 7728
+  },
+  "DSCF8845.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8845.7e1c0cf5-2592.jpg",
+      "w": 2592
+    },
+    "etag": "441a36ebefdd29a32e6ee44430d7936d",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/340s",
+      "taken": "2025-04-01T09:57:23"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBWAMZAblfucdvBcZ5SbfhqAAP7xgAGuq95l3qsHGWcLCCKw3pHmZ2wcXbju/NWoYpzgeUGeVxAk68vlOepoEHmcqMKW0RozEc3IgOTfkAMkmfn/3p7al2YrkTmSV96uodQN7/RtvB4Qg+2b9icSmF/f/GNK2xAQo4BnCGLgygo0OAGoAAAA",
+    "sha256": "7e1c0cf50f12d949c156de9861ff618468af744ae0e7b02865caa30345de31fd",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8845.7e1c0cf5-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8845.7e1c0cf5-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8845.7e1c0cf5-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8845.7e1c0cf5-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8845.7e1c0cf5-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8845.7e1c0cf5-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8845.7e1c0cf5-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8845.7e1c0cf5-2400.webp"
+      }
+    ],
+    "version": "7e1c0cf5",
+    "width": 7728
+  },
+  "DSCF8869.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8869.ea2089b0-2592.jpg",
+      "w": 2592
+    },
+    "etag": "335110b654ca3ba4ab5149be8e2e3a2b",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/300s",
+      "taken": "2025-04-01T10:13:51"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JYgCdIKnqQBaZbNsq2iC3aPWAAP3jri9SFk25EzpkkAHi/aTYuW+pYdY8MbsxiANNhLWB/luOzwbAKdlXnqedKkd88i2yPkQaT4E3xUA0I5HrHhfL4VCLRlBR0ULx+gaVUv5VSnSXZr5RSj3pW4CA7FjC9fqpKXWMLbiw/BwOt6fGWX70AAAA",
+    "sha256": "ea2089b08d36d4e4faf3048f0c34afb808f179676cb4b1d9c846f18836a91d98",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8869.ea2089b0-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8869.ea2089b0-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8869.ea2089b0-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8869.ea2089b0-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8869.ea2089b0-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8869.ea2089b0-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8869.ea2089b0-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8869.ea2089b0-2400.webp"
+      }
+    ],
+    "version": "ea2089b0",
+    "width": 7728
+  },
+  "DSCF8983.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF8983.70940566-2592.jpg",
+      "w": 2592
+    },
+    "etag": "df247e87e6d96a5f3d3a24ec82a4b657",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/400s",
+      "taken": "2025-04-07T16:38:12"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBACdASoYABAAPu1iqU2ppaQiMAgBMB2JZQC7ABuwah2VcN4zozIX/KAA/vH2hgo+FxXHq/h6nvFdaKtLueSqXd+KyeUG171wmVBOSM6ts/3K1bKN2m6SpdMvo6XlKR8rQYhJ3hLTc5ec8YgRYl1cLZv92jr9ZOkmRY1jxKY/TY0c/y8gmU2dadQZgVsAAAA=",
+    "sha256": "7094056612e4eb1008ce88fc01368094899e9c58f17a6ef18119be3e5b9d954b",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF8983.70940566-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF8983.70940566-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8983.70940566-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF8983.70940566-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8983.70940566-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF8983.70940566-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF8983.70940566-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF8983.70940566-2400.webp"
+      }
+    ],
+    "version": "70940566",
+    "width": 7728
+  },
+  "DSCF9115.JPG": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/DSCF9115.dfbed437-2592.jpg",
+      "w": 1728
+    },
+    "etag": "f83790951cf784824657356153579ac9",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 160,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-04-11T13:01:19"
+    },
+    "height": 7728,
+    "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JZQDCgBKti6ad9VkResAAyVKgNBwfRvwtlL3JnfxMkomD5bRgp/NFzIgwUVtamwGvCCgG0oS5N/jTl26m4fgsomToKipPBiGepYABoQmltXvtX8OLDh9Ix0F3lI2MuYiLKB1DKz8iqZAA",
+    "sha256": "dfbed437fb5c8dec00de7f08b8b217a45d1f3e9df25701ea30e6d2179a30032f",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF9115.dfbed437-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 480,
+        "webp": "2025-asia/DSCF9115.dfbed437-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9115.dfbed437-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 800,
+        "webp": "2025-asia/DSCF9115.dfbed437-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9115.dfbed437-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF9115.dfbed437-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9115.dfbed437-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1600,
+        "webp": "2025-asia/DSCF9115.dfbed437-2400.webp"
+      }
+    ],
+    "version": "dfbed437",
+    "width": 5152
+  },
+  "DSCF9123.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF9123.f83be242-2592.jpg",
+      "w": 2592
+    },
+    "etag": "7bd6fa5fccdc447f48c1d0b9752fe159",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/160s",
+      "taken": "2025-04-11T13:19:48"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQDG9Bkj6rYWLbXxxTeLPfaAAMygw5qlwnMBnZiAObkqhqB9P+GklDMXZXIMwm4t8J1CygpjNDO0U1TWqoDTLn0x3TUdOYr7GnbeeL8M2OJS6b7ahyJRFpRBf+3IXsLcAA==",
+    "sha256": "f83be24213bc7d956000f92a785b8392509d0fc18d4530e4e0dfcc07a7189bbc",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF9123.f83be242-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF9123.f83be242-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9123.f83be242-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF9123.f83be242-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9123.f83be242-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF9123.f83be242-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9123.f83be242-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF9123.f83be242-2400.webp"
+      }
+    ],
+    "version": "f83be242",
+    "width": 7728
+  },
+  "DSCF9316.JPG": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/DSCF9316.b660b01a-2592.jpg",
+      "w": 1728
+    },
+    "etag": "e4cd0918ee21e34183e6cc175394677c",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/350s",
+      "taken": "2025-04-19T15:55:47"
+    },
+    "height": 7728,
+    "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoQABgAPu1yrU+pp6QiMAgBMB2JYwABHu/RFGccfjfLNAAAAP6u/NJFG0C62ydUB8fzc9CfIoKb2WpQdw/QPxNECZR+tbv1aN+P6S6ETX/N4vR/MAeCI0xt1qjAAAAA",
+    "sha256": "b660b01a192a1310b33bc3df69e9750ab7c2216fe7cb0f3b6ac4c35fd14e16f7",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF9316.b660b01a-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 480,
+        "webp": "2025-asia/DSCF9316.b660b01a-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9316.b660b01a-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 800,
+        "webp": "2025-asia/DSCF9316.b660b01a-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9316.b660b01a-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF9316.b660b01a-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9316.b660b01a-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1600,
+        "webp": "2025-asia/DSCF9316.b660b01a-2400.webp"
+      }
+    ],
+    "version": "b660b01a",
+    "width": 5152
+  },
+  "DSCF9929.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF9929.60651326-2592.jpg",
+      "w": 2592
+    },
+    "etag": "7d9591f62ab1ac185a2932a01d9a47c0",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 5000,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/40s",
+      "taken": "2025-05-02T20:48:31"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZACdMoACtYOo+dRl9MManIoAAP7w33GwF23UVB2/nJfmFAXZgJcYcT0M/A/UwBtwDwQKlAaSdNYIh4nl3zYGMG9OQ2xARbirdxY0P7Aj9hCZV8NmNHnB1ums6Y0D+SuNErRNUSllexekkt7YUE39UTJQDRh0tt3pceQf5oXTtXagekZ1AAAA",
+    "sha256": "60651326c7e65cca3e580faae6ecec9de45a6330d6c37837bc173f5a1024173a",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF9929.60651326-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF9929.60651326-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9929.60651326-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF9929.60651326-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9929.60651326-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF9929.60651326-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9929.60651326-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF9929.60651326-2400.webp"
+      }
+    ],
+    "version": "60651326",
+    "width": 7728
+  },
+  "DSCF9941.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF9941.e1de8556-2592.jpg",
+      "w": 2592
+    },
+    "etag": "f7a48f96f8c44fa3c5765ea4996956ac",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 2500,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/40s",
+      "taken": "2025-05-02T20:49:35"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JagCdMoLT9AootYJ7PaNx+IlUOxEAAP7p0RYJ291Pwf2S13FCl4ktae9cdbGSXm+w3fSEC9tmpd+AqagDykEvDnVRvjfWu68SXvcuQDxbb1Zcczu2/f48fzKPVtu7lDeumhk+Om9lBXHe+Ij9gAAA",
+    "sha256": "e1de85569a7b1ee4c905584f84b19c52eaad6900ae2f1e8b8b3bd6d36257d23b",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF9941.e1de8556-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF9941.e1de8556-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9941.e1de8556-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF9941.e1de8556-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9941.e1de8556-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF9941.e1de8556-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9941.e1de8556-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF9941.e1de8556-2400.webp"
+      }
+    ],
+    "version": "e1de8556",
+    "width": 7728
+  },
+  "DSCF9978.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF9978.c947fda6-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ac7a69de5bfef96d7085bd750fdfd5cf",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 320,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/4s",
+      "taken": "2025-05-02T21:02:12"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCw7CHfIoKPiwdTZgAA/vQdbZ8dek/eKS3R/nONYkLN9Z0UWPFhmgC6CF6/Yd//9FZTr1Q//4YAJp4TMqF0W4bGMItEAAA=",
+    "sha256": "c947fda6b18a535def0d0af4604ab541a4c4f0633cf63b6a05dedec1f91ce79b",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF9978.c947fda6-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF9978.c947fda6-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9978.c947fda6-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF9978.c947fda6-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9978.c947fda6-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF9978.c947fda6-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9978.c947fda6-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF9978.c947fda6-2400.webp"
+      }
+    ],
+    "version": "c947fda6",
+    "width": 7728
+  },
+  "DSCF9993.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-asia/DSCF9993.b0851326-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ce71a3689ea9fc369219284e25e72fe8",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1s",
+      "taken": "2025-05-02T21:20:23"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCdAYuQz0/dmoq/pnoFxwAA/uox13NoW12JLLX47QAd5/UJPx8V5g4kWBNLqMBBx9Y1EkBF5Wmof7EH139x9fXVa+7oJrkSwa46VGS8QzNC7fE2dzq6W00PulT7ygJ739KcHDQAAA==",
+    "sha256": "b0851326ca7dd797c7bcbfe9d9c26ba5dd9fb78e4ca259c0fceeb61239988d01",
+    "variants": [
+      {
+        "avif": "2025-asia/DSCF9993.b0851326-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-asia/DSCF9993.b0851326-720.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9993.b0851326-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-asia/DSCF9993.b0851326-1200.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9993.b0851326-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-asia/DSCF9993.b0851326-1800.webp"
+      },
+      {
+        "avif": "2025-asia/DSCF9993.b0851326-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-asia/DSCF9993.b0851326-2400.webp"
+      }
+    ],
+    "version": "b0851326",
+    "width": 7728
+  },
+  "PXL_20250107_070802611.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250107_070802611.af92f4af-2592.jpg",
+      "w": 1952
+    },
+    "etag": "2ced5cd05066e4ef1115e39bd99539a2",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 448,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/24s",
+      "taken": "2025-01-07T15:08:02"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASoSABgAPu1srFEppaQiqAqpMB2JYwDE2BIlt2FufGf+kps5NeSfunsq4sCK4AD+g/2akNxBrkRve7KmT95pPKwAWZaaEXNKf7TwaqMTAwLkHH0WNOfsMlvB6DvCZPhWU1N9H1hDtG41SI83S73dpvoZRYbWpo0UPltIQRF6HoeSzAJfHUJWBouLeKRSNAAA",
+    "sha256": "af92f4aff6cd3d0f7f620dfbf71f1cd2d353472d1e7af0212813b6d775b27467",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250107_070802611.af92f4af-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250107_070802611.af92f4af-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250107_070802611.af92f4af-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250107_070802611.af92f4af-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250107_070802611.af92f4af-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250107_070802611.af92f4af-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250107_070802611.af92f4af-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250107_070802611.af92f4af-2400.webp"
+      }
+    ],
+    "version": "af92f4af",
+    "width": 3072
+  },
+  "PXL_20250107_071931547.jpg": {
+    "download": {
+      "h": 1952,
+      "key": "2025-asia/PXL_20250107_071931547.254e94c8-2592.jpg",
+      "w": 2592
+    },
+    "etag": "a524115eb5bb3a1267aeab87abbc4565",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 41,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/40s",
+      "taken": "2025-01-07T15:19:31"
+    },
+    "height": 3072,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBQCdASoYABIAPu1srFEppiQiqAqpMB2JQBadMYTOHem2JvuFC5OxBLOhTyVhc26CQAD+8XYMkTuUYboNuVmpL3BKNekfY8KFFFc9HiRansw5C/h+rQXycd349bgoW0oY6WJ7c/HstBWrQFck3Sm0M5VfCGwGfzSq25YUcouoDx7ugt7CcDxzLNc8UJQZz7JNRcDGX7fh6RW2R0u5BCAA",
+    "sha256": "254e94c80f9a39fae85ea935ced6b0b73a9c7d4219a763f706d9a4e1e45b176f",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250107_071931547.254e94c8-720.avif",
+        "edge": 720,
+        "h": 542,
+        "w": 720,
+        "webp": "2025-asia/PXL_20250107_071931547.254e94c8-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250107_071931547.254e94c8-1200.avif",
+        "edge": 1200,
+        "h": 904,
+        "w": 1200,
+        "webp": "2025-asia/PXL_20250107_071931547.254e94c8-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250107_071931547.254e94c8-1800.avif",
+        "edge": 1800,
+        "h": 1355,
+        "w": 1800,
+        "webp": "2025-asia/PXL_20250107_071931547.254e94c8-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250107_071931547.254e94c8-2400.avif",
+        "edge": 2400,
+        "h": 1807,
+        "w": 2400,
+        "webp": "2025-asia/PXL_20250107_071931547.254e94c8-2400.webp"
+      }
+    ],
+    "version": "254e94c8",
+    "width": 4080
+  },
+  "PXL_20250115_103954677.jpg": {
+    "download": {
+      "h": 1952,
+      "key": "2025-asia/PXL_20250115_103954677.6e534a94-2592.jpg",
+      "w": 2592
+    },
+    "etag": "eba4223f67b4452080c11ff4dfbb0baf",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 80,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/30s",
+      "taken": "2025-01-15T18:39:54"
+    },
+    "height": 3072,
+    "lqip": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAACwBQCdASoYABIAPu1qq1EppaOiqAqpMB2JZgC7AdwLgsJiL90ZqwZrfAopZNLb1UsAE20s6YAA/uTTMr98to0mEXyUoTlnxjxsxfFd8qwXkt8mbGU7U8Xb7n9rF1dmEg9Mw+FWNikGreairwUCuTFBfZn5VJY10F3rjOcfthhb//Qfos4ACR2fW/pDgHxMRAJvOEmVLb6pVgvvwRjxuRv7hqe71I3lhDdk/FUOuGN+kpkMUF2LtArDWScdsOpj2drk8rUtnYkQYq4R1hpdy+XSIc8xhQAA",
+    "sha256": "6e534a9425ea9531531235d863686c98bde6e998724c99b39d065cbea98f0745",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250115_103954677.6e534a94-720.avif",
+        "edge": 720,
+        "h": 542,
+        "w": 720,
+        "webp": "2025-asia/PXL_20250115_103954677.6e534a94-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250115_103954677.6e534a94-1200.avif",
+        "edge": 1200,
+        "h": 904,
+        "w": 1200,
+        "webp": "2025-asia/PXL_20250115_103954677.6e534a94-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250115_103954677.6e534a94-1800.avif",
+        "edge": 1800,
+        "h": 1355,
+        "w": 1800,
+        "webp": "2025-asia/PXL_20250115_103954677.6e534a94-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250115_103954677.6e534a94-2400.avif",
+        "edge": 2400,
+        "h": 1807,
+        "w": 2400,
+        "webp": "2025-asia/PXL_20250115_103954677.6e534a94-2400.webp"
+      }
+    ],
+    "version": "6e534a94",
+    "width": 4080
+  },
+  "PXL_20250115_114315089.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250115_114315089.e45adcad-2592.jpg",
+      "w": 1952
+    },
+    "etag": "207f7dd733e9c70324200f1e9ecbcb52",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 442,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/120s",
+      "taken": "2025-01-15T19:43:15"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAACwBQCdASoSABgAPu1qq1EppaOiqAqpMB2JQBUhIAc/+LZtMyuWVesIBzeGhh1fNB/iHPFf8AAA/rshIqsFUs9bky0Ijat0tbpT4MQ80+VKrUDWYMWxKLDL5DN3sH6NGLDcB+Gpd2mFeJ0P1eEwwapx8i41dHchFs4O3NKbOnhOhYXGTi4LLy7efPV+X2H+eX16ETloqYXA4aHSQnpkRK1nWvAPQlPV/diyV/hVsj8L5iUbaWL56xK8aqDcMRETciRtHPRW02nLCbPK/5DotYXqBksAAA==",
+    "sha256": "e45adcadb1b5484545563cbaaa720f2388cff77a50bed6c82e311b23fc9aa1e3",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250115_114315089.e45adcad-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250115_114315089.e45adcad-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250115_114315089.e45adcad-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250115_114315089.e45adcad-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250115_114315089.e45adcad-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250115_114315089.e45adcad-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250115_114315089.e45adcad-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250115_114315089.e45adcad-2400.webp"
+      }
+    ],
+    "version": "e45adcad",
+    "width": 3072
+  },
+  "PXL_20250117_083335880.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250117_083335880.5ed4b424-2592.jpg",
+      "w": 1952
+    },
+    "etag": "ac37ebde3919ac27f1cf83bca07de6f4",
+    "exif": {
+      "aperture": "f/2.2",
+      "camera": "Pixel 7 Pro",
+      "focal": "2mm",
+      "iso": 448,
+      "lens": "Pixel 7 Pro back camera 1.95mm f/2.2",
+      "shutter": "1/60s",
+      "taken": "2025-01-17T16:33:35"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADQBACdASoSABgAPu1urlKppiQiqAgBMB2JZwDE6f/gCf7YJXNJYVD8jgTzOXmSAAD8FfPUPjX5rHYB8Zhxas3rS3sVP8nn+BFZCpSB2E1cr5bSvMPYQOwmG873/7/V+m//e6L3GzcVtEASGYceSw3djMJ1+20WRtoyCHEJp1aTvZ/1BwB62Rab0xFzlECl57jSrUpysKeY9JXDgQkH+wAA",
+    "sha256": "5ed4b42463ac973741dabffa98e91d191773a61b5da78f634a237902fabffbbd",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250117_083335880.5ed4b424-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250117_083335880.5ed4b424-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250117_083335880.5ed4b424-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250117_083335880.5ed4b424-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250117_083335880.5ed4b424-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250117_083335880.5ed4b424-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250117_083335880.5ed4b424-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250117_083335880.5ed4b424-2400.webp"
+      }
+    ],
+    "version": "5ed4b424",
+    "width": 3072
+  },
+  "PXL_20250117_102359309.jpg": {
+    "download": {
+      "h": 1952,
+      "key": "2025-asia/PXL_20250117_102359309.3d8d0312-2592.jpg",
+      "w": 2592
+    },
+    "etag": "4ffe25801a15978c52ab366290e817bf",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 94,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/40s",
+      "taken": "2025-01-17T18:23:59"
+    },
+    "height": 3072,
+    "lqip": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACQBQCdASoYABIAPu1ur1IppiQiqAgBMB2JQBe6gQHK6H+vWUAGkfLt8NVrxOpaMyxDi+RsAAD+7NW4XjriR4WS3QHonSIuNnm8BHzuOdt5PBQb2fUFqxaO89UsSxDzDdjl1SssARoowAFEgSIjs6QmVlubahlBQPUNBOkQezBCZJsHwfZxITuXqrt+tWQYkMTC2iDzR6bR5J07ODGprq5M/D57kIG6Dra+WVlPjzLoC1ATzcpagAjz3i5mQMBTu65fqyMnwVFGpCcHVkAAAA==",
+    "sha256": "3d8d0312c6a1cc05d0d88d8e7ac710fabb7ddcf092729ed4620fbee035395a6b",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250117_102359309.3d8d0312-720.avif",
+        "edge": 720,
+        "h": 542,
+        "w": 720,
+        "webp": "2025-asia/PXL_20250117_102359309.3d8d0312-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250117_102359309.3d8d0312-1200.avif",
+        "edge": 1200,
+        "h": 904,
+        "w": 1200,
+        "webp": "2025-asia/PXL_20250117_102359309.3d8d0312-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250117_102359309.3d8d0312-1800.avif",
+        "edge": 1800,
+        "h": 1355,
+        "w": 1800,
+        "webp": "2025-asia/PXL_20250117_102359309.3d8d0312-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250117_102359309.3d8d0312-2400.avif",
+        "edge": 2400,
+        "h": 1807,
+        "w": 2400,
+        "webp": "2025-asia/PXL_20250117_102359309.3d8d0312-2400.webp"
+      }
+    ],
+    "version": "3d8d0312",
+    "width": 4080
+  },
+  "PXL_20250130_122848169.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250130_122848169.1be0e6cc-2592.jpg",
+      "w": 1952
+    },
+    "etag": "10b12c4cc2ba01d8c307c6716151bea9",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 371,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/32s",
+      "taken": "2025-01-30T20:28:48"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABQBQCdASoSABgAPu1sq1EppaOiqAqpMB2JYwDDNAwn9R8vuliEqt1Pmm1WbELsQZaLHAAA/tKFdC3Lwbpz6l99MpaSa9wBGKdcY9AP3maf644DRl7YRA99iohZ6sK9a8yrHrodgNeWFeV/SkKJuLFxz1NrbBxdU7D8lQncKs4uYvsOZxOhRSUqhJ1vyXdz2B1ojrKuwFlARoZZTivh5P8GaxIeA2iWCWPAAA==",
+    "sha256": "1be0e6ccbc9974e0ff76cba4ada9adfddc929025249579c19a977f41c76902ef",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250130_122848169.1be0e6cc-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250130_122848169.1be0e6cc-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_122848169.1be0e6cc-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250130_122848169.1be0e6cc-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_122848169.1be0e6cc-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250130_122848169.1be0e6cc-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_122848169.1be0e6cc-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250130_122848169.1be0e6cc-2400.webp"
+      }
+    ],
+    "version": "1be0e6cc",
+    "width": 3072
+  },
+  "PXL_20250130_122851652.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250130_122851652.b9578a32-2592.jpg",
+      "w": 1952
+    },
+    "etag": "9689543275f6c6bb42938c4dcee7495d",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 2513,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/15s",
+      "taken": "2025-01-30T20:28:51"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAADQBACdASoSABgAPu1oqU+ppiOiKA1RMB2JZwDLaA+2odAAUMwXqGNFAhSX9BvNAAD+6VIv1PCT1JKzfqzqCWcLHxEluaKrXFehyidRvGD/pSqEIS0NSAVe68+VImLaPS0S/saLRzywFToKtQKmzOZs0VNyCpSdqDhjx+v+R9zg0/EEnzVjyagWt+Ng0yLgAAA=",
+    "sha256": "b9578a320d8982f2fb83fb2b1e531825d8aac7293a14dc6237b267d479ef8fa1",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250130_122851652.b9578a32-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250130_122851652.b9578a32-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_122851652.b9578a32-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250130_122851652.b9578a32-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_122851652.b9578a32-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250130_122851652.b9578a32-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_122851652.b9578a32-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250130_122851652.b9578a32-2400.webp"
+      }
+    ],
+    "version": "b9578a32",
+    "width": 3072
+  },
+  "PXL_20250130_123050608.MP.jpg": {
+    "download": {
+      "h": 1952,
+      "key": "2025-asia/PXL_20250130_123050608.MP.89254028-2592.jpg",
+      "w": 2592
+    },
+    "etag": "c9b898dd8243b1ec4b1615bf8133a3ad",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 2081,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/15s",
+      "taken": "2025-01-30T20:30:50"
+    },
+    "height": 3072,
+    "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACQBACdASoYABIAPu1or1AppaSiqAqpMB2JZwDLaA9rlLINv2WL9hNZiDSRTvAA/uzQ2fTC9dd3fRBCHmySbq94XRAPLJVuLEsGeADOcJuszcuZcSA3m3WtNZ0LBvf0P1xe+5wOAvvAPrRZdiFw8zMkc73T1rRG6YLweaAA",
+    "sha256": "89254028208f6672b4e968204bca958371d0586df1fd8e6009ab53b29a2507ed",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250130_123050608.MP.89254028-720.avif",
+        "edge": 720,
+        "h": 542,
+        "w": 720,
+        "webp": "2025-asia/PXL_20250130_123050608.MP.89254028-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_123050608.MP.89254028-1200.avif",
+        "edge": 1200,
+        "h": 904,
+        "w": 1200,
+        "webp": "2025-asia/PXL_20250130_123050608.MP.89254028-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_123050608.MP.89254028-1800.avif",
+        "edge": 1800,
+        "h": 1355,
+        "w": 1800,
+        "webp": "2025-asia/PXL_20250130_123050608.MP.89254028-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250130_123050608.MP.89254028-2400.avif",
+        "edge": 2400,
+        "h": 1807,
+        "w": 2400,
+        "webp": "2025-asia/PXL_20250130_123050608.MP.89254028-2400.webp"
+      }
+    ],
+    "version": "89254028",
+    "width": 4080
+  },
+  "PXL_20250206_121906340.jpg": {
+    "download": {
+      "h": 1952,
+      "key": "2025-asia/PXL_20250206_121906340.894b4ff8-2592.jpg",
+      "w": 2592
+    },
+    "etag": "e5fbea487732fd550a46e23530b33b66",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 1440,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/33s",
+      "taken": "2025-02-06T19:19:06"
+    },
+    "height": 3072,
+    "lqip": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAABwBQCdASoYABIAPu1qq1EppaOiqAqpMB2JZACdM1XlyQk6R8jnzINDKt1WHth7QbpapBNAAP67HKsxdQuUwXBxbq1PS0sb2ECZmznjp2EBE0p8Oyjs5G0FYTlY5dEXzcEPxtwh+hTq4zUmir+2mIqxlo51ZKivteoUi3K2WuQiDek1xVm3xMZg8t2xXvnVuyObZhLlzUL0h9RIQnJMpsAdqZv98TA90Uju+m2INyPALrMIOZ4Z4GeYp5MAaDaejtwCVwcJSOQAJaQA",
+    "sha256": "894b4ff81a508b5326565e7ef436d9b150ea306c049c1a2e995cb5f1a8331fbd",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250206_121906340.894b4ff8-720.avif",
+        "edge": 720,
+        "h": 542,
+        "w": 720,
+        "webp": "2025-asia/PXL_20250206_121906340.894b4ff8-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250206_121906340.894b4ff8-1200.avif",
+        "edge": 1200,
+        "h": 904,
+        "w": 1200,
+        "webp": "2025-asia/PXL_20250206_121906340.894b4ff8-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250206_121906340.894b4ff8-1800.avif",
+        "edge": 1800,
+        "h": 1355,
+        "w": 1800,
+        "webp": "2025-asia/PXL_20250206_121906340.894b4ff8-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250206_121906340.894b4ff8-2400.avif",
+        "edge": 2400,
+        "h": 1807,
+        "w": 2400,
+        "webp": "2025-asia/PXL_20250206_121906340.894b4ff8-2400.webp"
+      }
+    ],
+    "version": "894b4ff8",
+    "width": 4080
+  },
+  "PXL_20250207_082037052.jpg": {
+    "download": {
+      "h": 1952,
+      "key": "2025-asia/PXL_20250207_082037052.04331e79-2592.jpg",
+      "w": 2592
+    },
+    "etag": "61a053e2a7d43cd1e957013dea16793d",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 136,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/43s",
+      "taken": "2025-02-07T15:20:37"
+    },
+    "height": 3072,
+    "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAADwBQCdASoYABIAPu1sqlEppaOiqAqpMB2JQBfnZYMPAOD9wZOXhom4WMzq3QskdasjmvrEiaPkAAD+zv2apijRb1zIWb9CBVhxF3ynm6L8RNgFk42Tu04t7OovrWlWpHHCtKuKYuI34RZC/UkvjJbkZDWQ6uIT1D1esWw1ZyhiTbPrQH2987b24HPEQ7FDx1Yqifj7yBmMtA9zj7hTiL1pRxCbWeHhAJWNz9DHmksKmv7klqoriQlhInwT0QcEAAA=",
+    "sha256": "04331e79c0cb25b8ed7fa17d9caaf41d9b18cc01cc35070a8453041f5ad14c78",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250207_082037052.04331e79-720.avif",
+        "edge": 720,
+        "h": 542,
+        "w": 720,
+        "webp": "2025-asia/PXL_20250207_082037052.04331e79-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250207_082037052.04331e79-1200.avif",
+        "edge": 1200,
+        "h": 904,
+        "w": 1200,
+        "webp": "2025-asia/PXL_20250207_082037052.04331e79-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250207_082037052.04331e79-1800.avif",
+        "edge": 1800,
+        "h": 1355,
+        "w": 1800,
+        "webp": "2025-asia/PXL_20250207_082037052.04331e79-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250207_082037052.04331e79-2400.avif",
+        "edge": 2400,
+        "h": 1807,
+        "w": 2400,
+        "webp": "2025-asia/PXL_20250207_082037052.04331e79-2400.webp"
+      }
+    ],
+    "version": "04331e79",
+    "width": 4080
+  },
+  "PXL_20250213_185644349.MP.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250213_185644349.MP.70c92526-2592.jpg",
+      "w": 1952
+    },
+    "etag": "16d3e98848db912e1120a2edfc8c137d",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 503,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/106s",
+      "taken": "2025-02-14T01:56:44"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAADwBQCdASoSABgAPu1mqk+ppSOiMBgIATAdiWwAnTLjdcX/4B6Jh0z0sdyHOw5zWbRdKyHn+ZdTgAD+8NCNFweAYYg+pJndu4dNeAVBTPZNhPmiCnAn7udZxMN65g/PTAOZvtFrH/g8yDsCrNt7uUh580QVdg8PwXSA62+cgE12vcaeKuXTexSRomeRpZTQRo6jlyx2fV1Gt45tRcfnZLQJwAA=",
+    "sha256": "70c92526e21771e3abe75de9b94d232805a9e3399316274cd08baab8cfa288df",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250213_185644349.MP.70c92526-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250213_185644349.MP.70c92526-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250213_185644349.MP.70c92526-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250213_185644349.MP.70c92526-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250213_185644349.MP.70c92526-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250213_185644349.MP.70c92526-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250213_185644349.MP.70c92526-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250213_185644349.MP.70c92526-2400.webp"
+      }
+    ],
+    "version": "70c92526",
+    "width": 3072
+  },
+  "PXL_20250217_170139616.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250217_170139616.1e184020-2592.jpg",
+      "w": 1952
+    },
+    "etag": "308a65579607d47cb82a017bfa3cc790",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 362,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/180s",
+      "taken": "2025-02-18T00:01:39"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoSABgAPu1oqU+ppiOjKA1RMB2JQBfnAiOYX/RH/jQR4AD+8p+Le0XT389F46FlNGQ2bxSrZjONtccarWrRhx1lj2zROXlrcOIZdSBEXgDQ7nZ5rw+H+XTFlNBssP7S+CMy8uhCTH2AAA==",
+    "sha256": "1e18402092be8bf613dfc55a77b34fc673209b55ad6ac34f79d58387ed75686d",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250217_170139616.1e184020-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250217_170139616.1e184020-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250217_170139616.1e184020-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250217_170139616.1e184020-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250217_170139616.1e184020-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250217_170139616.1e184020-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250217_170139616.1e184020-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250217_170139616.1e184020-2400.webp"
+      }
+    ],
+    "version": "1e184020",
+    "width": 3072
+  },
+  "PXL_20250225_064443851.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250225_064443851.7ea693a1-2592.jpg",
+      "w": 1952
+    },
+    "etag": "a2536fd8565d7752c1c5c39b88f887b9",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 76,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/100s",
+      "taken": "2025-02-25T13:44:43"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABwBQCdASoSABgAPu1ur1IppiQiqAgBMB2JagCsMzAnAAzk8HxLvIaFNo5H+ZE3lJZjAiBAAPwiuxKTJqw02LHai6eZYg3RAt4r4QLPihyFyPpCTsitdTAIFcOxpitS2suxi1OBCrFES2WJyplRmD8qWE8DxUEAfM49HDrPlRrw373d1ZCmmhg3N48XdY6l2+xVVHOIQ3PUa+aj0ixG8dfrwB1Cgi1ec1YP9CqVE/74TnORQjJLWzvr1TGp6Ve1AAA=",
+    "sha256": "7ea693a13014037824d3b6c13138638a0b896debfba64c0d51bf1a2d20a2667c",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250225_064443851.7ea693a1-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250225_064443851.7ea693a1-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250225_064443851.7ea693a1-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250225_064443851.7ea693a1-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250225_064443851.7ea693a1-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250225_064443851.7ea693a1-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250225_064443851.7ea693a1-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250225_064443851.7ea693a1-2400.webp"
+      }
+    ],
+    "version": "7ea693a1",
+    "width": 3072
+  },
+  "PXL_20250307_050635377.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250307_050635377.38e142cf-2592.jpg",
+      "w": 1952
+    },
+    "etag": "ee43e5fafdf4c742bb275b71fc37afbd",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 46,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/1099s",
+      "taken": "2025-03-07T12:06:35"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASoSABgAPu1ip04ppaMiMBgMATAdiWUAuDANcRcfBqxP9WosCqcSyeqkflrtYADvuPDiOe62Aljj5HMNjzijXP1ofGuUB06fy0hBCXrTzxhX/PNES9rxNZPvn742MrSygLF/Kap/BqXryK2Zem02DcmKgiapUDmyC2IozFLA7D/GMV3C1YQ66QmpknObR1AA",
+    "sha256": "38e142cf3eadd0d064226a6a1a5070efb04327f52798db730a183aa6e1f2d85b",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250307_050635377.38e142cf-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250307_050635377.38e142cf-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250307_050635377.38e142cf-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250307_050635377.38e142cf-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250307_050635377.38e142cf-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250307_050635377.38e142cf-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250307_050635377.38e142cf-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250307_050635377.38e142cf-2400.webp"
+      }
+    ],
+    "version": "38e142cf",
+    "width": 3072
+  },
+  "PXL_20250307_051732385.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250307_051732385.81401443-2592.jpg",
+      "w": 1952
+    },
+    "etag": "25d2b61531f1af2cbbe048b0d2d15f47",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 442,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/517s",
+      "taken": "2025-03-07T12:17:32"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAwBQCdASoSABgAPu1sq1EppaOiqAqpMB2JQBOkIJVIAOLfszVpnMygZ3DNGbJ9+DagAAD+GVJ5/JduNTgUmdywwFYffgjV6E5engU9yFQK2ZB3vCNSx8Oj21YEWrXSqST4GzhfXkHC5N2ZWbOYXZHQh0TszKyMrjCHg3m+8jeIDMD4M7UGsTFuUb3CACQon3dBYgIrtEXK0vsxTzxgr2ui8RTzy0vj/IKmNBChIGewgT6RlMhS4lZkm3A2A/npVXwAAA==",
+    "sha256": "81401443d3def405f5c224c04e9953b5861b21f40906368dfb13b12b720a220e",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250307_051732385.81401443-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250307_051732385.81401443-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250307_051732385.81401443-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250307_051732385.81401443-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250307_051732385.81401443-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250307_051732385.81401443-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250307_051732385.81401443-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250307_051732385.81401443-2400.webp"
+      }
+    ],
+    "version": "81401443",
+    "width": 3072
+  },
+  "PXL_20250308_113029224.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250308_113029224.9e583de8-2592.jpg",
+      "w": 1952
+    },
+    "etag": "afed72628f286ff832e0ff2615a2ae3f",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 237,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/50s",
+      "taken": "2025-03-08T18:30:29"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoSABgAPu1or1AppaSjKAqpMB2JZgDH6AgAH80fD/LrxusGAAD3AkO6FhQI1Jo9yL3eI4Q4/26PdqFg3RAgryVIwM3w6KrforWw/D2grsI7S+Rgta3NEd/QT6V4js8gvNtX1YNI6Y2kmqqgYItscd1I2S2wAA==",
+    "sha256": "9e583de8be9ffa13b90f5729ec1f1c4e248a33996c297b9e1dc87e52bee0ac52",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250308_113029224.9e583de8-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250308_113029224.9e583de8-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250308_113029224.9e583de8-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250308_113029224.9e583de8-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250308_113029224.9e583de8-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250308_113029224.9e583de8-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250308_113029224.9e583de8-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250308_113029224.9e583de8-2400.webp"
+      }
+    ],
+    "version": "9e583de8",
+    "width": 3072
+  },
+  "PXL_20250310_114945326.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250310_114945326.7dbf2e45-2592.jpg",
+      "w": 1952
+    },
+    "etag": "2fbed06fe1635ba1e88dddb0b49d55b3",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 381,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/100s",
+      "taken": "2025-03-10T18:49:45"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAACQBQCdASoSABgAPu1urlIppiQiqAgBMB2JZgC7MtpvQTRIWRW0QWTiePN+DlFOT/9MFfBdsAD+voiIvw8wUKxgfGGb8HUDYTX+aJWVPoUw7OhTWWlwE0yR0iWuHmpBoiB33eJH59q5fhVVJv4mSWtMoj1SQXR2G64hppPPRgd0SFAFoUv/cBLeaSo0EZn0PtVlqntRjpceOrmiNkyonZ/jR+yMRm0x8xsr963Zo3rAOzluDtjjfAkY9DAaOf5NZRLmn8Meu2osKBY3SAkZXXwr/zOEcJod4r7wAAAA",
+    "sha256": "7dbf2e45c6c25e76c6882abce4e3f5c7c70b3421e9c6a7b1b530b169130d9f02",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250310_114945326.7dbf2e45-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250310_114945326.7dbf2e45-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_114945326.7dbf2e45-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250310_114945326.7dbf2e45-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_114945326.7dbf2e45-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250310_114945326.7dbf2e45-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_114945326.7dbf2e45-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250310_114945326.7dbf2e45-2400.webp"
+      }
+    ],
+    "version": "7dbf2e45",
+    "width": 3072
+  },
+  "PXL_20250310_115639608~2.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250310_115639608~2.33d0ebed-2592.jpg",
+      "w": 1952
+    },
+    "etag": "fe81ff2d849ebb3dc4e9e5d1624bdf24",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 346,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/100s",
+      "taken": "2025-03-10T18:56:39"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAACQBQCdASoSABgAPu1usFKppiSiqAgBMB2JZACdMt9OAhANbCHNzKMpFMgvVA0cQSQ8pCugAADiXzcRGXQpwZyxeXpjEWy/NBMk+FGiRMkaYZdfYC0OZs1rVyKVCSd2fGoIWIYwNLAg7OH2mSZGl+U1nZ0VxTNVOWQdx9QG0ckiJtVooyKlg9fwqjZJzgu6TI5/TwuOpy8TPD50Gaidh1o7GDvLxRrfLni28JT0qXaPckyjDCbWkWxR31GQ8x/KH/AmCPlhqVM5x3FbJ8rvRGrL9k3yFgAA",
+    "sha256": "33d0ebed6a27f34e0727588d0ac2bb81fc2af94be1b4dd3181c3f663765da43a",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250310_115639608~2.33d0ebed-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250310_115639608~2.33d0ebed-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_115639608~2.33d0ebed-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250310_115639608~2.33d0ebed-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_115639608~2.33d0ebed-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250310_115639608~2.33d0ebed-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_115639608~2.33d0ebed-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250310_115639608~2.33d0ebed-2400.webp"
+      }
+    ],
+    "version": "33d0ebed",
+    "width": 3072
+  },
+  "PXL_20250310_141437421.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250310_141437421.0f425b03-2592.jpg",
+      "w": 1952
+    },
+    "etag": "883933940a75bf01482e457861c8ff1b",
+    "exif": {
+      "aperture": "f/2.2",
+      "camera": "Pixel 7 Pro",
+      "focal": "2mm",
+      "iso": 136,
+      "lens": "Pixel 7 Pro back camera 1.95mm f/2.2",
+      "shutter": "1/50s",
+      "taken": "2025-03-10T21:14:37"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAACwBgCdASoSABgAPu1srFEppiQiqAqpMB2JaACdMuz6e9Z9cbdA/nKCABtkyoB/3ow/nlv3Z8QTCqZurhkOAAD+wAC3nE1/22XIfyL4f516SY+cTNqK0+FcQEWQeCVSIkBVCOUpRuZMnZAYfESGWESf5/Hrasx+f3Y+FapCqed47wVfXKQ+OUxPWq186Qw56Ad/iTBi4igEpmQvMzPYC5J60kHKm5x+9fJhBSB1mCBHrAeSMyilmPiprjnwyOgcK1tWSH/WzuNiKi8zPzIcEVnOa08bFfvGAGN1PrqMOlBvAWWYCyXM5j4A",
+    "sha256": "0f425b0349ee4afa3518458cec9fbf4f3d40bc79288f33d8e03ea77032cafc41",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250310_141437421.0f425b03-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250310_141437421.0f425b03-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_141437421.0f425b03-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250310_141437421.0f425b03-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_141437421.0f425b03-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250310_141437421.0f425b03-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250310_141437421.0f425b03-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250310_141437421.0f425b03-2400.webp"
+      }
+    ],
+    "version": "0f425b03",
+    "width": 3072
+  },
+  "PXL_20250330_140240083.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250330_140240083.3e8be7b8-2592.jpg",
+      "w": 1952
+    },
+    "etag": "c0d0584fa8fb442bf6a0c9f7530d06c4",
+    "exif": {
+      "aperture": "f/2.2",
+      "camera": "Pixel 7 Pro",
+      "focal": "2mm",
+      "iso": 173,
+      "lens": "Pixel 7 Pro back camera 1.95mm f/2.2",
+      "shutter": "1/127s",
+      "taken": "2025-03-30T21:02:40"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBQCdASoSABgAPu1qqU8ppiOiMBgIATAdiUAVhnIN/8A9EA3YwoZWl/D1Dj5yd3PG/cAA/vKiDgpMdpzi8CmpqYzaWMk2RJtrjAvuqwgwt2nuZkZ+4IYidrqSLiQZ0F+YuQRyVs4rP9E0Vj5riZkitXHBJM+tWmSRthMjkQGF5rdqKE/eJFAoRwRTUtdHzsEjVWU+pjGii1khXSCNYaR48E6COQTtgAA=",
+    "sha256": "3e8be7b8075c237a8383f20cf3f4d6dda4dcb9151ffa9d568a3ed3eb7032b4ea",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250330_140240083.3e8be7b8-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250330_140240083.3e8be7b8-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250330_140240083.3e8be7b8-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250330_140240083.3e8be7b8-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250330_140240083.3e8be7b8-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250330_140240083.3e8be7b8-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250330_140240083.3e8be7b8-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250330_140240083.3e8be7b8-2400.webp"
+      }
+    ],
+    "version": "3e8be7b8",
+    "width": 3072
+  },
+  "PXL_20250331_111850016.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250331_111850016.a2152db5-2592.jpg",
+      "w": 1952
+    },
+    "etag": "4a389fa9e05f13ef1363ad0115ad8da2",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 374,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/120s",
+      "taken": "2025-03-31T18:18:50"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBQCdASoSABgAPu1kpU4ppaMiMBgMATAdiWYALv/AvA851+M4Z4lBNM6Hhi8/JPFoAAD+4wlnA1ki2vHkii4TgYu7N5bT4/v/9a81taYoxxOTIb+kuW/CHP6fFHbsbzcDOdtsna4HQObEII1OrE+NOvx/40LLgO2NEGtLyhMmQshtero6fRtI2IfhY+bl+AAAAA==",
+    "sha256": "a2152db565dbac5af3f62a66d39f2c62b9f69a45439bf6769af8e0e3e91a3852",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250331_111850016.a2152db5-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250331_111850016.a2152db5-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250331_111850016.a2152db5-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250331_111850016.a2152db5-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250331_111850016.a2152db5-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250331_111850016.a2152db5-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250331_111850016.a2152db5-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250331_111850016.a2152db5-2400.webp"
+      }
+    ],
+    "version": "a2152db5",
+    "width": 3072
+  },
+  "PXL_20250419_065411133.jpg": {
+    "download": {
+      "h": 1952,
+      "key": "2025-asia/PXL_20250419_065411133.36b7d601-2592.jpg",
+      "w": 2592
+    },
+    "etag": "45946ab7fb71e64f3fa9ba75e36c4552",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 54,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/517s",
+      "taken": "2025-04-19T15:54:11"
+    },
+    "height": 3072,
+    "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAADQBACdASoYABIAPu1ur1IppiQiqAgBMB2JZQC2yAgeHvWbs4QITS+ikuRz/eAkAAD+v4yibwXjo/bCGtni2/xCRcKYmTQoIGdd3U2BlZmtYJtFC8A9QsdECXnSGsJIprjF/p5BVOztLW8Inb6w7sGKzQ7ss1meUOZyUBtSJMZkVoZ5IoJD65mOBbs9wJYgXRrvJmj/KJIvV00T9p9SLwBAAAA=",
+    "sha256": "36b7d6010da2c5ad7b4f489f1c98ee02e0995543e053190dec753c2d4febd1d3",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250419_065411133.36b7d601-720.avif",
+        "edge": 720,
+        "h": 542,
+        "w": 720,
+        "webp": "2025-asia/PXL_20250419_065411133.36b7d601-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250419_065411133.36b7d601-1200.avif",
+        "edge": 1200,
+        "h": 904,
+        "w": 1200,
+        "webp": "2025-asia/PXL_20250419_065411133.36b7d601-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250419_065411133.36b7d601-1800.avif",
+        "edge": 1800,
+        "h": 1355,
+        "w": 1800,
+        "webp": "2025-asia/PXL_20250419_065411133.36b7d601-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250419_065411133.36b7d601-2400.avif",
+        "edge": 2400,
+        "h": 1807,
+        "w": 2400,
+        "webp": "2025-asia/PXL_20250419_065411133.36b7d601-2400.webp"
+      }
+    ],
+    "version": "36b7d601",
+    "width": 4080
+  },
+  "PXL_20250419_163000004.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250419_163000004.c535ebb6-2592.jpg",
+      "w": 1952
+    },
+    "etag": "70ea0f14555d9ed867a505589cdab47b",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 1147,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/15s",
+      "taken": "2025-04-20T01:30:00"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQBACdASoSABgAPu1irU4ppaSiKA1RMB2JYwBWxA/4B6IDfh6V0ezn3D4AAP70GbrrbKORPoP97o0dngxj9qM/iHbV0oncIrytGriW01gAeHaq0GK8fi4hV0bWJjjEAAA=",
+    "sha256": "c535ebb60a045191f4e032dee49db5b51f31b36daccda0223f5d1e778bd1c71e",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250419_163000004.c535ebb6-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250419_163000004.c535ebb6-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250419_163000004.c535ebb6-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250419_163000004.c535ebb6-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250419_163000004.c535ebb6-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250419_163000004.c535ebb6-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250419_163000004.c535ebb6-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250419_163000004.c535ebb6-2400.webp"
+      }
+    ],
+    "version": "c535ebb6",
+    "width": 3072
+  },
+  "PXL_20250420_010116835.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250420_010116835.5e5a0aad-2592.jpg",
+      "w": 1952
+    },
+    "etag": "95f1bed0b3141c388efdf56388e138c8",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 240,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/333s",
+      "taken": "2025-04-20T10:01:16"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAAAwBQCdASoSABgAPu1ur1IppiQiqAgBMB2JQBdgO4FwlDqa3qz4Yk2c/On+r9G4hodhgAD+TPmLqIUN4gd7+rCc7kgWdcUxtns4o6jieRsGIgMtyB0nWXH5jU3bb4yfFsq8N78AJeX5SdnH1Puf+BbJuM++r4xaILLUGopLfdBqHqln44fqjK0egav1dvCYwmJctWNlOLxKSMForKQ+9TADLWg71s5wirE62+/65gtEvoaCPFc0Wb6TFdczzRu1SEJb5WfuD6bcAA==",
+    "sha256": "5e5a0aadc9730e7fac6e0b4254775dd42855c1f50fa325e47d811996aa136d7d",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250420_010116835.5e5a0aad-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250420_010116835.5e5a0aad-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250420_010116835.5e5a0aad-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250420_010116835.5e5a0aad-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250420_010116835.5e5a0aad-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250420_010116835.5e5a0aad-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250420_010116835.5e5a0aad-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250420_010116835.5e5a0aad-2400.webp"
+      }
+    ],
+    "version": "5e5a0aad",
+    "width": 3072
+  },
+  "PXL_20250517_045515562.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250517_045515562.7d1b66d4-2592.jpg",
+      "w": 1952
+    },
+    "etag": "cfb76a6a11f825a9e2fd468140b264b8",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 41,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/449s",
+      "taken": "2025-05-17T13:55:15"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAwBQCdASoSABgAPu1sq1EppaOiqAqpMB2JYwDE2BGnQElb4rYnvX/cIAWYL6r5G02wAAD8882bYhwUnli1oGeSpf4f3hOImft0QI07fxPKxovtZCfx0oiri5eky5g2qgBe/vfPZ2a46FsCnamLGAiJMXPiR2qzBaO5PXU4JDpi06S9TP1d43Y4YUu4fZ9iMVc81TcdUoy6pwAAAAA=",
+    "sha256": "7d1b66d48e866bd157acfbb129c70e82b82a02e7ee0c721cab7539ba0987cde6",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250517_045515562.7d1b66d4-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250517_045515562.7d1b66d4-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250517_045515562.7d1b66d4-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250517_045515562.7d1b66d4-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250517_045515562.7d1b66d4-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250517_045515562.7d1b66d4-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250517_045515562.7d1b66d4-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250517_045515562.7d1b66d4-2400.webp"
+      }
+    ],
+    "version": "7d1b66d4",
+    "width": 3072
+  },
+  "PXL_20250517_054122607.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250517_054122607.04c388b9-2592.jpg",
+      "w": 1952
+    },
+    "etag": "0b5af6ffd7aa580a0af90694d6d043d6",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 41,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/258s",
+      "taken": "2025-05-17T14:41:22"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADQBQCdASoSABgAPu1ur1IppiQiqAgBMB2JYwC+et8lxAeHtD+YJLiMH9hX1+ctrnyJM12bIsVAAP7maNOUUlphcAZoeHtddXZmlvQeIXM3zsJV1OIHc3BlB8Gpc/gC3KXsD65Usstx0TpTz0ePSARWBSRw2irLeA2sT23tdKGUw0cDJgsLmYitudKK/5kdauV9WnPqYNE01O5pktS3c4ICxRuPjjm3JMJBgzFcgAA=",
+    "sha256": "04c388b95442fdb8c0bab642df4899a8272285c1a4081c50f666da2b7836b3df",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250517_054122607.04c388b9-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250517_054122607.04c388b9-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250517_054122607.04c388b9-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250517_054122607.04c388b9-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250517_054122607.04c388b9-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250517_054122607.04c388b9-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250517_054122607.04c388b9-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250517_054122607.04c388b9-2400.webp"
+      }
+    ],
+    "version": "04c388b9",
+    "width": 3072
+  },
+  "PXL_20250520_042742436.TS~2.mp4": {
+    "etag": "d5be543461556b6d96ee933e519c72a8",
+    "height": 1920,
+    "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBACdASoNABgAPu1iqU2ppaOiMAgBMB2JYgCsAB86nXENpMbIl7j/QAD+X+GJQUgbiQdHkFWs894UILQWv52CDCKQzFR366Vy/L7BYAs7fBYUiL4Jv/OARxNkNtIxxF+dmkOOGTdYNbn7zTGnvZL62Al5Sk4AAAA=",
+    "sha256": "b6cf9156030dc3334b26912e46031f95252ff3fec96450d863a01b8b84d23966",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250520_042742436.TS~2.poster.b6cf9156-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 405,
+        "webp": "2025-asia/PXL_20250520_042742436.TS~2.poster.b6cf9156-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250520_042742436.TS~2.poster.b6cf9156-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 675,
+        "webp": "2025-asia/PXL_20250520_042742436.TS~2.poster.b6cf9156-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250520_042742436.TS~2.poster.b6cf9156-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1012,
+        "webp": "2025-asia/PXL_20250520_042742436.TS~2.poster.b6cf9156-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250520_042742436.TS~2.poster.b6cf9156-1920.avif",
+        "edge": 1920,
+        "h": 1920,
+        "w": 1080,
+        "webp": "2025-asia/PXL_20250520_042742436.TS~2.poster.b6cf9156-1920.webp"
+      }
+    ],
+    "version": "b6cf9156",
+    "video": {
+      "duration": 12.63,
+      "h": 1920,
+      "key": "2025-asia/PXL_20250520_042742436.TS~2.b6cf9156-1080.mp4",
+      "w": 1080
+    },
+    "width": 1080
+  },
+  "PXL_20250520_235351252.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/PXL_20250520_235351252.2456b428-2592.jpg",
+      "w": 1952
+    },
+    "etag": "79e8226ea669b27aca9f787be2c6769f",
+    "exif": {
+      "aperture": "f/1.9",
+      "camera": "Pixel 7 Pro",
+      "focal": "7mm",
+      "iso": 71,
+      "lens": "Pixel 7 Pro back camera 6.81mm f/1.85",
+      "shutter": "1/253s",
+      "taken": "2025-05-21T08:53:51"
+    },
+    "height": 4080,
+    "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACwBACdASoSABgAPu1qrFEppaQiqAqpMB2JZQCdAAoJWiwnHDvV1WgVF7CbTVggAP7AJ0CgLVdND5e0NS4dl6Z3pYsj02Cd2DrTRxfRvLsU1zidczCssK/d36e9NsxDFKKaamfp8CEhwqIg/3Vuw/LDuKQjRk7P6A3T7Wczy58foB1QAAA=",
+    "sha256": "2456b4287ccefadea4d9f16e2801ad217b51ba6e7e5ae43688c042e6bb70d54a",
+    "variants": [
+      {
+        "avif": "2025-asia/PXL_20250520_235351252.2456b428-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 542,
+        "webp": "2025-asia/PXL_20250520_235351252.2456b428-720.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250520_235351252.2456b428-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 904,
+        "webp": "2025-asia/PXL_20250520_235351252.2456b428-1200.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250520_235351252.2456b428-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1355,
+        "webp": "2025-asia/PXL_20250520_235351252.2456b428-1800.webp"
+      },
+      {
+        "avif": "2025-asia/PXL_20250520_235351252.2456b428-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1807,
+        "webp": "2025-asia/PXL_20250520_235351252.2456b428-2400.webp"
+      }
+    ],
+    "version": "2456b428",
+    "width": 3072
+  },
+  "Snapchat-129112990.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/Snapchat-129112990.98ebc9d2-2592.jpg",
+      "w": 1458
+    },
+    "etag": "16c1dfd33dbeb062dffa9dc6c5001a6c",
+    "exif": {},
+    "height": 2688,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoNABgAPu1iqU2ppaQiMAgBMB2JZACdACHpPPFvBJs9UoN3gAD+8NC3GZUBBP0rW/hj2jDo5QsIA7boFwxuISdAJ1hZT1ZrsE30w5JRLJxuqycJuExe/T2Vrhj6byoorncfOCAAAAA=",
+    "sha256": "98ebc9d292d78f94de570270da3a2931a7bdd275ba6935030a3a4bf54d945781",
+    "variants": [
+      {
+        "avif": "2025-asia/Snapchat-129112990.98ebc9d2-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 405,
+        "webp": "2025-asia/Snapchat-129112990.98ebc9d2-720.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-129112990.98ebc9d2-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 675,
+        "webp": "2025-asia/Snapchat-129112990.98ebc9d2-1200.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-129112990.98ebc9d2-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1012,
+        "webp": "2025-asia/Snapchat-129112990.98ebc9d2-1800.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-129112990.98ebc9d2-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1350,
+        "webp": "2025-asia/Snapchat-129112990.98ebc9d2-2400.webp"
+      }
+    ],
+    "version": "98ebc9d2",
+    "width": 1512
+  },
+  "Snapchat-1680503041.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/Snapchat-1680503041.de837aec-2592.jpg",
+      "w": 1458
+    },
+    "etag": "116ff8efc8c4d6ba1ded2eba98b5f0d3",
+    "exif": {},
+    "height": 2688,
+    "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoNABgAPu1iqU2ppaQiMAgBMB2JZwDDNCHZxYAP4fFiuAAA/oxWxRCK415wc8nxNsD7NPY3ZVR+XJ9Npj1nLVy2wMangAAA",
+    "sha256": "de837aec69e6296b8d385f24c2175238bc6ffcb21c4803d3f483110f261dbb46",
+    "variants": [
+      {
+        "avif": "2025-asia/Snapchat-1680503041.de837aec-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 405,
+        "webp": "2025-asia/Snapchat-1680503041.de837aec-720.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-1680503041.de837aec-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 675,
+        "webp": "2025-asia/Snapchat-1680503041.de837aec-1200.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-1680503041.de837aec-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1012,
+        "webp": "2025-asia/Snapchat-1680503041.de837aec-1800.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-1680503041.de837aec-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1350,
+        "webp": "2025-asia/Snapchat-1680503041.de837aec-2400.webp"
+      }
+    ],
+    "version": "de837aec",
+    "width": 1512
+  },
+  "Snapchat-2034541795.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/Snapchat-2034541795.3774a856-2592.jpg",
+      "w": 1458
+    },
+    "etag": "6484d332b033cde9c9884faeb5357fd5",
+    "exif": {},
+    "height": 2688,
+    "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBACdASoNABgAPu1kq04ppaQiMAgBMB2JZQDCgCIb0bWOZa4gI6fBCDgAAPxJBhem7Mf4zQQJcQKlNUI6csUZ2eCGouhsLJME6WEKdixJQh8X5gJYP38s4JN7DpTMpcLSh9CYj6o/VhLdpFiBe+ahoAA=",
+    "sha256": "3774a856181baed5d84da7ffa7cedb7779e31ddd0daf7f68a0dbb8582b67e4e2",
+    "variants": [
+      {
+        "avif": "2025-asia/Snapchat-2034541795.3774a856-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 405,
+        "webp": "2025-asia/Snapchat-2034541795.3774a856-720.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-2034541795.3774a856-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 675,
+        "webp": "2025-asia/Snapchat-2034541795.3774a856-1200.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-2034541795.3774a856-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1012,
+        "webp": "2025-asia/Snapchat-2034541795.3774a856-1800.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-2034541795.3774a856-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1350,
+        "webp": "2025-asia/Snapchat-2034541795.3774a856-2400.webp"
+      }
+    ],
+    "version": "3774a856",
+    "width": 1512
+  },
+  "Snapchat-477667604~2.jpg": {
+    "download": {
+      "h": 1458,
+      "key": "2025-asia/Snapchat-477667604~2.e7cf389c-2592.jpg",
+      "w": 2592
+    },
+    "etag": "d7493bba6d68cffb87be8ee673188ae0",
+    "exif": {
+      "taken": "2025-04-03T18:19:10"
+    },
+    "height": 1512,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAwCdASoYAA4APu1iqk4ppaQiMAgBMB2JbAC7LwABRcDU378AAP538+GssCijhhxaO3B5GzoOtqVy1a2HaEdygwvBWWMj170B8vzeSGXZE7JUGwW04/6trmZYn5EHfJ0UTPhsyHuvNdkQd04wAA==",
+    "sha256": "e7cf389cca74deb39eedde72de33a5c09bde53b0d5bdaf2b0b13e935d96d72fb",
+    "variants": [
+      {
+        "avif": "2025-asia/Snapchat-477667604~2.e7cf389c-720.avif",
+        "edge": 720,
+        "h": 405,
+        "w": 720,
+        "webp": "2025-asia/Snapchat-477667604~2.e7cf389c-720.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-477667604~2.e7cf389c-1200.avif",
+        "edge": 1200,
+        "h": 675,
+        "w": 1200,
+        "webp": "2025-asia/Snapchat-477667604~2.e7cf389c-1200.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-477667604~2.e7cf389c-1800.avif",
+        "edge": 1800,
+        "h": 1012,
+        "w": 1800,
+        "webp": "2025-asia/Snapchat-477667604~2.e7cf389c-1800.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-477667604~2.e7cf389c-2400.avif",
+        "edge": 2400,
+        "h": 1350,
+        "w": 2400,
+        "webp": "2025-asia/Snapchat-477667604~2.e7cf389c-2400.webp"
+      }
+    ],
+    "version": "e7cf389c",
+    "width": 2688
+  },
+  "Snapchat-623838946.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/Snapchat-623838946.1449e6e6-2592.jpg",
+      "w": 1458
+    },
+    "etag": "862ed3ef36af42e8dae64b249719d4f8",
+    "exif": {},
+    "height": 2688,
+    "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoNABgAPu1iqk4ppaQiMAgBMB2JaACdMoR8eBhdTuGaoEoBQADdaaYzXCKUbVbFQ/X6lt5Hh0aBsig+WSTh5WxAPXHxX5wvBzoH/17/IZEJ/QnTbMqdtPQmyZTRSKwpGx/x3F7bjaUpvdKuSYs7r867P5dwAA==",
+    "sha256": "1449e6e6cd2a51e23437198dcffa4290b2ca96f965291a9715af1a324e58655f",
+    "variants": [
+      {
+        "avif": "2025-asia/Snapchat-623838946.1449e6e6-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 405,
+        "webp": "2025-asia/Snapchat-623838946.1449e6e6-720.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-623838946.1449e6e6-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 675,
+        "webp": "2025-asia/Snapchat-623838946.1449e6e6-1200.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-623838946.1449e6e6-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1012,
+        "webp": "2025-asia/Snapchat-623838946.1449e6e6-1800.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-623838946.1449e6e6-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1350,
+        "webp": "2025-asia/Snapchat-623838946.1449e6e6-2400.webp"
+      }
+    ],
+    "version": "1449e6e6",
+    "width": 1512
+  },
+  "Snapchat-654261027.jpg": {
+    "download": {
+      "h": 2592,
+      "key": "2025-asia/Snapchat-654261027.fe164402-2592.jpg",
+      "w": 1458
+    },
+    "etag": "5c0307ddf8f2d8ac864ea1ef17919ee8",
+    "exif": {},
+    "height": 2688,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoNABgAPu1iqU2ppaQiMAgBMB2JYwCuHB9g/UA7iUvpgVvkAAD+jTEwm16y3RHMGFYQnOqwqYKaiHNSzsE5FHgDkRYFuD6ZZlPTQg2J6bmbJ7N1pjOClOHxZTlRlks7j922rte0uAA=",
+    "sha256": "fe164402fd54c1e8b7f35dac81fcdf92f71d627f0ef5fc36b8d51474e86cb3d3",
+    "variants": [
+      {
+        "avif": "2025-asia/Snapchat-654261027.fe164402-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 405,
+        "webp": "2025-asia/Snapchat-654261027.fe164402-720.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-654261027.fe164402-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 675,
+        "webp": "2025-asia/Snapchat-654261027.fe164402-1200.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-654261027.fe164402-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1012,
+        "webp": "2025-asia/Snapchat-654261027.fe164402-1800.webp"
+      },
+      {
+        "avif": "2025-asia/Snapchat-654261027.fe164402-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1350,
+        "webp": "2025-asia/Snapchat-654261027.fe164402-2400.webp"
+      }
+    ],
+    "version": "fe164402",
+    "width": 1512
+  },
+  "mpv-shot0001.jpg": {
+    "download": {
+      "h": 1920,
+      "key": "2025-asia/mpv-shot0001.c096ad5f-1920.jpg",
+      "w": 1080
+    },
+    "etag": "49a41112f8bd7b0acda9e5cbf5083425",
+    "exif": {},
+    "height": 1920,
+    "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAADwAwCdASoNABgAPu1iqU2ppaOiMAgBMB2JZQCdABws9o2hUtumbE1AAP3wNPa9hmYBCtFCtzCGBcU6SUmLiJeUUTMGxokX2rSD/Ho6Pu06Ayw9FSzgs4QxdkR1I9PDZCtJ+PJqKdISztQirbwuyPyM+/a+31UueiMXK4sLCigLGO51/U22Vfq1+ssa9gVgAAA=",
+    "sha256": "c096ad5f721495b9b95ace99354aa2425e4a70c17831cfce81444ea180c3831b",
+    "variants": [
+      {
+        "avif": "2025-asia/mpv-shot0001.c096ad5f-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 405,
+        "webp": "2025-asia/mpv-shot0001.c096ad5f-720.webp"
+      },
+      {
+        "avif": "2025-asia/mpv-shot0001.c096ad5f-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 675,
+        "webp": "2025-asia/mpv-shot0001.c096ad5f-1200.webp"
+      },
+      {
+        "avif": "2025-asia/mpv-shot0001.c096ad5f-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1012,
+        "webp": "2025-asia/mpv-shot0001.c096ad5f-1800.webp"
+      },
+      {
+        "avif": "2025-asia/mpv-shot0001.c096ad5f-1920.avif",
+        "edge": 1920,
+        "h": 1920,
+        "w": 1080,
+        "webp": "2025-asia/mpv-shot0001.c096ad5f-1920.webp"
+      }
+    ],
+    "version": "c096ad5f",
+    "width": 1080
+  }
+}
