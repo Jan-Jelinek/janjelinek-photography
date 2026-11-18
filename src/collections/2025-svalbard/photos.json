@@ -155,6 +155,58 @@
     "version": "5533f11c",
     "width": 7728
   },
+  "DSCF1911.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF1911.4bea312b-2592.jpg",
+      "w": 2592
+    },
+    "etag": "7109c7392aa9820c209b7641b1f5a51b",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/250s",
+      "taken": "2025-08-25T11:05:05"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoYABAAPu1kqk2ppaQiMAgBMB2JYwCsACHWr0v7gItZcOAA/udmQX1oSQ9w8bCXSktTOYFe7PSK6lBXx4Xn0rqLZ8zNGDEr/H8IAA==",
+    "sha256": "4bea312b9358e46b1b1b808ffab447543040fed0de43d39f1d2924234f913af8",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF1911.4bea312b-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF1911.4bea312b-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1911.4bea312b-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF1911.4bea312b-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1911.4bea312b-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF1911.4bea312b-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1911.4bea312b-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF1911.4bea312b-2400.webp"
+      }
+    ],
+    "version": "4bea312b",
+    "width": 7728
+  },
   "DSCF1945.JPG": {
     "download": {
       "h": 1728,
