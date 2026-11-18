@@ -1,0 +1,107 @@
+---
+// An aside ("director's commentary") next to a photo's row: text and snapshots, in the order written.
+import SnapshotBlocks, { type Block } from "./SnapshotBlocks.astro";
+
+interface Props {
+  aside: {
+    number: string;
+    /** Frame number of the photo it's about. */
+    frame: string;
+    /** Runs of text (paragraphs, each a list of lines) and runs of snapshots, in order. */
+    blocks: Block[];
+  };
+  /** Width of the margin column on wide screens, px. */
+  width: number;
+}
+
+const { aside, width } = Astro.props;
+const { number, frame, blocks } = aside;
+// Below 1024px the aside sits under its row, up to 560px wide.
+const sizes = (cols: number) =>
+  `(min-width: 1024px) ${Math.round(width / cols)}px, min(${Math.round(560 / cols)}px, ${Math.round(100 / cols)}vw)`;
+---
+
+<aside class="aside snapshot-gallery flex flex-col gap-4" aria-label={`Aside ${number}, about frame ${frame}`}>
+  <div class="flex items-center gap-2.5 text-[11px] tracking-[0.08em] text-dim uppercase">
+    <span aria-hidden="true" class="block h-px w-5 bg-current"></span>
+    <span>Aside {number}</span>
+  </div>
+
+  <div id={`aside-${number}-body`} class="aside-body flex flex-col gap-4">
+    <SnapshotBlocks
+      blocks={blocks}
+      sizes={sizes}
+      label={`aside ${number}`}
+      textClass="flex flex-col gap-3 font-display text-[19px] leading-[1.45] font-light text-pretty text-fg"
+    />
+  </div>
+
+  <button
+    type="button"
+    hidden
+    class="aside-more -mt-3 flex h-11 items-center gap-2 self-start text-[11px] tracking-[0.08em] text-strong uppercase transition-opacity hover:opacity-70"
+    aria-expanded="false"
+    aria-controls={`aside-${number}-body`}
+  >
+    <span>Read more</span>
+    <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <path d="M6 9l6 6 6-6"></path>
+    </svg>
+  </button>
+</aside>
+
+<style>
+  /* A long aside (text and snapshots alike) is cut off, fading out, until "Read more". */
+  .aside-body.clamped {
+    max-height: var(--clamp);
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, #000 calc(100% - 4rem), transparent);
+  }
+  .aside-more[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  // How much of an aside shows before "Read more": beside its row (from 1024px), the row's height,
+  // so the aside doesn't make the row taller; under the row, a fixed height.
+  const BESIDE = matchMedia("(width >= 64rem)");
+  const STACKED_LIMIT = 360;
+  const MIN_LIMIT = 240;
+  // Don't hide less than this; just show it.
+  const SLACK = 48;
+
+  for (const aside of document.querySelectorAll<HTMLElement>("aside.aside")) {
+    const body = aside.querySelector<HTMLElement>(".aside-body")!;
+    const button = aside.querySelector<HTMLButtonElement>(".aside-more")!;
+    const row = aside.closest(".aside-row")?.querySelector<HTMLElement>(".photo-row");
+    const asides = aside.parentElement?.children.length ?? 1;
+    let open = false;
+
+    const fit = () => {
+      if (open) return;
+      // Room left beside the row once the label, button and gaps are taken out (shared if several asides).
+      const beside = row && BESIDE.matches
+        ? row.offsetHeight / asides - (body.offsetTop - aside.offsetTop) - 44 - 4
+        : STACKED_LIMIT;
+      const limit = Math.max(Math.round(beside), MIN_LIMIT);
+      const clamp = body.scrollHeight > limit + SLACK;
+      body.classList.toggle("clamped", clamp);
+      body.style.setProperty("--clamp", `${limit}px`);
+      button.hidden = !clamp;
+    };
+
+    button.addEventListener("click", () => {
+      open = !open;
+      body.classList.toggle("clamped", !open);
+      button.setAttribute("aria-expanded", String(open));
+      button.querySelector("span")!.textContent = open ? "Show less" : "Read more";
+      if (!open && aside.getBoundingClientRect().top < 0) aside.scrollIntoView({ block: "start" });
+    });
+
+    // Fonts change how tall the text is; the row's height changes with the window.
+    document.fonts.ready.then(fit);
+    if (row) new ResizeObserver(fit).observe(row);
+    BESIDE.addEventListener("change", fit);
+  }
+</script>

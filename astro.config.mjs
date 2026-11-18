@@ -9,5 +9,5 @@ export default defineConfig({
   vite: {    
     plugins: [tailwindcss()],  
   },
-  site: 'https://jelinekphotos.com',
+  site: 'https://jj.photography',
 });

@@ -1,0 +1,626 @@
+{
+  "DSCF9440.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9440.69cebb54-2592.jpg",
+      "w": 2592
+    },
+    "etag": "1106c8ad7183a57c7290428751584603",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "2.5s",
+      "taken": "2025-04-24T19:16:41"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwAAXwxobQll3PA/yGOcG0AA/s97JA6VuPYgYRigGqhpJtqLSSkO3LI3HBeZFnDQGM5/EtIpWSE0m4FGgdERynKfdqo5jjn6m/ufR/7n2rMYK96pC+/9U4WQpIagIJZo4Te3+mgqopO9BTWorDQRZNmdGAAA",
+    "sha256": "69cebb5445cf23f359621671375f73d8333950f38535897b1d7f15f1650313e3",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9440.69cebb54-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9440.69cebb54-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9440.69cebb54-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9440.69cebb54-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9440.69cebb54-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9440.69cebb54-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9440.69cebb54-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9440.69cebb54-2400.webp"
+      }
+    ],
+    "version": "69cebb54",
+    "width": 7728
+  },
+  "DSCF9459.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9459.dbe97f96-2592.jpg",
+      "w": 2592
+    },
+    "etag": "d18c85ebdb960f26b785f3a7de5a6564",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "2.5s",
+      "taken": "2025-04-24T19:28:15"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCsAYxstjb+JupfacYZbZEwAP7djE9Ag/AYjdTlXtz6rQEM6P0eWfvH4Uw1ybnDu3FnutxjPd04g3br+Pyzj5Ma85iYeUTUa0rlH3nh9WJgv+4j9IsewTNdEvt+zvv5oQiACGJcj9a2wT6ZJe47OpI/WHlkcWS2Wv8tP2oufXvLO4Dt6Qc7UviCytGjDCxKX6A0Id6we0CxMy2EsKATHToy/UnNeAAAAA==",
+    "sha256": "dbe97f96fa3709ccd9a97363ae96991c77b2ee38dda8dec630e7cef5d7e156e3",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9459.dbe97f96-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9459.dbe97f96-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9459.dbe97f96-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9459.dbe97f96-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9459.dbe97f96-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9459.dbe97f96-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9459.dbe97f96-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9459.dbe97f96-2400.webp"
+      }
+    ],
+    "version": "dbe97f96",
+    "width": 7728
+  },
+  "DSCF9462.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9462.75214d04-2592.jpg",
+      "w": 2592
+    },
+    "etag": "da5c4bf6aefa2b20fe082d42122093aa",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "2.5s",
+      "taken": "2025-04-24T19:32:27"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZwATiUDttUbtC5WV6UYAAP7u8BIRCKRozVZtqB7Kr6sZF9d/ab7Dj4wQ24FTy+t+z4/+j4zTlhcNaeozt9k8HWKERWJmJZWJMpfdq77mpFFwPYAAAA==",
+    "sha256": "75214d0486a75a0dbf6d6c8db56c76510444e372b3f0b523ab74281b66ce2ea9",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9462.75214d04-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9462.75214d04-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9462.75214d04-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9462.75214d04-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9462.75214d04-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9462.75214d04-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9462.75214d04-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9462.75214d04-2400.webp"
+      }
+    ],
+    "version": "75214d04",
+    "width": 7728
+  },
+  "DSCF9506.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9506.c58da189-2592.jpg",
+      "w": 2592
+    },
+    "etag": "5b69e1a94408d518d5c84973f6a2ad16",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "10s",
+      "taken": "2025-04-24T21:20:52"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAADQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCsAB11N+fJeumi6AAA/n0fHouYTeYBra12vA8xfP26VPQmd+6kHzkvuRhfZqNopbRI6s+uSvXrd9mASlcy96F+cW7h8xsfI+5AWU5jNWS/NcUQR0/JswS+p0eURA1vx+b5CawQtlCI/KPXDaBkkDVt5efjAYcbBvHa1Bgof2CT7AAAAA==",
+    "sha256": "c58da189e0e46bbe49d056bea9db43c2291bd2e332f7acd9d293b2917ab61f85",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9506.c58da189-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9506.c58da189-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9506.c58da189-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9506.c58da189-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9506.c58da189-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9506.c58da189-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9506.c58da189-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9506.c58da189-2400.webp"
+      }
+    ],
+    "version": "c58da189",
+    "width": 7728
+  },
+  "DSCF9512.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9512.81c120ea-2592.jpg",
+      "w": 2592
+    },
+    "etag": "39bd2a1ff6801966285b2ce416e5e728",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "5s",
+      "taken": "2025-04-24T21:29:11"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwBACdASoYABAAPu1kqk2ppaQiMAgBMB2JZgCdB3gB0/cgCSZRiRq4iHQZgAD+/bQGvVUhgsr5JUdX4ocK6N978X9sdu/K/FvWmzsqXHHLcMUjRKbMRY5Y+MKXj1YDbhET0ci9iAzhDhDHH4qlmWbbaiH8QhMdQ6bJ4ACAEjKUzZNu9XlnDE9QAAA=",
+    "sha256": "81c120ea73574a94f2392044630571cb3ae041ad14c1feaad517a5b634ae40fd",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9512.81c120ea-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9512.81c120ea-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9512.81c120ea-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9512.81c120ea-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9512.81c120ea-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9512.81c120ea-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9512.81c120ea-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9512.81c120ea-2400.webp"
+      }
+    ],
+    "version": "81c120ea",
+    "width": 7728
+  },
+  "DSCF9518.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9518.b1698f4f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "8be0253ca297989df0e56700ba7a0572",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "5s",
+      "taken": "2025-04-24T21:41:31"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABwBACdASoYABAAPu1Ct1apoqakGAEwHYlsAJ0vAAGc5TCg6NxaP78nK1TPAAD+I2FXFw3k1cz/K6q2WF1DxCq1qE4WexJrwI6thkRompMfseLF/AVu4nRJzW9HPnf6RTs3YGPSZsXcY7QvPxZLRTTX/afG981KDXLgR5dwkEiqAAAA",
+    "sha256": "b1698f4f2f69c7c27a4cf4c5dae05c39b7b4ff6a80cd26f1b22bdc5c225b0188",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9518.b1698f4f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9518.b1698f4f-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9518.b1698f4f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9518.b1698f4f-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9518.b1698f4f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9518.b1698f4f-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9518.b1698f4f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9518.b1698f4f-2400.webp"
+      }
+    ],
+    "version": "b1698f4f",
+    "width": 7728
+  },
+  "DSCF9525.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9525.26460d1c-2592.jpg",
+      "w": 2592
+    },
+    "etag": "7205a33db73acc35daf3635b3c683b52",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "5s",
+      "taken": "2025-04-24T21:57:10"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoYABAAPu1kqU4ppaOiMAgBMB2JagCdMoAKSF+sc1x/GYG4qOAA/vxI7SSy0SBKah/mIpnRNcc4/7qG+PiTeDR1t3UfM9gMest14G6vp3wP2DihBZY0zkfTctXasW5SX2gOsnQMsrWQIkXprGtAgRmT94+fAAAA",
+    "sha256": "26460d1ccd6a16ee184585fac5edb2087a473df0bbf00676427a1564108babc6",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9525.26460d1c-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9525.26460d1c-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9525.26460d1c-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9525.26460d1c-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9525.26460d1c-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9525.26460d1c-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9525.26460d1c-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9525.26460d1c-2400.webp"
+      }
+    ],
+    "version": "26460d1c",
+    "width": 7728
+  },
+  "DSCF9529.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9529.970bf4c8-2592.jpg",
+      "w": 2592
+    },
+    "etag": "5f6d351e9186445051a41df5186c909e",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "5s",
+      "taken": "2025-04-24T22:04:18"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAwCdASoYABAAPu1orU6ppiSiMAgBMB2JQAAIOz1iAQ9MDxwA/uo/c1B4WX0XX9FopJocbBWS4vRMb5sP/Q5zCOnFZW+GaPD1KTMmM4gA3WZQkh9grdcxfs+wjv64Wpxv+/zNqoOY/3R0bdGYmX1bR4sQbWTfgAA=",
+    "sha256": "970bf4c811c5a8495b560b7a7f2affc716491131d784472c0652875b34b794b3",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9529.970bf4c8-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9529.970bf4c8-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9529.970bf4c8-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9529.970bf4c8-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9529.970bf4c8-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9529.970bf4c8-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9529.970bf4c8-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9529.970bf4c8-2400.webp"
+      }
+    ],
+    "version": "970bf4c8",
+    "width": 7728
+  },
+  "DSCF9532.JPG": {
+    "download": {
+      "h": 2592,
+      "key": "2025-shibuya/DSCF9532.474c1ed2-2592.jpg",
+      "w": 1728
+    },
+    "etag": "1b92350747f6bc5c505f82fef622f3b8",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "5s",
+      "taken": "2025-04-24T22:10:54"
+    },
+    "height": 7728,
+    "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoQABgAPu1iqU2ppaQiMAgBMB2JYwC06CG57DLXuIJDw6/TQAD+9CNpcVMkBFgFCzz2hXDBQxpmdGb06Y04w1Tg31S3gfr3pr7p74Q+NzxaE+xaPkykIkr1bB3Gr5E9rLavxYfylpLQHRAA",
+    "sha256": "474c1ed2d7031a0c923e43c04e19178055f349582df49b137bfdd10bd0b10a28",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9532.474c1ed2-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 480,
+        "webp": "2025-shibuya/DSCF9532.474c1ed2-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9532.474c1ed2-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 800,
+        "webp": "2025-shibuya/DSCF9532.474c1ed2-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9532.474c1ed2-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9532.474c1ed2-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9532.474c1ed2-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1600,
+        "webp": "2025-shibuya/DSCF9532.474c1ed2-2400.webp"
+      }
+    ],
+    "version": "474c1ed2",
+    "width": 5152
+  },
+  "DSCF9542.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9542.535423d9-2592.jpg",
+      "w": 2592
+    },
+    "etag": "25748b6427366078a2b989e0d1db03d6",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "10s",
+      "taken": "2025-04-24T22:32:30"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdMoGv/gMWWZYHVnBIIj1xLh6QAP55KtfbfAAZLzC172VZrlfaZZu8BX8aDJMhRNB7WZi/odpiAdRnhyi1IRsRQV9DSE6vuPeiYG6nbpDOw8OOSZj8AY7Al38vyrJ9sL3VM3WoevuQSZ3wJZWSlHMaBHQmMcbOog603aL7kJnXPK7EhgwgO6AAJAVZC28ymvHxkx19Dz4AAAA=",
+    "sha256": "535423d948d5d3f92466bdc6050bd801b5c82f24939f4bab2cd9b50324cf4ca0",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9542.535423d9-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9542.535423d9-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9542.535423d9-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9542.535423d9-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9542.535423d9-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9542.535423d9-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9542.535423d9-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9542.535423d9-2400.webp"
+      }
+    ],
+    "version": "535423d9",
+    "width": 7728
+  },
+  "DSCF9545.JPG": {
+    "download": {
+      "h": 2592,
+      "key": "2025-shibuya/DSCF9545.3b6f85f0-2592.jpg",
+      "w": 1728
+    },
+    "etag": "238d8920e102228833abdeb8bb7db43d",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "10s",
+      "taken": "2025-04-24T22:43:21"
+    },
+    "height": 7728,
+    "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JbACdMoAC8JZ0qkojmtaROoAA/vEZciNQZXmFQkgqZxcTlClqCu7u7ws4Hxg6rzuFJA9yzCFuwnpBi0p1hOZXXsP2+anTNFgbsVLCnRT8oI2Qq/Lzh+cHPGJSbDcwQKSg9Ir6F4ayJKa/5qI3U1VciYmpkRjK9gCFaWrF8wAAAA==",
+    "sha256": "3b6f85f090d50bd63fbecce10d1ae3c959c13bf6d3e6b0b04a9e1e0c8ccc5ea9",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9545.3b6f85f0-720.avif",
+        "edge": 720,
+        "h": 720,
+        "w": 480,
+        "webp": "2025-shibuya/DSCF9545.3b6f85f0-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9545.3b6f85f0-1200.avif",
+        "edge": 1200,
+        "h": 1200,
+        "w": 800,
+        "webp": "2025-shibuya/DSCF9545.3b6f85f0-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9545.3b6f85f0-1800.avif",
+        "edge": 1800,
+        "h": 1800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9545.3b6f85f0-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9545.3b6f85f0-2400.avif",
+        "edge": 2400,
+        "h": 2400,
+        "w": 1600,
+        "webp": "2025-shibuya/DSCF9545.3b6f85f0-2400.webp"
+      }
+    ],
+    "version": "3b6f85f0",
+    "width": 5152
+  },
+  "DSCF9550.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-shibuya/DSCF9550.ea16b607-2592.jpg",
+      "w": 2592
+    },
+    "etag": "641b15c23a98e579cf7b981eb38696a9",
+    "exif": {
+      "aperture": "f/16",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "10s",
+      "taken": "2025-04-24T23:07:01"
+    },
+    "height": 3015,
+    "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoYABAAPu1kqU2ppaOiMAgBMB2JQBOgBDEy5Q67JTQAAP70KNdLc4sVwBtoZrFsIOGog1vFLpg35qW2EnWtL1xcg4JE4ZYF+k/F742562W3Ao4AAAA=",
+    "sha256": "ea16b607d5d59af1a583f19ac7e1541769b7016e1bfce791e6120b7b42f4e2fa",
+    "variants": [
+      {
+        "avif": "2025-shibuya/DSCF9550.ea16b607-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-shibuya/DSCF9550.ea16b607-720.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9550.ea16b607-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-shibuya/DSCF9550.ea16b607-1200.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9550.ea16b607-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-shibuya/DSCF9550.ea16b607-1800.webp"
+      },
+      {
+        "avif": "2025-shibuya/DSCF9550.ea16b607-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-shibuya/DSCF9550.ea16b607-2400.webp"
+      }
+    ],
+    "version": "ea16b607",
+    "width": 4523
+  }
+}

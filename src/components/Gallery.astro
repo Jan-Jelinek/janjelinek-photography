@@ -1,0 +1,448 @@
+---
+import GalleryPhoto from "./GalleryPhoto.astro";
+import GalleryAside from "./GalleryAside.astro";
+import SnapshotBlocks from "./SnapshotBlocks.astro";
+import { exposureText, loadPhoto as loadPhotoFrom } from "../lib/photos";
+import { asideOf } from "../lib/asides";
+
+interface Caption {
+  text?: string;
+  exposure?: string;
+}
+
+/** An image ID, or a list of IDs stacked into one column. */
+type RowItem = string | string[];
+/** A text section or aside: one string, or a list of text and image file names. */
+type TextItems = string | string[];
+
+interface Props {
+  slug: string;
+  title: string;
+  /** Folder holding the post, e.g. "src/collections/2025-qixing". */
+  dir: string;
+  /**
+   * Photo rows; text sections: text (left, max 640px), text-r (right), text-f (full width);
+   * and asides: `aside` right after a photo row sits beside that row (`aside-N` badges its Nth photo).
+   */
+  rows: (RowItem[] | { text: TextItems } | { "text-r": TextItems } | { "text-f": TextItems } | Record<string, TextItems>)[];
+  captions: Record<string, Caption>;
+  /** Fill each caption's exposure from the photo's camera data. */
+  autoCaptions?: boolean;
+}
+
+const { slug, title, dir, rows, captions, autoCaptions = false } = Astro.props;
+
+// Tallest a row's photos get on wide screens, in px.
+const MAX_ROW_HEIGHT = 800;
+// Space between photos, both within a row and between rows (passed to CSS as --gallery-gap).
+const GAP_REM = 0.75;
+// Share of the page width a row takes, by how many photos it has (4+ = full width).
+const ROW_WIDTH_BY_COUNT = [90, 96, 100];
+const rowWidth = (count: number) => ROW_WIDTH_BY_COUNT[count - 1] ?? 100;
+// Asides: margin column beside their row on wide screens (px), and the space between them (rem).
+// From 1920px wide they hang in the page margin (the row keeps its size); see the CSS below.
+const ASIDE_WIDTH = 256;
+const ASIDE_GAP_REM = 2;
+// Snapshot strips in text sections are at most 640px wide (even in text-f).
+const TEXT_SNAPSHOT_SIZES = (cols: number) => `min(${Math.round(640 / cols)}px, ${Math.round(100 / cols)}vw)`;
+
+const pad = (n: number) => String(n).padStart(2, "0");
+
+// Photo names resolve to your local copy or the uploaded one in src/lib/photos.ts.
+const loadPhoto = (raw: string) => loadPhotoFrom(raw, { dir });
+
+/** Blank line = new paragraph. A newline, "\n" or <br/> (or a run of them) = line break. */
+const splitText = (text: string) =>
+  text
+    .trim()
+    .split(/\n\s*\n/)
+    .map((p) => p.split(/(?:\s*(?:<br\s*\/?>|\\n|\n)\s*)+/i));
+
+// In asides and text sections, a string with no spaces ending in a photo or video extension is a
+// snapshot; anything else is text.
+const SNAPSHOT = /^\S+\.(jpe?g|png|webp|avif|tiff?|mp4|mov|m4v)$/i;
+const listOf = (items: TextItems) => [items].flat().map((s) => s.trim());
+
+// Items in the order written: each run of text is one text block, each run of images one thumbnail strip.
+async function loadBlocks(items: string[]) {
+  const runs: { images: boolean; items: string[] }[] = [];
+  for (const item of items) {
+    const images = SNAPSHOT.test(item);
+    if (runs.at(-1)?.images === images) runs.at(-1)!.items.push(item);
+    else runs.push({ images, items: [item] });
+  }
+  return Promise.all(
+    runs.map(async (run) =>
+      run.images
+        ? {
+            kind: "photos" as const,
+            // Snapshots, not frames: no download button.
+            photos: await Promise.all(run.items.map(async (file) => ({ ...(await loadPhoto(file)), download: undefined }))),
+          }
+        : { kind: "text" as const, paragraphs: run.items.flatMap(splitText) },
+    ),
+  );
+}
+
+const round = (n: number) => Number(n.toFixed(5));
+/** " - 1.5rem" / " + 1.5rem", so calc() never sees "- -1.5rem". */
+const minusRem = (n: number) => (n >= 0 ? ` - ${round(n)}rem` : ` + ${round(-n)}rem`);
+
+/*
+ * Row layout. Every column (a photo, or a stack of photos) ends up the same
+ * height H, nothing cropped. With row width W, gap g and k columns:
+ *   photo of ratio r:          width = r * H
+ *   stack of n photos:         acts like one photo of ratio rS = 1 / Σ(1/ri),
+ *                              but its n-1 inner gaps add height, so
+ *                              width = rS * (H - (n-1)g)
+ *   widths + (k-1)g = W   →   H = (W - g(k-1-C)) / R
+ * where R = Σ column ratios and C = Σ over stacks of rS(n-1).
+ */
+// Each `aside` / `aside-N` row joins the photo row above it (the schema checks there is one),
+// numbered in order.
+type Section = RowItem[] | { text: TextItems } | { "text-r": TextItems } | { "text-f": TextItems };
+type PendingAside = { number: string; target?: number; items: string[] };
+const sections: { row: Section; asides: PendingAside[] }[] = [];
+let asideCount = 0;
+for (const row of rows) {
+  const aside = asideOf(row);
+  if (aside) {
+    sections.at(-1)?.asides.push({ number: pad(++asideCount), target: aside.target, items: listOf(aside.items).filter(Boolean) });
+  } else {
+    sections.push({ row: row as Section, asides: [] });
+  }
+}
+
+let frame = 0;
+const blocks = await Promise.all(
+  sections.map(async ({ row, asides: rowAsides }) => {
+    if (!Array.isArray(row)) {
+      const align = "text-r" in row ? "right" : "text-f" in row ? "full" : "left";
+      const items = "text-r" in row ? row["text-r"] : "text-f" in row ? row["text-f"] : row.text;
+      return { kind: "text" as const, align, blocks: await loadBlocks(listOf(items).filter(Boolean)) };
+    }
+
+    // Numbered before the first await, so frames count in reading order.
+    const groups = row.map((item) => (Array.isArray(item) ? item : [item]).map((raw) => ({ raw, number: pad(++frame) })));
+    // An aside's badge goes on the row's top-right photo (top of the last column), nearest the aside;
+    // `aside-N` puts it on the row's Nth photo in reading order.
+    const topRight = groups.at(-1)![0];
+    const inOrder = groups.flat();
+    const asides = await Promise.all(
+      rowAsides.map(async ({ number, target, items }) => {
+        const photo = target ? inOrder[target - 1] : topRight;
+        if (!photo) throw new Error(`aside-${target}: the photo row above has only ${inOrder.length} photos.`);
+        return { number, frame: photo.number, blocks: await loadBlocks(items) };
+      }),
+    );
+
+    const columns = await Promise.all(
+      groups.map(async (group, i) => {
+        const photos = await Promise.all(
+          group.map(async ({ raw, number }) => {
+            if (/\.(mp4|mov|m4v)$/i.test(raw)) {
+              throw new Error(`"${raw}" is a video: videos only go in text sections and asides, not photo rows.`);
+            }
+            const photo = await loadPhoto(raw);
+            const manual = captions[photo.key] ?? captions[raw];
+            // Auto captions only show in the lightbox; hand-written captions still show under the photo.
+            const exposure = manual?.exposure ?? (autoCaptions ? exposureText(photo.exposure) : undefined);
+            // Several asides on one photo: the badge shows the first.
+            const aside = asides.find((a) => a.frame === number)?.number;
+            return { ...photo, number, aside, caption: manual, lightboxCaption: exposure };
+          }),
+        );
+        return {
+          photos,
+          stacked: Array.isArray(row[i]),
+          ratio: 1 / photos.reduce((sum, p) => sum + 1 / p.ratio, 0),
+          innerGaps: photos.length - 1,
+        };
+      }),
+    );
+
+    const g = GAP_REM;
+    const R = columns.reduce((sum, c) => sum + c.ratio, 0);
+    const C = columns.reduce((sum, c) => sum + c.ratio * c.innerGaps, 0);
+    const spare = g * (columns.length - 1 - C); // rem taken out of W before sharing it out
+    // A stacked column counts as 3 for ROW_WIDTH_BY_COUNT.
+    const width = rowWidth(columns.reduce((n, c) => n + (c.stacked ? 3 : 1), 0));
+
+    return {
+      kind: "photos" as const,
+      asides,
+      columns: columns.map((c) => {
+        const share = c.ratio / R;
+        const vw = `${Math.round(share * width)}vw`;
+        // From 1024px an aside row gives up the margin column, so its photos are that much narrower
+        // (from 1920px the aside hangs in the page margin instead, and the photos are back to normal).
+        const asidePx = Math.round(share * (ASIDE_WIDTH + ASIDE_GAP_REM * 16));
+        return {
+          ...c,
+          basis: `calc((100%${minusRem(spare)}) * ${round(share)}${minusRem(c.ratio * c.innerGaps * g)})`,
+          sizes: asides.length
+            ? `(min-width: 1920px) ${vw}, (min-width: 1024px) calc(${vw} - ${asidePx}px), (min-width: 640px) ${vw}, 100vw`
+            : `(min-width: 640px) ${vw}, 100vw`,
+        };
+      }),
+      // Row width, capped so H never exceeds MAX_ROW_HEIGHT.
+      style: `--row-width: ${width}%; --row-max: calc(${Math.round(R * MAX_ROW_HEIGHT)}px${minusRem(-spare)})`,
+    };
+  }),
+);
+---
+
+<section id="gallery" aria-label="Photographs" class="site-container flex flex-col py-10 sm:py-12" style={`--gallery-gap: ${GAP_REM}rem; --aside-width: ${ASIDE_WIDTH}px; --aside-gap: ${ASIDE_GAP_REM}rem; gap: var(--gallery-gap)`}>
+  {blocks.map((block) =>
+    block.kind === "text" ? (
+      <div
+        class:list={[
+          "gallery-text snapshot-gallery flex flex-col gap-6 py-8 sm:py-10",
+          block.align === "full" ? "w-full" : "max-w-[640px]",
+          block.align === "right" && "self-end items-end",
+        ]}
+      >
+        <SnapshotBlocks
+          blocks={block.blocks}
+          sizes={TEXT_SNAPSHOT_SIZES}
+          label="this section"
+          textClass={`flex flex-col gap-4 font-display text-[22px] leading-[1.35] font-light text-pretty text-fg sm:text-[26px]${block.align === "right" ? " text-right" : ""}`}
+          stripClass="w-full max-w-[640px]"
+          oneLine
+        />
+      </div>
+    ) : (
+      <div class:list={[block.asides.length > 0 && "aside-row"]} style={block.style}>
+        <div class="photo-row">
+          {block.columns.map((column) =>
+            column.stacked ? (
+              <div class="photo-stack" style={`--basis: ${column.basis}`}>
+                {column.photos.map((photo) => (
+                  <GalleryPhoto photo={photo} title={title} sizes={column.sizes} />
+                ))}
+              </div>
+            ) : (
+              <GalleryPhoto photo={column.photos[0]} title={title} sizes={column.sizes} style={`--basis: ${column.basis}`} />
+            ),
+          )}
+        </div>
+        {block.asides.length > 0 && (
+          <div class="aside-col">
+            {block.asides.map((aside) => <GalleryAside aside={aside} width={ASIDE_WIDTH} />)}
+          </div>
+        )}
+      </div>
+    ),
+  )}
+</section>
+
+<style>
+  .photo-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gallery-gap);
+    width: 100%;
+    margin-inline: auto;
+  }
+  .photo-stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gallery-gap);
+    min-width: 0;
+  }
+
+  /* Side by side from tablet up, each column at the width worked out above
+     (--basis) so every column is the same height without cropping. On phones
+     everything stacks full width. */
+  @media (width >= 40rem) {
+    .photo-row {
+      flex-direction: row;
+      align-items: flex-start;
+      width: var(--row-width);
+      max-width: var(--row-max);
+    }
+    .photo-row > :global(*) {
+      flex: 0 0 var(--basis);
+    }
+  }
+
+  /* A row with asides: under the photos on smaller screens, in a margin column
+     beside them from 1024px. The photo row keeps its own width rules relative
+     to whatever space is left, so the equal-height math above still holds. */
+  .aside-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-inline: auto;
+    padding-bottom: 1.5rem; /* breathing room before the next row while the aside sits underneath */
+  }
+  .aside-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 560px;
+  }
+  @media (width >= 40rem) {
+    .aside-row {
+      width: var(--row-width);
+    }
+    .aside-row > .photo-row {
+      width: 100%;
+    }
+  }
+  @media (width >= 64rem) {
+    .aside-row {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: var(--aside-gap);
+      max-width: calc(var(--row-max) + var(--aside-width) + var(--aside-gap));
+      padding-bottom: 0;
+    }
+    .aside-row > .photo-row {
+      flex: 1 1 0;
+      min-width: 0;
+      margin: 0;
+    }
+    .aside-col {
+      flex: 0 0 var(--aside-width);
+      /* Stays in view while a tall row scrolls past. */
+      position: sticky;
+      top: 2rem;
+    }
+  }
+  /* Wide screens have room in the page margin (the page is at most 1400px wide):
+     the row keeps its normal size and place, and the aside hangs outside it on
+     the right. 1920px is where it fits next to a full-width row. */
+  @media (width >= 1920px) {
+    .aside-row {
+      max-width: var(--row-max);
+    }
+    .aside-row > .photo-row {
+      flex: 0 0 100%;
+    }
+  }
+
+  /* Lightbox exposure caption (PhotoSwipe's own markup, hence :global). Fades with the other controls. */
+  :global(.pswp__exposure) {
+    position: absolute;
+    left: 50%;
+    bottom: 1.25rem;
+    transform: translateX(-50%);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    background: rgb(0 0 0 / 0.55);
+    color: rgb(255 255 255 / 0.9);
+    font: 500 13px/1.4 var(--font-ui);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  /* Sized by PhotoSwipe; max-width: none undoes Tailwind's video { max-width: 100% } (as PhotoSwipe does for img). */
+  :global(.pswp__video) {
+    position: absolute;
+    max-width: none;
+    background: #000;
+    object-fit: contain;
+  }
+  :global(.pswp--ui-visible .pswp__exposure) {
+    opacity: 1;
+  }
+  :global(.pswp:not(.pswp--ui-visible) .pswp__exposure) {
+    opacity: 0;
+  }
+</style>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+  import "photoswipe/style.css";
+
+  const options = { zoom: false, loop: false, pswpModule: () => import("photoswipe") };
+
+  // Each aside's / text section's snapshots are their own little gallery, separate from the frames.
+  const snapshots = new PhotoSwipeLightbox({ gallery: ".snapshot-gallery", children: "a.snapshot-item", ...options });
+
+  // Videos (data-pswp-video): a <video> slide with controls and sound. Only plays when tapped.
+  snapshots.addFilter("itemData", (data) => {
+    const el = data.element as HTMLElement | undefined;
+    if (el?.dataset.pswpVideo) {
+      data.type = "video";
+      data.videoSrc = el.dataset.pswpVideo;
+      data.poster = el.dataset.pswpPoster;
+    }
+    return data;
+  });
+  snapshots.on("contentLoad", (e) => {
+    const { content } = e;
+    if (content.type !== "video") return;
+    e.preventDefault();
+    const video = document.createElement("video");
+    video.src = content.data.videoSrc as string;
+    if (content.data.poster) video.poster = content.data.poster as string;
+    video.controls = true;
+    video.playsInline = true;
+    video.preload = "metadata";
+    video.className = "pswp__video";
+    // Let the video's own controls get taps and drags instead of PhotoSwipe (swipe / close).
+    for (const type of ["pointerdown", "mousedown", "touchstart"]) {
+      video.addEventListener(type, (event) => event.stopPropagation());
+    }
+    // PhotoSwipe's types only know <img>/<div>; any element works (it's sized via setDisplayedSize).
+    content.element = video as unknown as HTMLDivElement;
+    content.onLoaded();
+  });
+  // Nothing keeps playing once you move on or close.
+  const pauseVideos = () => snapshots.pswp?.element?.querySelectorAll("video").forEach((v) => v.pause());
+  snapshots.on("change", pauseVideos);
+  snapshots.on("close", pauseVideos);
+  snapshots.init();
+
+  const lightbox = new PhotoSwipeLightbox({ gallery: "#gallery", children: "a.pswp-item", ...options });
+
+  // Download button: saves the photo's wallpaper JPEG (data-pswp-download). Hidden when a photo has none.
+  lightbox.on("uiRegister", () => {
+    lightbox.pswp?.ui?.registerElement({
+      name: "download",
+      order: 9, // just left of the close button
+      isButton: true,
+      tagName: "a",
+      title: "Download wallpaper",
+      ariaLabel: "Download wallpaper",
+      html: {
+        isCustomSVG: true,
+        inner:
+          '<path d="M16 6v13m-5.5-5.5L16 19l5.5-5.5M8 23.5h16" id="pswp__icn-download" ' +
+          'fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+        outlineID: "pswp__icn-download",
+      },
+      onInit: (el, pswp) => {
+        el.setAttribute("download", "");
+        el.setAttribute("target", "_blank");
+        el.setAttribute("rel", "noopener");
+        pswp.on("change", () => {
+          const url = (pswp.currSlide?.data.element as HTMLElement | undefined)?.dataset.pswpDownload;
+          if (url) (el as HTMLAnchorElement).href = url;
+          else el.removeAttribute("href");
+          el.style.display = url ? "" : "none";
+        });
+      },
+    });
+
+    // Exposure caption at the bottom (data-pswp-caption, from auto captions). Hidden when a photo has none.
+    lightbox.pswp?.ui?.registerElement({
+      name: "exposure",
+      className: "pswp__exposure",
+      appendTo: "root",
+      onInit: (el, pswp) => {
+        pswp.on("change", () => {
+          const text = (pswp.currSlide?.data.element as HTMLElement | undefined)?.dataset.pswpCaption ?? "";
+          el.textContent = text;
+          el.style.display = text ? "" : "none";
+        });
+      },
+    });
+  });
+
+  lightbox.init();
+</script>

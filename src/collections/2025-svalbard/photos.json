@@ -1,0 +1,2334 @@
+{
+  "DSCF1423.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF1423.8464a92c-2592.jpg",
+      "w": 2592
+    },
+    "etag": "fb6bc9a67d7f6f41101699ca42de388a",
+    "exif": {
+      "aperture": "f/2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 160,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-08-23T00:09:35"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JQBdgA+X5XyCEQVwVbf0gQAD+w98rTb96trlydhbHutIwPfPTvYpffwHOOGy3kZ75ZwB0i6tnxMOHgakQtwQRAvIFm2X6BL/yrBXlDfokp2hUkfM14yIhTcFloAAA",
+    "sha256": "8464a92c17f76ce4e9cf1d534b10bfc33f10fc2674614b3a03949cb8407c0f9c",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF1423.8464a92c-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF1423.8464a92c-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1423.8464a92c-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF1423.8464a92c-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1423.8464a92c-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF1423.8464a92c-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1423.8464a92c-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF1423.8464a92c-2400.webp"
+      }
+    ],
+    "version": "8464a92c",
+    "width": 7728
+  },
+  "DSCF1470e.JPG": {
+    "download": {
+      "h": 864,
+      "key": "2025-svalbard/DSCF1470e.999f3be5-2592.jpg",
+      "w": 2592
+    },
+    "etag": "8fa51ff40e7c0b6ee705ef2c20c31ed4",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/350s",
+      "taken": "2025-08-24T10:31:07"
+    },
+    "height": 2576,
+    "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoYAAgAPu1iqU2ppaOiMAgBMB2JZQC06CIaAj7I9tAAAP1Tkxo0yKJbd7rFoED/bpria8h/v3GcQJCLgPYEWDypQAo4AAAA",
+    "sha256": "999f3be5f8f419c075e7663292fa119d88e527e852976ce07f442a61265c40d7",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF1470e.999f3be5-720.avif",
+        "edge": 720,
+        "h": 240,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF1470e.999f3be5-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1470e.999f3be5-1200.avif",
+        "edge": 1200,
+        "h": 400,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF1470e.999f3be5-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1470e.999f3be5-1800.avif",
+        "edge": 1800,
+        "h": 600,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF1470e.999f3be5-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1470e.999f3be5-2400.avif",
+        "edge": 2400,
+        "h": 800,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF1470e.999f3be5-2400.webp"
+      }
+    ],
+    "version": "999f3be5",
+    "width": 7728
+  },
+  "DSCF1849.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF1849.5533f11c-2592.jpg",
+      "w": 2592
+    },
+    "etag": "c1a1756250f9ae0824c3efe7edbd578c",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/170s",
+      "taken": "2025-08-25T10:05:34"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAwCdASoYABAAPu1orU2ppqSiMAgBMB2JQBOgBDrVmj3WElNIuAD+sHyboiqJz3pTao0LP/ohVHVuqEgcTMtxZ0HDQAAA",
+    "sha256": "5533f11cd1b43edb8d1ee365c0be5d1a723530f74c6545fe9a2ec88ef813030c",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF1849.5533f11c-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF1849.5533f11c-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1849.5533f11c-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF1849.5533f11c-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1849.5533f11c-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF1849.5533f11c-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1849.5533f11c-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF1849.5533f11c-2400.webp"
+      }
+    ],
+    "version": "5533f11c",
+    "width": 7728
+  },
+  "DSCF1945.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF1945.7cd42119-2592.jpg",
+      "w": 2592
+    },
+    "etag": "dd3b842beb4bdf78f7c919908128eab3",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/850s",
+      "taken": "2025-08-25T11:25:15"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZQCzgCHWjrvfy+ttQAD+yIgX/ThLuVdptH/2aNp4h12aGJEg98h51xODH4SAJkmm4EYqjNwAAA==",
+    "sha256": "7cd42119d445dc4c4b39714145f544ed0b4d23b92ec8a39d94c5849bd28d5ccb",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF1945.7cd42119-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF1945.7cd42119-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1945.7cd42119-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF1945.7cd42119-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1945.7cd42119-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF1945.7cd42119-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1945.7cd42119-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF1945.7cd42119-2400.webp"
+      }
+    ],
+    "version": "7cd42119",
+    "width": 7728
+  },
+  "DSCF1953.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF1953.b1ca94d8-2592.jpg",
+      "w": 2592
+    },
+    "etag": "36e587fb7b9d64612770e04f2a96d08f",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/480s",
+      "taken": "2025-08-25T11:27:23"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoYABAAPu1orU2ppqSiMAgBMB2JQBOgBDqK62DmZLsHKoAA/c6caRXbWrz+3GB2qDd9BIlaQrojSbH395ibUHYtzugAAA==",
+    "sha256": "b1ca94d85457b5557b8feecb8550dabf05b9e312bf982b9afc44a72bac479bc5",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF1953.b1ca94d8-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF1953.b1ca94d8-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1953.b1ca94d8-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF1953.b1ca94d8-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1953.b1ca94d8-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF1953.b1ca94d8-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF1953.b1ca94d8-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF1953.b1ca94d8-2400.webp"
+      }
+    ],
+    "version": "b1ca94d8",
+    "width": 7728
+  },
+  "DSCF2011e.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2011e.d91eacbe-2592.jpg",
+      "w": 2592
+    },
+    "etag": "54d40e43bc72ff1acf1c82728ec7648c",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/240s",
+      "taken": "2025-08-25T12:19:33"
+    },
+    "height": 2576,
+    "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JQBadANXR6bHLDmiFaAC9QJOWyX/GBcP/WRaAsH7b9N2i3Uzblw7lOZZHTwgxFGE8ODMdPtUVj5LrpsQzAM75rNNgaAAA",
+    "sha256": "d91eacbe312186d109d5af0a91f56d9131a26a2dfbad0381de5613eba2f7d499",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2011e.d91eacbe-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2011e.d91eacbe-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2011e.d91eacbe-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2011e.d91eacbe-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2011e.d91eacbe-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2011e.d91eacbe-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2011e.d91eacbe-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2011e.d91eacbe-2400.webp"
+      }
+    ],
+    "version": "d91eacbe",
+    "width": 3864
+  },
+  "DSCF2025.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2025.971a9bec-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ab596f5db57d0dad7152194600710aa2",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/450s",
+      "taken": "2025-08-25T12:20:56"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoYABAAPu1mqk2ppaQiMAgBMB2JZQAAUpKPxzSLjL7DnhgwAAD+3/Tmposfy9jjb5RUwRnxNsQ5VLpMxsHdGLd+kW7jpfpO2XWhaeYT7xNeebsMAAA=",
+    "sha256": "971a9bec8e5736347feb5d12161b3e72b73f043c2acf1b2c39ce21c0be433c57",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2025.971a9bec-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2025.971a9bec-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2025.971a9bec-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2025.971a9bec-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2025.971a9bec-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2025.971a9bec-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2025.971a9bec-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2025.971a9bec-2400.webp"
+      }
+    ],
+    "version": "971a9bec",
+    "width": 7728
+  },
+  "DSCF2050.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2050.09fdd701-2592.jpg",
+      "w": 2592
+    },
+    "etag": "288dee4f0a96229014906a659bca6503",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/240s",
+      "taken": "2025-08-25T12:32:15"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYABAAPu1iqU2ppaQiMAgBMB2JQBOgBHwfAQViJc1FTTGAjwAA4gL/L4lDDeIZ97lJsrzh+DfcDxlA0MKjZgntwA3C5GlyxXp0tMpkLT8hh8JDMlodJYWBQx3T8kp/A7YMEJuUAAA=",
+    "sha256": "09fdd701cb08745965715550ba033607a0c3e9e021759f3a91defd2323174d18",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2050.09fdd701-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2050.09fdd701-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2050.09fdd701-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2050.09fdd701-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2050.09fdd701-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2050.09fdd701-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2050.09fdd701-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2050.09fdd701-2400.webp"
+      }
+    ],
+    "version": "09fdd701",
+    "width": 7728
+  },
+  "DSCF2070.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2070.d92eb882-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ca659a36d28923a1a5dac8392898d0c3",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/340s",
+      "taken": "2025-08-25T12:40:55"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoYABAAPu1kq04ppaQiMAgBMB2JZQAAW9v0D93J2ORxkAAA/mZg6EAz28Y1Dj8je7XKjMkJq6XCDiOnYwjFA3ZDAmv3eLgA",
+    "sha256": "d92eb882a0b3e78c6d15701ea432eeab26b3673a4b2414846e303645220cc0c9",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2070.d92eb882-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2070.d92eb882-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2070.d92eb882-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2070.d92eb882-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2070.d92eb882-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2070.d92eb882-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2070.d92eb882-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2070.d92eb882-2400.webp"
+      }
+    ],
+    "version": "d92eb882",
+    "width": 7728
+  },
+  "DSCF2132.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2132.d860c227-2592.jpg",
+      "w": 2592
+    },
+    "etag": "26a23bd2228cca628bcfec1545d94c7f",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/170s",
+      "taken": "2025-08-25T13:23:33"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQCw7BefDPLG6Gpa+fEBfAAA/rWPF//mf4Pyke6gN3IsSGIb+MPBZZr+S41ecQYrnI5sg+Dx23hTlSoLOuvSR5isPv9BuYoN1tqVwEQcKwyUuU2juHgA",
+    "sha256": "d860c227f180dde2d15ee2c8b40cae2aec92fc2d45ab8371cb5d4d6867e45fd0",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2132.d860c227-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2132.d860c227-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2132.d860c227-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2132.d860c227-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2132.d860c227-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2132.d860c227-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2132.d860c227-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2132.d860c227-2400.webp"
+      }
+    ],
+    "version": "d860c227",
+    "width": 7728
+  },
+  "DSCF2142.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2142.d040c1d2-2592.jpg",
+      "w": 2592
+    },
+    "etag": "b3a2f25e636190c75904526c78896623",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/250s",
+      "taken": "2025-08-25T13:35:52"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoYABAAPu1krU6ppaSiMAgBMB2JYwAAUpOJD47aOSXbLnzqOAD8caNl3iFxaua0nNqTwVb9i2xx7WpWA3uK6rpkN7bWIgVASZd05FL6aEAAAA==",
+    "sha256": "d040c1d22a907ab1fb23d1d5c17c38ceb65751f2dbe41b6d660c038d010835bf",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2142.d040c1d2-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2142.d040c1d2-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2142.d040c1d2-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2142.d040c1d2-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2142.d040c1d2-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2142.d040c1d2-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2142.d040c1d2-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2142.d040c1d2-2400.webp"
+      }
+    ],
+    "version": "d040c1d2",
+    "width": 7728
+  },
+  "DSCF2215.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2215.0833fcdf-2592.jpg",
+      "w": 2592
+    },
+    "etag": "13d6eee4a2acdcfeae1a03a7942ecba6",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 12800,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/8s",
+      "taken": "2025-08-26T10:44:49"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAwCdASoYABAAPu1iqU2ppaQiMAgBMB2JYwDG9Bulh94j5gS1Vb8wAP70MtdazY6tokOTnOtjP97imcrkesRPWK/SdWOkFjAluOLbjM6gUVqK88BIojG7iZ9ZAK1S0yhTe5tcIZ2yYAAA",
+    "sha256": "0833fcdfa2fda551e9213bc53a889ddbd14e9fdca5c7a26c84a699fbedbdbad1",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2215.0833fcdf-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2215.0833fcdf-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2215.0833fcdf-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2215.0833fcdf-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2215.0833fcdf-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2215.0833fcdf-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2215.0833fcdf-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2215.0833fcdf-2400.webp"
+      }
+    ],
+    "version": "0833fcdf",
+    "width": 7728
+  },
+  "DSCF2220.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2220.f173b791-2592.jpg",
+      "w": 2592
+    },
+    "etag": "c458c1625c423a27e65b2f9bab0692d5",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 12800,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/13s",
+      "taken": "2025-08-26T10:47:19"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoYABAAPu1orU6ppiSiMAgBMB2JZwAAW+knFVLTgAJIAAD+9CeRO2bsnbkwzb3CAP1CrvwU/T2PB18jplKr1zydzlWX1H/kuq/VKGBgAAA=",
+    "sha256": "f173b791700d2c1e7e50cb294b84cc0b872c67d0249bd73950eaf9a0244abc1d",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2220.f173b791-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2220.f173b791-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2220.f173b791-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2220.f173b791-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2220.f173b791-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2220.f173b791-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2220.f173b791-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2220.f173b791-2400.webp"
+      }
+    ],
+    "version": "f173b791",
+    "width": 7728
+  },
+  "DSCF2229.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2229.89cdcf7a-2592.jpg",
+      "w": 2592
+    },
+    "etag": "49225287eee47f900abda9ab7a956b8d",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 12800,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/27s",
+      "taken": "2025-08-26T11:04:01"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoYABAAPu1yrU+pp6QiMAgBMB2JQAAj3WlLu61LJc82BgAA/v3afbV1/PjyXE5ermMCdokm+Sx8NmuG7GmknnpExRf0QVLulZLARzJhCx1zngAA",
+    "sha256": "89cdcf7a6e1a706a5d1cfdf8997cb349c3a0fce35915150eaace3d4b11ba67e3",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2229.89cdcf7a-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2229.89cdcf7a-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2229.89cdcf7a-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2229.89cdcf7a-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2229.89cdcf7a-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2229.89cdcf7a-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2229.89cdcf7a-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2229.89cdcf7a-2400.webp"
+      }
+    ],
+    "version": "89cdcf7a",
+    "width": 7728
+  },
+  "DSCF2237.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2237.d5da1069-2592.jpg",
+      "w": 2592
+    },
+    "etag": "b00f56857d1b91cca4ba670b67335d83",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 12800,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/34s",
+      "taken": "2025-08-26T11:07:25"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JQBfJA+WSXepTwjGQAP48NRSZg5J21F6uPFJPEx0vsJKDlDaVrCeRZ+fjByB+HzccFK+LnGd5VhTQol86urF82RPff1n2YdM+wGoB/gHHJR50LkW7URlpnu1dR/V2FNvuvjSA7PAAAA==",
+    "sha256": "d5da1069f87d89e4f236d4cbecc67c8adb07492422f5396482c4b293d02377fd",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2237.d5da1069-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2237.d5da1069-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2237.d5da1069-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2237.d5da1069-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2237.d5da1069-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2237.d5da1069-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2237.d5da1069-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2237.d5da1069-2400.webp"
+      }
+    ],
+    "version": "d5da1069",
+    "width": 7728
+  },
+  "DSCF2318.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2318.d3a83fdb-2592.jpg",
+      "w": 2592
+    },
+    "etag": "8bb74f634382c1d0b926cd1f40a8d6cc",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/240s",
+      "taken": "2025-08-27T11:14:41"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoYABAAPu1krU6ppaSiMAgBMB2JZQCdACHZryljlxJs0WAA/owgAuX/w6cCEjmirZs276ULtRtVBcAZf5Za8LBRiRp+3RXHtdQ9vAAA",
+    "sha256": "d3a83fdbb995caa86710f5c41111f04ddc25f4029c21248af3fe0054866f84cd",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2318.d3a83fdb-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2318.d3a83fdb-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2318.d3a83fdb-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2318.d3a83fdb-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2318.d3a83fdb-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2318.d3a83fdb-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2318.d3a83fdb-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2318.d3a83fdb-2400.webp"
+      }
+    ],
+    "version": "d3a83fdb",
+    "width": 7728
+  },
+  "DSCF2418.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2418.93597b83-2592.jpg",
+      "w": 2592
+    },
+    "etag": "e6291750bf770e25b64ea5f30f56c07b",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 160,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/640s",
+      "taken": "2025-08-27T11:46:35"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoYABAAPu1kqk2ppaQiMAgBMB2JZQCsACHes7I7T8aELiAAAP7DmCfrupjwJTmYAaIu0UBqCHQ6DsUkSqGVh+2x6O0C1xG4ss8btrBw0AA=",
+    "sha256": "93597b8394ca2ee6a706d17239338bbf704defbc4973e1252b7ca935c9a91608",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2418.93597b83-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2418.93597b83-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2418.93597b83-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2418.93597b83-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2418.93597b83-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2418.93597b83-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2418.93597b83-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2418.93597b83-2400.webp"
+      }
+    ],
+    "version": "93597b83",
+    "width": 7728
+  },
+  "DSCF2461.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2461.9663e745-2592.jpg",
+      "w": 2592
+    },
+    "etag": "8b54064fc8e73dee986ad85a7b2cf6e7",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/250s",
+      "taken": "2025-08-27T11:54:09"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQBACdASoYABAAPu1kqk2ppaQiMAgBMB2JZwC/OCHhBvtvvIAZ1woJMAD+000oVhRMM5JQ/3zYgFWl1//2bsTuBDcGo30glYY268NhGyEijuAAAAA=",
+    "sha256": "9663e74525ced7faf30925054276fcd60262e761e79a342c34f8c34e69707ba7",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2461.9663e745-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2461.9663e745-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2461.9663e745-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2461.9663e745-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2461.9663e745-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2461.9663e745-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2461.9663e745-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2461.9663e745-2400.webp"
+      }
+    ],
+    "version": "9663e745",
+    "width": 7728
+  },
+  "DSCF2517.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2517.0a37b20f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "0ee8ba882fa849ab07da39f5f9d12873",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/420s",
+      "taken": "2025-08-27T12:29:34"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCsACHcjwAPU37wKkaAAPxS6oWu0VntELeDQOzsO23xgBLw+O4sC3iXYGD5jH2lNHRc7zr+4AAA",
+    "sha256": "0a37b20f7bf3993d182969c5ce21e2cb6112041afbe54294337f6c92aadd4c50",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2517.0a37b20f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2517.0a37b20f-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2517.0a37b20f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2517.0a37b20f-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2517.0a37b20f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2517.0a37b20f-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2517.0a37b20f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2517.0a37b20f-2400.webp"
+      }
+    ],
+    "version": "0a37b20f",
+    "width": 7728
+  },
+  "DSCF2590.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2590.5e4088c3-2592.jpg",
+      "w": 2592
+    },
+    "etag": "f040231d159f6c0787bc8455afb4f19e",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/420s",
+      "taken": "2025-08-27T13:58:46"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JYwCdABVMVY0Rhv9JyRecAAD3cwMSG2VbPCupeo1stbMrmceKnJZlDKkimqUht0I0M6u2k3gsUP8CbhvfwfAHiAEOXp/4vMAAAA==",
+    "sha256": "5e4088c3591af57cbfe2a339fa7c66dcf180fc4eff529a5a8c6a67fb26c6b027",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2590.5e4088c3-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2590.5e4088c3-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2590.5e4088c3-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2590.5e4088c3-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2590.5e4088c3-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2590.5e4088c3-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2590.5e4088c3-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2590.5e4088c3-2400.webp"
+      }
+    ],
+    "version": "5e4088c3",
+    "width": 7728
+  },
+  "DSCF2598.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2598.ef461e4b-2592.jpg",
+      "w": 2592
+    },
+    "etag": "9939457b1c6e1527af49eeab4fdf7361",
+    "exif": {
+      "aperture": "f/4",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/150s",
+      "taken": "2025-08-27T14:08:54"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoYABAAPu1orU2ppqSiMAgBMB2JZQC7ACHWrp5uPHUCN3AA/q8FTvOHxGObHhggDahpcGMuryqtgm1vSqOpkGqAAAA=",
+    "sha256": "ef461e4b24a936c0cc64460293256d5ca5a6ef239ab2b52baba6ad00d5bc56e2",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2598.ef461e4b-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2598.ef461e4b-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2598.ef461e4b-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2598.ef461e4b-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2598.ef461e4b-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2598.ef461e4b-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2598.ef461e4b-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2598.ef461e4b-2400.webp"
+      }
+    ],
+    "version": "ef461e4b",
+    "width": 7728
+  },
+  "DSCF2620.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2620.fd0d66e3-2592.jpg",
+      "w": 2592
+    },
+    "etag": "0ef702a17b1ddd5a477eaa75868b72f3",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/200s",
+      "taken": "2025-08-27T14:59:50"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JQBOgA9GO9VeCVRbnffIAAOJloxnVgrs/d86ha6NegrGL/s0uQVo9uQ0DJ+uJSaO0F78dYeVd5HE79fWnpbxiGodse04OdQAAAA==",
+    "sha256": "fd0d66e306d16d70d7f4f81c3369076a9919c085cb4459d102eb4c47cc4adc25",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2620.fd0d66e3-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2620.fd0d66e3-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2620.fd0d66e3-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2620.fd0d66e3-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2620.fd0d66e3-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2620.fd0d66e3-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2620.fd0d66e3-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2620.fd0d66e3-2400.webp"
+      }
+    ],
+    "version": "fd0d66e3",
+    "width": 7728
+  },
+  "DSCF2679.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2679.506ef0a2-2592.jpg",
+      "w": 2592
+    },
+    "etag": "158c6a706687d3715b6002458b6916b2",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 1250,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/40s",
+      "taken": "2025-08-28T12:47:02"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQAD5hovJzczFBUrK00SA08jQAD+8Ow1i2Z+hGJobfdqZRu25xd8D5Ggf8fzVttGKCfWDdz70lmYWCWsP3e+EvyfRHmXh5LVz5p7sDnQne6VMKDx6PWyeXBhNxaK+LWBAB1PRsSX0rbOIdUuyPmRw+He83k/TYmnOp+28/FToxkRJqr/1eS8hizBAAAA",
+    "sha256": "506ef0a25fb375cfb644d037f2ae100de2fc31b184f36e69295731a6826c668d",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2679.506ef0a2-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2679.506ef0a2-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2679.506ef0a2-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2679.506ef0a2-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2679.506ef0a2-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2679.506ef0a2-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2679.506ef0a2-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2679.506ef0a2-2400.webp"
+      }
+    ],
+    "version": "506ef0a2",
+    "width": 7728
+  },
+  "DSCF2715.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2715.c9adabc6-2592.jpg",
+      "w": 2592
+    },
+    "etag": "47248074ad4653324d9256149bd62691",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/340s",
+      "taken": "2025-08-28T12:53:08"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQApgF4ANTig+2bgjEx4/cgAA/f+D6oBHp4/IUsstBh7xPe0Yy1MugiONZKvX7/Ur849HE4nPDkRdHGLqzRK6Qd6Y4CjZJccpdKT+lTWqcdZgfWOtTfNdVPdFS5lfjZHR389gzx4Hj+RXQ5TJfkWal3RNbqw5WSswCH+BkAn4GQBD+ccdqIgAAAA=",
+    "sha256": "c9adabc6630b2d01bf25fbca2abce30d44df253c055d8fce470b40771d892113",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2715.c9adabc6-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2715.c9adabc6-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2715.c9adabc6-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2715.c9adabc6-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2715.c9adabc6-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2715.c9adabc6-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2715.c9adabc6-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2715.c9adabc6-2400.webp"
+      }
+    ],
+    "version": "c9adabc6",
+    "width": 7728
+  },
+  "DSCF2905.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2905.188d1b59-2592.jpg",
+      "w": 2592
+    },
+    "etag": "40354104aa01a16bb80bdbf5d36b3b23",
+    "exif": {
+      "aperture": "f/4",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/340s",
+      "taken": "2025-08-29T11:24:14"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoYABAAPu1kqk4ppaQiMAgBMB2JQBOkEnhg2id9bIaufvBKAAD+w5vqQLZ6cL19tEGVrFzfPVrSfGlYvfCEjNgKI47iaMq3yD41QVncQKr1k8QpPs7vt7+QlwXrev7dEBMsVoAA",
+    "sha256": "188d1b593f4e1f6bfb67a095b744b97c1acb6b3f0c92cadee614220791e29998",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2905.188d1b59-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2905.188d1b59-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2905.188d1b59-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2905.188d1b59-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2905.188d1b59-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2905.188d1b59-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2905.188d1b59-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2905.188d1b59-2400.webp"
+      }
+    ],
+    "version": "188d1b59",
+    "width": 7728
+  },
+  "DSCF2913.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2913.354c784e-2592.jpg",
+      "w": 2592
+    },
+    "etag": "10fee452e0132a8c00393eff601ac5d4",
+    "exif": {
+      "aperture": "f/4.5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/140s",
+      "taken": "2025-08-30T09:56:19"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYABAAPu1iqU2ppaQiMAgBMB2JYwCdABusTUp3/stDpkMa7QAA/rdl9/ZLEdWqxjNkDQF57yF6/1FhLnQe7AWKtcKFnJIvvGs9tSdPiW7/H32SPFcPjVVLPm8EgcSApu4ObPQOAAA=",
+    "sha256": "354c784e35f48e428084268bbf26c847c0e24340e05d8e3fdeb2340daddb47a2",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2913.354c784e-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2913.354c784e-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2913.354c784e-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2913.354c784e-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2913.354c784e-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2913.354c784e-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2913.354c784e-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2913.354c784e-2400.webp"
+      }
+    ],
+    "version": "354c784e",
+    "width": 7728
+  },
+  "DSCF2954.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2954.1423957d-2592.jpg",
+      "w": 2592
+    },
+    "etag": "d9a0e62b55493b58cdc9a8810ad4def8",
+    "exif": {
+      "aperture": "f/3.2",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/75s",
+      "taken": "2025-08-30T11:30:09"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JaQAAUQQjcpWEbJzkQ3HYgADNoiGQaoV4Q2sVgDeso6eL7SuAp06m5wuddNPGMRdvbP1IIGkllEYYYDz6/5rLK28GTvTNJngmZ2eoh1GG/Tyr354Q4/f3aayA+WYMm5ES54UAAAA=",
+    "sha256": "1423957d41351ed9801f1b58582bacb1e01717b266618220cb09d4875a89aa13",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2954.1423957d-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2954.1423957d-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2954.1423957d-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2954.1423957d-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2954.1423957d-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2954.1423957d-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2954.1423957d-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2954.1423957d-2400.webp"
+      }
+    ],
+    "version": "1423957d",
+    "width": 7728
+  },
+  "DSCF2984.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF2984.d0587fcd-2592.jpg",
+      "w": 2592
+    },
+    "etag": "e5782689e884770226315a763cd18bfd",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/250s",
+      "taken": "2025-08-30T13:07:52"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADQAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JYwCdMoADThCg+BCVg8AA/siKTyZc6LyYRn3qz/Efkkgrd066d1tBZNG4DBSvpf4iZGkdSkQ53JG27vMdZNezzeweFDg9EYd1L0g2tDZd2UAA",
+    "sha256": "d0587fcd50c9eeb3ac535042e79f03a3d7b00a3bc4d52bb0bc1a01476a39fb04",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF2984.d0587fcd-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF2984.d0587fcd-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2984.d0587fcd-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF2984.d0587fcd-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2984.d0587fcd-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF2984.d0587fcd-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF2984.d0587fcd-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF2984.d0587fcd-2400.webp"
+      }
+    ],
+    "version": "d0587fcd",
+    "width": 7728
+  },
+  "DSCF3034.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3034.643b735c-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ec768795554c0de325718a97096f884a",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/250s",
+      "taken": "2025-08-30T13:45:02"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAwCdASoYABAAPu1yrU+pp6QiMAgBMB2JYgC7ACHccS2gncHLewAA/uGYy22Kor83wwwDdYRylcUt9RjupziBbsrBWyOTIMUML+Qht6E9YYTlsAAAAA==",
+    "sha256": "643b735cba2f280080ef7193f7957a3bb26ed61e4f52cd0b2b8b1587db5501dd",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3034.643b735c-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3034.643b735c-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3034.643b735c-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3034.643b735c-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3034.643b735c-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3034.643b735c-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3034.643b735c-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3034.643b735c-2400.webp"
+      }
+    ],
+    "version": "643b735c",
+    "width": 7728
+  },
+  "DSCF3138.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3138.512dada9-2592.jpg",
+      "w": 2592
+    },
+    "etag": "753303e1176ece251d32efc3443a5da9",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/180s",
+      "taken": "2025-08-30T14:26:31"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoYABAAPu1kq04ppaQiMAgBMB2JQBOgBDvQwafgC73lQAAA/sStZ+YhkDUM8Np0zKgVyFjkZPWLhMw9gDMfEk/UpQoyKBFb0Pu7XoGptB+Y0+2+KDgNgAAA",
+    "sha256": "512dada98228a68684f494fa1a61b49162688872e62d1d912601445288640b91",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3138.512dada9-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3138.512dada9-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3138.512dada9-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3138.512dada9-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3138.512dada9-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3138.512dada9-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3138.512dada9-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3138.512dada9-2400.webp"
+      }
+    ],
+    "version": "512dada9",
+    "width": 7728
+  },
+  "DSCF3158.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3158.c3029a48-2592.jpg",
+      "w": 2592
+    },
+    "etag": "ce179f44f79d78bd76ee912bbdf630f7",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/320s",
+      "taken": "2025-08-30T15:21:21"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoYABAAPu1kq04ppaQiMAgBMB2JYwCw7CHVD8St96tsAP3Oodb39LVUeH/37G20dgeWqnLHLgeDEQmg8pxDOfrbuzgn9ogA",
+    "sha256": "c3029a489f26042eca87e465e2677a91361ffce908a55a8cdb01339d2c2f0b64",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3158.c3029a48-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3158.c3029a48-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3158.c3029a48-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3158.c3029a48-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3158.c3029a48-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3158.c3029a48-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3158.c3029a48-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3158.c3029a48-2400.webp"
+      }
+    ],
+    "version": "c3029a48",
+    "width": 7728
+  },
+  "DSCF3182.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3182.0cf671d6-2592.jpg",
+      "w": 2592
+    },
+    "etag": "0920b50e5d873a47c120176d5f20c5a1",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/640s",
+      "taken": "2025-08-30T15:38:18"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JZQC/OCB+3APTg2CGSZAAAP38Gz/e2VKkkd+SPXiA4Uz/9d0h+WLU8Htv6AAA",
+    "sha256": "0cf671d64decdbd6b2b689cbd5ccc68f1065ec6428541eef2068670c321f453b",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3182.0cf671d6-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3182.0cf671d6-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3182.0cf671d6-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3182.0cf671d6-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3182.0cf671d6-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3182.0cf671d6-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3182.0cf671d6-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3182.0cf671d6-2400.webp"
+      }
+    ],
+    "version": "0cf671d6",
+    "width": 7728
+  },
+  "DSCF3189.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3189.f6230ddd-2592.jpg",
+      "w": 2592
+    },
+    "etag": "96b7532ed28c36fb0a54a0bf312eecef",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/420s",
+      "taken": "2025-08-30T16:04:35"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAwCdASoYABAAPu1kqU2ppaQiMAgBMB2JZQC7ACzcFhgAAP6/g03Aups+EJZ9ABN1Y5Pt/ebwQUPhFijV2oAA",
+    "sha256": "f6230ddd3b7093b6ad5de4fcfe8b00e395106454abfe918c531662a980c92d11",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3189.f6230ddd-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3189.f6230ddd-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3189.f6230ddd-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3189.f6230ddd-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3189.f6230ddd-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3189.f6230ddd-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3189.f6230ddd-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3189.f6230ddd-2400.webp"
+      }
+    ],
+    "version": "f6230ddd",
+    "width": 7728
+  },
+  "DSCF3250.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3250.110d3e73-2592.jpg",
+      "w": 2592
+    },
+    "etag": "3184f7f6e35c08780c14091c56f0602f",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/550s",
+      "taken": "2025-08-31T12:37:35"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoYABAAPu1yrU+pp6QiMAgBMB2JQBOgDPr75P1TVKsYQaQBOAAA/vn555Mws9711uz4l7d60Z4tI/TKdu7ZkszGgqLGUzTZMAxEMG6lP7B+7Gq0ipg4fSNlRQRvwqnZZqS7RS4NmWeAAA==",
+    "sha256": "110d3e73d87a5618ca451a41eea1ae025d46e30b8808660898956fe54b431414",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3250.110d3e73-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3250.110d3e73-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3250.110d3e73-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3250.110d3e73-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3250.110d3e73-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3250.110d3e73-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3250.110d3e73-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3250.110d3e73-2400.webp"
+      }
+    ],
+    "version": "110d3e73",
+    "width": 7728
+  },
+  "DSCF3317.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3317.f46ba0a6-2592.jpg",
+      "w": 2592
+    },
+    "etag": "1f4cba096fc4fed455da9a3736053521",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/420s",
+      "taken": "2025-09-01T10:44:57"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JQBOgA3BYq9dYwAlaEVAA8KiXbZfxQGcojaNbMzJLfPl/9aMEqDDO0mqZ9okkhYHMdeS1tvct790nM6Q4oXFAQUC1kkQk9+5UO1AA",
+    "sha256": "f46ba0a63d09c0fb9806f56e8a27132ebde0fc3c6d05ef94716c928566f7dfd5",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3317.f46ba0a6-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3317.f46ba0a6-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3317.f46ba0a6-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3317.f46ba0a6-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3317.f46ba0a6-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3317.f46ba0a6-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3317.f46ba0a6-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3317.f46ba0a6-2400.webp"
+      }
+    ],
+    "version": "f46ba0a6",
+    "width": 7728
+  },
+  "DSCF3566.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3566.439f6391-2592.jpg",
+      "w": 2592
+    },
+    "etag": "354fb0f5526f31da3d8d6b444362086c",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/200s",
+      "taken": "2025-09-02T10:20:45"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBACdASoYABAAPu1iqk2ppaQiMAgBMB2JZQCdK7/HABJka3LLmJozI4AA/uq3WIe6l5xUpVL+Mt/mOgYdaeuhrK+VkNzSuEqHuemofOrDBFkMDLLlwipWXD/O/gF0hyDaMMFyGJrkMAAA",
+    "sha256": "439f639111cfd7a6ce842eec1873fdd8f1ba266302db85f28d8f1da83916ade4",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3566.439f6391-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3566.439f6391-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3566.439f6391-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3566.439f6391-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3566.439f6391-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3566.439f6391-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3566.439f6391-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3566.439f6391-2400.webp"
+      }
+    ],
+    "version": "439f6391",
+    "width": 7728
+  },
+  "DSCF3809.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3809.71cc0e0f-2592.jpg",
+      "w": 2592
+    },
+    "etag": "fc6da89cf39e8469993a4c96f3bf9f08",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/450s",
+      "taken": "2025-09-02T11:20:18"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwAAXiAdHxHMsMfd0oAAyzHUO73OXQg98aNYBkJKmdyo+z3bDN8fyKv8GW2xUfQfFwEVey3itnMqXXE6jIyuInKH65bDUPlAAA==",
+    "sha256": "71cc0e0f93e54fe9543b150176a942cad79dc2d90edc8569e2e69dc513caa352",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3809.71cc0e0f-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3809.71cc0e0f-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3809.71cc0e0f-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3809.71cc0e0f-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3809.71cc0e0f-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3809.71cc0e0f-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3809.71cc0e0f-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3809.71cc0e0f-2400.webp"
+      }
+    ],
+    "version": "71cc0e0f",
+    "width": 7728
+  },
+  "DSCF3889.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3889.46551dce-2592.jpg",
+      "w": 2592
+    },
+    "etag": "3a6c0b1de9ad029c2633e0202ac972e0",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/500s",
+      "taken": "2025-09-02T11:38:20"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoYABAAPu1iqU2ppaQiMAgBMB2JQBdgA9DxPY4voK2akgAA/dFPbwpckaLJVVOzHRgcIXAfVYaImoDJE/vgy1O/cnW4JvWs0CUxvb0TsUzu6mexGZpi4ymSlrDFwAAA",
+    "sha256": "46551dcefdcc20f71149c7b3737bd83932c07f7fa588333694509447ec43b635",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3889.46551dce-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3889.46551dce-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3889.46551dce-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3889.46551dce-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3889.46551dce-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3889.46551dce-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3889.46551dce-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3889.46551dce-2400.webp"
+      }
+    ],
+    "version": "46551dce",
+    "width": 7728
+  },
+  "DSCF3918e.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3918e.a90ad245-2592.jpg",
+      "w": 2592
+    },
+    "etag": "53264027cf2b5c3571980a13179f40fb",
+    "exif": {},
+    "height": 2001,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBOmUABPk+oS+GKejJpGaaAAyeOwFPeOfav+jsqherSyjAEmuvju2l2JeiFRfUnZ9mnTz0ZX3Cu7E8wojp4mdEE1HFSBh+MIpO/33FAtYei8AAA=",
+    "sha256": "a90ad2458f76b3c013fbeb19eee5894923b274e8c743f94172af05a54cc40206",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3918e.a90ad245-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3918e.a90ad245-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3918e.a90ad245-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3918e.a90ad245-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3918e.a90ad245-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3918e.a90ad245-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3918e.a90ad245-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3918e.a90ad245-2400.webp"
+      }
+    ],
+    "version": "a90ad245",
+    "width": 3002
+  },
+  "DSCF3970.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF3970.bdb64efc-2592.jpg",
+      "w": 2592
+    },
+    "etag": "1009251e7769f37897737f4b44e94a45",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/400s",
+      "taken": "2025-09-02T12:17:15"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JQBOgA8nSIrw0ebdnf0AA/fZkGoZLCsheMZOHOtQcpn/ZquoGc4ta/3C4RaoK6rBUEyYBodpdyzBpOLtsAAHIgl6SPohCCuoYge32zYqBhifm7IiCQeI4Xb6doAAA",
+    "sha256": "bdb64efc2c78241d12900c83d534589d4ae184d34dfd7646cbaa252c84ab67dd",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF3970.bdb64efc-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF3970.bdb64efc-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3970.bdb64efc-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF3970.bdb64efc-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3970.bdb64efc-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF3970.bdb64efc-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF3970.bdb64efc-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF3970.bdb64efc-2400.webp"
+      }
+    ],
+    "version": "bdb64efc",
+    "width": 7728
+  },
+  "DSCF4032.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF4032.ca725b4a-2592.jpg",
+      "w": 2592
+    },
+    "etag": "35a96e0fe3a39d187a2568f4f4e5dee1",
+    "exif": {
+      "aperture": "f/5",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/240s",
+      "taken": "2025-09-04T11:20:23"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoYABAAPu1mq04ppaQiMAgBMB2JZACdACHXYvVdyMQLbwAA/oulBrC5sYpMWmG7uf5XOnhRj4r0CNcMT+PHvPRn0BbQEaFIH46MQnJ+itK6y/sCMceOSPDfUHCQvKgEaVZKrUHnC6TJeCAA",
+    "sha256": "ca725b4a2a5733df04037eefaa67be75dc62918bb0a0dfcd748c73f1055bf856",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF4032.ca725b4a-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF4032.ca725b4a-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4032.ca725b4a-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF4032.ca725b4a-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4032.ca725b4a-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF4032.ca725b4a-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4032.ca725b4a-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF4032.ca725b4a-2400.webp"
+      }
+    ],
+    "version": "ca725b4a",
+    "width": 7728
+  },
+  "DSCF4074.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF4074.55931d69-2592.jpg",
+      "w": 2592
+    },
+    "etag": "05e3ac6cc54772e92a809126fb79119b",
+    "exif": {
+      "aperture": "f/5.6",
+      "camera": "X-T5",
+      "focal": "27mm",
+      "iso": 125,
+      "lens": "XF27mmF2.8 R WR",
+      "shutter": "1/300s",
+      "taken": "2025-09-04T12:25:32"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoYABAAPu1mqk4ppaOiMAgBMB2JYwCdMoADTYuPIT3qsNsygQAA/ie4SKP62L2zgY55hulJLdb3gLoH3UOVnTnTVqnm18CGuYcK7dFmhhCG9TdXtecTsDdXkqNbhGLx8luWlwKWqiBWjsTp7FE09WKvW/oHXRihjPSEtQLU+PIAAA==",
+    "sha256": "55931d6944ceb2625847b3258648bafb24f2ed41bcd5ef4c08014ad40b0651fa",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF4074.55931d69-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF4074.55931d69-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4074.55931d69-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF4074.55931d69-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4074.55931d69-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF4074.55931d69-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4074.55931d69-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF4074.55931d69-2400.webp"
+      }
+    ],
+    "version": "55931d69",
+    "width": 7728
+  },
+  "DSCF4186.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF4186.dcf6561e-2592.jpg",
+      "w": 2592
+    },
+    "etag": "dbc7b6b5abbafe8766c43ccbbfc2f004",
+    "exif": {
+      "aperture": "f/3.6",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/280s",
+      "taken": "2025-09-05T11:38:15"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JQBWABD4LV59obvQPS3AA/rCPzj3R5bKo6mV2bv06qG5Dk68lXLf7m+0O4qB/lBvV+yKx+kwcqNxd8SxisAAA",
+    "sha256": "dcf6561e98f9439318bb01227349bb2c87e0acce7b2c8d3b9f08816b1f58831e",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF4186.dcf6561e-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF4186.dcf6561e-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4186.dcf6561e-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF4186.dcf6561e-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4186.dcf6561e-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF4186.dcf6561e-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4186.dcf6561e-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF4186.dcf6561e-2400.webp"
+      }
+    ],
+    "version": "dcf6561e",
+    "width": 7728
+  },
+  "DSCF4253.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF4253.8b7f451d-2592.jpg",
+      "w": 2592
+    },
+    "etag": "30e035fb3a7b36927d3b5a176bbdfe0c",
+    "exif": {
+      "aperture": "f/2.8",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/180s",
+      "taken": "2025-09-05T11:59:18"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoYABAAPu1kqU2ppaOiMAgBMB2JQBOgBDNX+P4cG/9HUP4AAP6u0DVKiBWDnIJF0hB6oWdYyBBpYvL5+uGlOHBhXD7X9TZgMItcLL3gtiWVufTDHm427LULgQAAAA==",
+    "sha256": "8b7f451ded0aab5ee6861bdeaf3d39f0551de4d88de1252c55bb0f702a9eef6b",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF4253.8b7f451d-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF4253.8b7f451d-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4253.8b7f451d-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF4253.8b7f451d-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4253.8b7f451d-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF4253.8b7f451d-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4253.8b7f451d-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF4253.8b7f451d-2400.webp"
+      }
+    ],
+    "version": "8b7f451d",
+    "width": 7728
+  },
+  "DSCF4268.JPG": {
+    "download": {
+      "h": 1728,
+      "key": "2025-svalbard/DSCF4268.78b55140-2592.jpg",
+      "w": 2592
+    },
+    "etag": "f5370a7d637a430c09c6247e2fed77b7",
+    "exif": {
+      "aperture": "f/3.2",
+      "camera": "X-T5",
+      "focal": "50mm",
+      "iso": 125,
+      "lens": "XF50mmF2 R WR",
+      "shutter": "1/210s",
+      "taken": "2025-09-05T12:28:04"
+    },
+    "height": 5152,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JYgCdACFrfXFITMIcHQ0AAP6Rt4y0O3vNWtbxKSnR1PdwZXxOFFq7JjWJ5E4P+YJ7ADBnQhaqX4mISXtA6D/BbPQF00bTZswfaQiYkz1OAAAA",
+    "sha256": "78b55140c5fb10997d423334501021f3b7198cb1577351c6fd6158114ddc844c",
+    "variants": [
+      {
+        "avif": "2025-svalbard/DSCF4268.78b55140-720.avif",
+        "edge": 720,
+        "h": 480,
+        "w": 720,
+        "webp": "2025-svalbard/DSCF4268.78b55140-720.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4268.78b55140-1200.avif",
+        "edge": 1200,
+        "h": 800,
+        "w": 1200,
+        "webp": "2025-svalbard/DSCF4268.78b55140-1200.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4268.78b55140-1800.avif",
+        "edge": 1800,
+        "h": 1200,
+        "w": 1800,
+        "webp": "2025-svalbard/DSCF4268.78b55140-1800.webp"
+      },
+      {
+        "avif": "2025-svalbard/DSCF4268.78b55140-2400.avif",
+        "edge": 2400,
+        "h": 1600,
+        "w": 2400,
+        "webp": "2025-svalbard/DSCF4268.78b55140-2400.webp"
+      }
+    ],
+    "version": "78b55140",
+    "width": 7728
+  }
+}

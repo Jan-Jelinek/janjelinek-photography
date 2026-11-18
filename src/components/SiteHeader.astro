@@ -1,0 +1,37 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+interface Props {
+  current?: "home" | "collection" | "about" | "prints";
+}
+
+const { current } = Astro.props;
+
+// "Collections" lights up on a collection page; on the home page it's just an anchor.
+const links = [
+  { href: "/#collections", label: "Collections", key: "collection" },
+  { href: "/about", label: "About", key: "about" },
+  { href: "/prints", label: "Prints", key: "prints" },
+];
+---
+
+<header class="site-container flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-3 sm:py-4">
+  <a href="/" class="font-display text-[22px] tracking-[0.01em] text-strong">Jan Jelinek</a>
+  <div class="flex items-center gap-4 sm:gap-7">
+    <nav aria-label="Primary" class="flex gap-4 text-[13px] tracking-[0.04em] uppercase sm:gap-8 sm:text-sm">
+      {links.map((link) => {
+        const active = link.key === current;
+        return (
+          <a
+            href={link.href}
+            aria-current={active ? (link.key === "collection" ? "true" : "page") : undefined}
+            class:list={["py-3 transition-colors hover:text-strong", active ? "text-strong" : "text-fg"]}
+          >
+            {link.label}
+          </a>
+        );
+      })}
+    </nav>
+    <ThemeToggle />
+  </div>
+</header>

@@ -22,3 +22,28 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local preview photos (`py r2sync push <collection>` uploads them)
+src/collections/**/*.jpg
+src/collections/**/*.JPG
+src/collections/**/*.jpeg
+src/collections/**/*.JPEG
+src/collections/**/*.png
+src/collections/**/*.PNG
+src/collections/**/*.webp
+src/collections/**/*.WEBP
+src/collections/**/*.tif
+src/collections/**/*.TIF
+src/collections/**/*.tiff
+src/collections/**/*.TIFF
+src/collections/**/*.mp4
+src/collections/**/*.MP4
+src/collections/**/*.mov
+src/collections/**/*.MOV
+src/collections/**/*.m4v
+src/collections/**/*.M4V
+src/collections/**/photos.json.tmp
+
+# r2sync
+__pycache__/
+.r2sync-fake/
