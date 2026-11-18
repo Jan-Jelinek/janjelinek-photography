@@ -3,6 +3,7 @@ import GalleryPhoto from "./GalleryPhoto.astro";
 import GalleryAside from "./GalleryAside.astro";
 import SnapshotBlocks from "./SnapshotBlocks.astro";
 import { exposureText, loadPhoto as loadPhotoFrom } from "../lib/photos";
+import { asideOf } from "../lib/asides";
 
 interface Caption {
   text?: string;
@@ -17,13 +18,13 @@ type TextItems = string | string[];
 interface Props {
   slug: string;
   title: string;
-  /** Folder holding the post, e.g. "src/collections/2025-peak-fog". */
+  /** Folder holding the post, e.g. "src/collections/2025-qixing". */
   dir: string;
   /**
    * Photo rows; text sections: text (left, max 640px), text-r (right), text-f (full width);
-   * and asides: `aside` right after a photo row sits beside that row.
+   * and asides: `aside` right after a photo row sits beside that row (`aside-N` badges its Nth photo).
    */
-  rows: (RowItem[] | { text: TextItems } | { "text-r": TextItems } | { "text-f": TextItems } | { aside: TextItems })[];
+  rows: (RowItem[] | { text: TextItems } | { "text-r": TextItems } | { "text-f": TextItems } | Record<string, TextItems>)[];
   captions: Record<string, Caption>;
   /** Fill each caption's exposure from the photo's camera data. */
   autoCaptions?: boolean;
@@ -47,8 +48,8 @@ const TEXT_SNAPSHOT_SIZES = (cols: number) => `min(${Math.round(640 / cols)}px, 
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
-// Photo names resolve to local preview / R2 / Azure in src/lib/photos.ts.
-const loadPhoto = (raw: string) => loadPhotoFrom(raw, { dir, slug });
+// Photo names resolve to your local copy or the uploaded one in src/lib/photos.ts.
+const loadPhoto = (raw: string) => loadPhotoFrom(raw, { dir });
 
 /** Blank line = new paragraph. A newline, "\n" or <br/> (or a run of them) = line break. */
 const splitText = (text: string) =>
@@ -97,15 +98,18 @@ const minusRem = (n: number) => (n >= 0 ? ` - ${round(n)}rem` : ` + ${round(-n)}
  *   widths + (k-1)g = W   →   H = (W - g(k-1-C)) / R
  * where R = Σ column ratios and C = Σ over stacks of rS(n-1).
  */
-// Each `aside` row joins the photo row above it (the schema checks there is one), numbered in order.
-type Section = Exclude<(typeof rows)[number], { aside: TextItems }>;
-const sections: { row: Section; asides: { number: string; items: string[] }[] }[] = [];
+// Each `aside` / `aside-N` row joins the photo row above it (the schema checks there is one),
+// numbered in order.
+type Section = RowItem[] | { text: TextItems } | { "text-r": TextItems } | { "text-f": TextItems };
+type PendingAside = { number: string; target?: number; items: string[] };
+const sections: { row: Section; asides: PendingAside[] }[] = [];
 let asideCount = 0;
 for (const row of rows) {
-  if (!Array.isArray(row) && "aside" in row) {
-    sections.at(-1)?.asides.push({ number: pad(++asideCount), items: listOf(row.aside).filter(Boolean) });
+  const aside = asideOf(row);
+  if (aside) {
+    sections.at(-1)?.asides.push({ number: pad(++asideCount), target: aside.target, items: listOf(aside.items).filter(Boolean) });
   } else {
-    sections.push({ row, asides: [] });
+    sections.push({ row: row as Section, asides: [] });
   }
 }
 
@@ -120,11 +124,16 @@ const blocks = await Promise.all(
 
     // Numbered before the first await, so frames count in reading order.
     const groups = row.map((item) => (Array.isArray(item) ? item : [item]).map((raw) => ({ raw, number: pad(++frame) })));
-    // The aside badge goes on the row's top-right photo (top of the last column), nearest the aside.
-    const marked = groups.at(-1)![0];
-
+    // An aside's badge goes on the row's top-right photo (top of the last column), nearest the aside;
+    // `aside-N` puts it on the row's Nth photo in reading order.
+    const topRight = groups.at(-1)![0];
+    const inOrder = groups.flat();
     const asides = await Promise.all(
-      rowAsides.map(async ({ number, items }) => ({ number, frame: marked.number, blocks: await loadBlocks(items) })),
+      rowAsides.map(async ({ number, target, items }) => {
+        const photo = target ? inOrder[target - 1] : topRight;
+        if (!photo) throw new Error(`aside-${target}: the photo row above has only ${inOrder.length} photos.`);
+        return { number, frame: photo.number, blocks: await loadBlocks(items) };
+      }),
     );
 
     const columns = await Promise.all(
@@ -138,7 +147,8 @@ const blocks = await Promise.all(
             const manual = captions[photo.key] ?? captions[raw];
             // Auto captions only show in the lightbox; hand-written captions still show under the photo.
             const exposure = manual?.exposure ?? (autoCaptions ? exposureText(photo.exposure) : undefined);
-            const aside = number === marked.number ? asides[0]?.number : undefined;
+            // Several asides on one photo: the badge shows the first.
+            const aside = asides.find((a) => a.frame === number)?.number;
             return { ...photo, number, aside, caption: manual, lightboxCaption: exposure };
           }),
         );

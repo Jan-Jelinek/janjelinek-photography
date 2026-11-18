@@ -27,7 +27,7 @@ export interface Photo {
   badge?: "not uploaded" | "edited";
   /** Wallpaper JPEG for the lightbox's download button (uploaded photos; local ones in dev). */
   download?: string;
-  /** Camera settings, for auto captions (uploaded and local photos; not Azure). */
+  /** Camera settings, for auto captions. */
   exposure?: Exposure;
   /** Set for a video (text sections and asides only): the tile shows the poster, the lightbox plays it. */
   video?: Video;
@@ -63,9 +63,8 @@ export function exposureText(e?: Exposure): string | undefined {
 
 /** Which collection a photo name belongs to. */
 export interface PhotoSource {
-  /** Folder holding the post, e.g. "src/collections/2025-peak-fog". */
+  /** Folder holding the post, e.g. "src/collections/2025-qixing". */
   dir: string;
-  slug: string;
 }
 
 // --- Uploaded: in the collection's photos.json, written by `py r2sync`. ---
@@ -113,28 +112,6 @@ function r2Photo(file: string, entry: ManifestEntry): Photo {
       lightboxWidth: entry.video.w,
       lightboxHeight: entry.video.h,
     }),
-  };
-}
-
-// --- Azure: "1-01", or "1-01v" for portrait. ---
-// Each photo exists as <id>-720.webp and <id>-1200/1800/2400.jpg (number = long edge).
-function azurePhoto(raw: string, slug: string): Photo {
-  const base = `https://stjjp.blob.core.windows.net/images/${slug}/`;
-  const portrait = raw.endsWith("v");
-  const id = portrait ? raw.slice(0, -1) : raw;
-  const widthOf = (edge: number) => (portrait ? Math.round((edge * 2) / 3) : edge);
-  const url = (edge: number) => `${base}${id}-${edge}.${edge === 720 ? "webp" : "jpg"}`;
-  return {
-    key: id,
-    ratio: portrait ? 2 / 3 : 3 / 2,
-    width: widthOf(1200),
-    height: portrait ? 1200 : 800,
-    src: url(1200),
-    srcset: WIDTHS.map((e) => `${url(e)} ${widthOf(e)}w`).join(", "),
-    href: url(2400),
-    lightboxSrcset: WIDTHS.slice(1).map((e) => `${url(e)} ${widthOf(e)}w`).join(", "),
-    lightboxWidth: widthOf(2400),
-    lightboxHeight: portrait ? 2400 : 1600,
   };
 }
 
@@ -267,11 +244,12 @@ function sha256Of(path: string): string {
  * A name with an image extension is a file: your local copy wins (so you can tinker),
  * unless it's identical to the upload; otherwise the uploaded version from photos.json.
  * Local photos are gitignored, so the deployed site only ever uses uploaded ones.
- * A name without an extension is a legacy Azure ID.
  */
-export async function loadPhoto(raw: string, { dir, slug }: PhotoSource): Promise<Photo> {
+export async function loadPhoto(raw: string, { dir }: PhotoSource): Promise<Photo> {
   const video = VIDEO.test(raw);
-  if (!video && !LOCAL.test(raw)) return azurePhoto(raw, slug);
+  if (!video && !LOCAL.test(raw)) {
+    throw new Error(`"${raw}" in ${dir}/post.mdx isn't a photo or video file name (e.g. DSCF0669.JPG).`);
+  }
   const entry = (manifests[`/${dir}/photos.json`] ?? {})[raw];
   const fresh = () => !(entry && sha256Of(resolve(dir, raw)) === entry.sha256);
   const badge = entry ? "edited" : "not uploaded";

@@ -26,15 +26,15 @@ site at the bucket's `r2.dev` URL with `PUBLIC_IMAGE_BASE=https://pub-xxxx.r2.de
 
 ## Daily workflow
 
-1. Drop exports into the collection folder, e.g. `src/collections/2025-peak-fog/`.
+1. Drop exports into the collection folder, e.g. `src/collections/2025-qixing/`.
 2. Put the file names in the post's `rows` and tinker with `npm run dev`.
    Photos coming from your PC have a badge (only in dev):
    - **not uploaded**: only on your PC
    - **edited**: uploaded, but your local copy is different
-3. `py r2sync push 2025-peak-fog`: uploads the photos used in rows, converts them, and moves the
+3. `py r2sync push 2025-qixing`: uploads the photos used in rows, converts them, and moves the
    local copies to the Recycle Bin. The badges disappear.
    Only photos used in rows, text sections or asides are uploaded; leftovers in the folder are skipped.
-4. `py r2sync unused 2025-peak-fog` lists those leftovers; delete the ones you don't need.
+4. `py r2sync unused 2025-qixing` lists those leftovers; delete the ones you don't need.
 5. Commit `post.mdx` and `photos.json`, push.
 
 To re-edit a photo, drop the new version in the folder under the same name and push again.

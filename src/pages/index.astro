@@ -17,7 +17,6 @@ const metaOf = (data: { place?: string; slug: string }) =>
 // Where a post's photo names are looked up (folder of its post.mdx).
 const sourceOf = (post: (typeof posts)[number]) => ({
   dir: post.filePath!.replace(/\/[^/]+$/, ""),
-  slug: post.data.slug,
 });
 
 // Covers: one of each collection's photos, cropped to a square in CollectionCover.
@@ -25,14 +24,22 @@ const covers = await Promise.all(posts.map((post) => loadPhoto(post.data.cover.p
 
 // Hero: every visit picks a random collection that has `feature:` photos (equal odds),
 // then one of its featured photos. Done in the browser, since the site is static.
+// In dev, `feature-test:` in any post replaces all of that with only the test photos.
+const testing = posts.filter((post) => post.data["feature-test"]);
+if (testing.length && !import.meta.env.DEV) {
+  console.warn(
+    `[hero] Ignoring \`feature-test\` in ${testing.map((p) => p.data.slug).join(", ")} (dev only). Remove it when you're done.`,
+  );
+}
+const useTest = testing.length > 0 && import.meta.env.DEV;
 const heroes = await Promise.all(
-  posts
-    .filter((post) => post.data.feature)
+  (useTest ? testing : posts.filter((post) => post.data.feature))
     .map((post) => {
-      const { slug, title, feature, captions } = post.data;
+      const { slug, title, captions } = post.data;
+      const feature = (useTest ? post.data["feature-test"] : post.data.feature)!;
       const source = sourceOf(post);
       return Promise.all(
-        feature!.map(async (name) => {
+        feature.map(async (name) => {
           const photo = await loadPhoto(name, source);
           return {
             src: photo.src,

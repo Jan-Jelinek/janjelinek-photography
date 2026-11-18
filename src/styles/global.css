@@ -29,7 +29,7 @@
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --bg: #f4f2ee;
+  --bg: #ffffff;
   --fg: #2a2824;
   --strong: #0e0e0d;
   --muted: #5c584f;

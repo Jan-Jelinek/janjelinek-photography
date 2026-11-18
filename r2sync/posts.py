@@ -11,8 +11,7 @@ import yaml
 REPO = Path(__file__).resolve().parent.parent
 COLLECTIONS = REPO / "src" / "collections"
 
-# Same rule as Gallery.astro: a name with an image (or video) extension is a file; without one it's a
-# legacy Azure ID. Videos only go in text sections and asides.
+# Photo and video files (videos only go in text sections and asides).
 PHOTO = re.compile(r"\.(jpe?g|png|webp|avif|tiff?|mp4|mov|m4v)$", re.IGNORECASE)
 VIDEO = re.compile(r"\.(mp4|mov|m4v)$", re.IGNORECASE)
 FRONT_MATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---", re.DOTALL)
@@ -22,40 +21,36 @@ SNAPSHOT = re.compile(r"^\S+\.(jpe?g|png|webp|avif|tiff?|mp4|mov|m4v)$", re.IGNO
 
 @dataclass
 class Collection:
-    name: str  # folder name, e.g. "2025-peak-fog"; also the prefix in both buckets
+    name: str  # folder name, e.g. "2025-qixing"; also the prefix in both buckets
     dir: Path
     referenced: list[str] = field(default_factory=list)  # photo file names in rows, then aside images
     local: dict[str, Path] = field(default_factory=dict)  # photo files on disk
-    legacy: int = 0  # Azure IDs in rows ("1-01"), ignored by r2sync
 
     @property
     def unreferenced_local(self) -> list[str]:
         return sorted(n for n in self.local if n not in self.referenced)
 
 
-def _rows_photos(rows) -> tuple[list[str], int]:
-    """(photo file names in order, number of legacy Azure IDs)."""
+def _rows_photos(rows) -> list[str]:
+    """Photo file names in photo rows, in order."""
     names: list[str] = []
-    legacy = 0
     for row in rows or []:
         if not isinstance(row, list):
             continue  # text row
         for item in row:
             for name in item if isinstance(item, list) else [item]:
-                name = str(name)
-                if not PHOTO.search(name):
-                    legacy += 1
-                elif name not in names:
-                    names.append(name)
-    return names, legacy
+                if str(name) not in names:
+                    names.append(str(name))
+    return names
 
 
-TEXT_KEYS = ("text", "text-r", "text-f", "aside")
+# Rows holding text and snapshots: text sections, and asides (`aside`, or `aside-3` = about photo 3).
+TEXT_KEY = re.compile(r"^(text|text-r|text-f|aside(-\d+)?)$")
 
 
 def _snapshot_images(rows) -> list[str]:
     """Image file names used in text sections and asides (rows like `- aside: [...]`), in order."""
-    lists = [row[k] for row in rows or [] if isinstance(row, dict) for k in TEXT_KEYS if k in row]
+    lists = [v for row in rows or [] if isinstance(row, dict) for k, v in row.items() if TEXT_KEY.match(str(k))]
     names: list[str] = []
     for items in lists:
         for item in items if isinstance(items, list) else [items]:
@@ -75,11 +70,11 @@ def load_collection(folder: Path) -> Collection:
         for p in sorted(folder.iterdir())
         if p.is_file() and PHOTO.search(p.name)
     }
-    referenced, legacy = _rows_photos(data.get("rows"))
+    referenced = _rows_photos(data.get("rows"))
     # Snapshots (in asides and text sections) count as used too: push uploads them, unused doesn't list them.
     snapshots = _snapshot_images(data.get("rows"))
     referenced += [n for n in snapshots if n not in referenced]
-    return Collection(name=folder.name, dir=folder, referenced=referenced, local=local, legacy=legacy)
+    return Collection(name=folder.name, dir=folder, referenced=referenced, local=local)
 
 
 def all_collections() -> dict[str, Collection]:

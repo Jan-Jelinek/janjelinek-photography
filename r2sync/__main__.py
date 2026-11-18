@@ -335,8 +335,7 @@ def cmd_check(args) -> int:
             lines.append((False, "candidate", file, "on your PC, not in rows or asides"))
 
         uploaded = sum(1 for f in coll.referenced if f in entries)
-        legacy = f", {coll.legacy} old Azure IDs" if coll.legacy else ""
-        print(f"{name}  ({uploaded}/{len(coll.referenced)} photos used are uploaded{legacy})")
+        print(f"{name}  ({uploaded}/{len(coll.referenced)} photos used are uploaded)")
         for problem, tag, file, note in lines:
             problems += problem
             print(f"  {'!!' if problem else '  '} {tag:<13} {file}  {note}")
@@ -432,7 +431,7 @@ def main() -> int:
     sub = parser.add_subparsers(dest="command", required=True)
 
     p = sub.add_parser("push", help="upload a collection's local photos, convert them, remove the local copies")
-    p.add_argument("collection", help="folder name in src/collections, e.g. 2025-peak-fog")
+    p.add_argument("collection", help="folder name in src/collections, e.g. 2025-qixing")
     p.add_argument("--keep", action="store_true", help="keep the local copies")
     p.add_argument("--dry-run", action="store_true", help="only show what would happen")
     p.set_defaults(fn=cmd_push)
@@ -443,7 +442,7 @@ def main() -> int:
     p.set_defaults(fn=cmd_run)
 
     p = sub.add_parser("prune", help="delete uploaded photos the post no longer uses (master + public + photos.json)")
-    p.add_argument("collection", help="folder name in src/collections, e.g. 2025-peak-fog")
+    p.add_argument("collection", help="folder name in src/collections, e.g. 2025-qixing")
     p.add_argument("--yes", action="store_true", help="don't ask before deleting")
     p.add_argument("--dry-run", action="store_true", help="only show what would be deleted")
     p.set_defaults(fn=cmd_prune)
