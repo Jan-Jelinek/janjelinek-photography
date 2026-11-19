@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Crawlers that collect AI training data: please stay out.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: meta-externalagent
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://jj.photography/sitemap-index.xml
