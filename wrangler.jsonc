@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "jj-photography",
+  "compatibility_date": "2026-11-19",
+  "assets": {
+    "directory": "./dist",
+  }
+}
